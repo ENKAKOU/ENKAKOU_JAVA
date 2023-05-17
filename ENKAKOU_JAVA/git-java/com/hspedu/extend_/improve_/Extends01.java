@@ -1,9 +1,11 @@
 package com.hspedu.extend_.improve_;
 
 import com.hspedu.extend_.Graduate;
+
 import com.hspedu.extend_.Pupil;
 
 public class Extends01 {
+    
     public static void main(String[] args) {
         com.hspedu.extend_.Pupil pupil = new Pupil();
         pupil.name = "银角大王~";
