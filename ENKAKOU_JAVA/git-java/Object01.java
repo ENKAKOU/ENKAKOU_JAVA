@@ -1,66 +1,47 @@
-
 public class Object01 {
 
 	public static void main(String[] args) {
 		
-		 /*
-	      ÕÅÀÏÌ«ÑøÁËÁ½Ö»Ã¨Ã¨:Ò»Ö»Ãû×Ö½ĞĞ¡°×,½ñÄê 3 Ëê,°×É«¡£
-	      »¹ÓĞÒ»Ö»½ĞĞ¡»¨,½ñÄê 100 Ëê,»¨É«¡£Çë±àĞ´Ò»¸ö³ÌĞò£¬µ±ÓÃ»§ÊäÈëĞ¡Ã¨µÄÃû×ÖÊ±£¬
-	      ¾ÍÏÔÊ¾¸ÃÃ¨µÄÃû×Ö£¬ÄêÁä£¬ÑÕÉ«¡£Èç¹ûÓÃ»§ÊäÈëµÄĞ¡Ã¨Ãû´íÎó£¬
-	      ÔòÏÔÊ¾ ÕÅÀÏÌ«Ã»ÓĞÕâÖ»Ã¨  */
-
-	    /*  µ¥¶À±äÁ¿ --- ²»ÀûÓÚÊı¾İ¹ÜÀí
-
-	        String cat1Name = "Ğ¡°×";   //µÚÒ»Ö»Ã¨
+	    /* 
+	        String cat1Name = "å°ç™½";  
 	        int cat1Age = 3;
-	        String cat1Color = "°×É«";
+	        String cat1Color = "ç™½è‰²";
 
-	        String cat2Name = "Ğ¡»¨";   //µÚ¶şÖ»Ã¨
+	        String cat2Name = "å°èŠ±";  
 	        int cat2Age = 100;
-	        String cat2Color = "»¨É«";  */
+	        String cat2Color = "èŠ±è‰²";  */
 
-	     /* Êı×é --- Êı¾İÀàĞÍ£¬ÌåÏÖ²»³öÀ´: (1) Êı¾İÀàĞÍÌåÏÖ²»³öÀ´
-	                                  (2) Ö»ÄÜÍ¨¹ı[ÏÂ±ê]»ñÈ¡ĞÅÏ¢£¬Ôì³É±äÁ¿Ãû×ÖºÍÄÚÈİµÄ¶ÔÓ¦¹ØÏµ²»Ã÷È·
-	                                  (3) ²»ÄÜÌåÏÖÃ¨µÄĞĞÎª
-
-	        String[] cat1 = {"Ğ¡°×", "3", "°×É«"};    //µÚÒ»Ö»Ã¨
-	        String[] cat2 = {"Ğ¡»¨", "100", "»¨É«"};  //µÚ¶şÖ»Ã¨    */
-
-
-	     /* Ê¹ÓÃ OOP ÃæÏò¶ÔÏó½â¾ö
-	        new Cat() ´´½¨Ò»Ö»Ã¨(Ã¨¶ÔÏó)
-	        Cat cat1 = new Cat(); °Ñ´´½¨µÄÃ¨¸³¸ø cat1
-	        cat1 ¾ÍÊÇÒ»¸ö¶ÔÏó    cat2 Ò²ÊÇÒ»¸ö¶ÔÏó      */
+	     /* æ•°ç»„ 
+	        String[] cat1 = {"å°ç™½", "3", "ç™½è‰²"};    
+	        String[] cat2 = {"å°èŠ±", "100", "èŠ±è‰²"};   */
 
 	        Cat cat1 = new Cat();
-	        cat1.name = "Ğ¡°×";
+	        cat1.name = "å°ç™½";
 	        cat1.age = 3;
-	        cat1.color = "°×É«";
+	        cat1.color = "ç™½è‰²";
 
 
-	        Cat cat2 = new Cat();     //´´½¨ÁËµÚ¶şÖ»Ã¨£¬²¢¸³¸ø cat2
-	        cat2.name = "Ğ¡»¨";       //cat2 Ò²ÊÇÒ»¸ö¶ÔÏó(Ã¨¶ÔÏó)
+	        Cat cat2 = new Cat();     
+	        cat2.name = "å°èŠ±";
 	        cat2.age = 100;
-	        cat2.color = "»¨É«";
+	        cat2.color = "èŠ±è‰²";
 
 
-	        System.out.println("µÚ 1 Ö»Ã¨ĞÅÏ¢" + cat1.name
+	        System.out.println("ç¬¬ 1 åªçŒ«ä¿¡æ¯" + cat1.name
 	                + " " + cat1.age + " " + cat1.color + " ");
-	        System.out.println("µÚ 2 Ö»Ã¨ĞÅÏ¢" + cat2.name
+	        System.out.println("ç¬¬ 2 åªçŒ«ä¿¡æ¯" + cat2.name
 	                + " " + cat2.age + " " + cat2.color + " ");
 
 	    }
 
 	}
 
-	//¶¨ÒåÒ»¸öÃ¨Àà Cat -> ×Ô¶¨ÒåµÄÊı¾İÀàĞÍ
-	class Cat {      //ÊôĞÔ/³ÉÔ±±äÁ¿
-
-	    String name; //Ãû×Ö
-	    int age; //ÄêÁä
-	    String color; //ÑÕÉ«
-
-	//ĞĞÎª
 	
+	class Cat {   
+
+	    String name; 
+	    int age;
+	    String color; 
+
 
 }
