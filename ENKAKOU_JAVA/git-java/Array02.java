@@ -1,34 +1,21 @@
 import java.util.Scanner;
 public class Array02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//ÑİÊ¾ Êı¾İÀàĞÍ Êı×éÃû[]=new Êı¾İÀàĞÍ[´óĞ¡]
-		//Ñ­»·ÊäÈë5¸ö³É¼¨£¬±£´æµ½doubleÊı×é,²¢Êä³ö
 		
-		//²½Öè
-		//1. ´´½¨Ò»¸ö double Êı×é£¬´óĞ¡ 5
-		
-		//(1) µÚÒ»ÖÖ¶¯Ì¬·ÖÅä·½Ê½
-		//double scores[] = new double[5];
-		//(2) µÚ2ÖÖ¶¯Ì¬·ÖÅä·½Ê½£¬ ÏÈÉùÃ÷Êı×é£¬ÔÙ new ·ÖÅä¿Õ¼ä
-		double scores[] ; //ÉùÃ÷Êı×é£¬ ÕâÊ± scores ÊÇ null
-		scores = new double[5]; // ·ÖÅäÄÚ´æ¿Õ¼ä£¬¿ÉÒÔ´æ·ÅÊı¾İ
-		
-
-		//2. Ñ­»·ÊäÈë
-		//   scores.length ±íÊ¾Êı×éµÄ´óĞ¡/³¤¶È
-		//   
+		double scores[] ; 
+		scores = new double[5]; 
+	
 		Scanner myScanner = new Scanner(System.in);
 		for( int i = 0; i < scores.length; i++) {
-			System.out.println("ÇëÊäÈëµÚ"+ (i+1) +"¸öÔªËØµÄÖµ");
+			System.out.println("è¯·è¾“å…¥ç¬¬"+ (i+1) +"ä¸ªå…ƒç´ çš„å€¼");
 			scores[i] = myScanner.nextDouble();
 		}
 
-		//Êä³ö£¬±éÀúÊı×é
-		System.out.println("==Êı×éµÄÔªËØ/ÖµµÄÇé¿öÈçÏÂ:===");
+		
+		System.out.println("==æ•°ç»„çš„å…ƒç´ /å€¼çš„æƒ…å†µå¦‚ä¸‹:===");
 		for( int i = 0; i < scores.length; i++) {
-			System.out.println("µÚ"+ (i+1) +"¸öÔªËØµÄÖµ=" + scores[i]);
+			System.out.println("ç¬¬"+ (i+1) +"ä¸ªå…ƒç´ çš„å€¼=" + scores[i]);
 		}
 	}
 }
