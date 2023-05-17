@@ -4,14 +4,14 @@ public class PropertiesDetail{
 
         Person p1 = new Person();
 
-        System.out.println("\n µ±Ç°Õâ¸öÈËµÄÐÅÏ¢");
+        System.out.println("\n ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ï¢");
         System.out.println("age=" + p1.age + " name=" + p1.name + " sal=" +
                 p1.sal + " isPass=" + p1.isPass) ;
 
     }
 }
 
-class Person {
+class Person22 {
     int age;
     String name;
     double sal;

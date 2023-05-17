@@ -1,89 +1,74 @@
 public class BiliJavaDay3 {
 	
     public static void main(String[] args){
-        //JAVA ³ÌĞòÖĞ + ºÅµÄÊ¹ÓÃ
 
-        // µ±×óÓÒÁ½±ß¶¼ÊÇÊıÖµĞÍ£¬Ôò×ö¼Ó·¨ÔËËã
-        System.out.println(100 + 3);              // 103
-        //µ±×óÓÒÁ½±ßÓĞÒ»·½Îª×Ö·û´®£¬Ôò×öÆ´½ÓÔËËã
-        System.out.println("100" + 98);           //10098  " "ÊÇ×Ö·û´®
-        System.out.println(100 + 3 +"hello");     //103hello
-        System.out.println("hello" + 100 + 3);    //hello1003
+        System.out.println(100 + 3);
+        System.out.println("100" + 98);
+        System.out.println(100 + 3 +"hello");
+        System.out.println("hello" + 100 + 3);
 
-        //Êı¾İÀàĞÍ - ÕûÊıÀàĞÍ
-        byte n1 = 10;    //ÊıÖµÊÇ10 £¬1×Ö½Ú(Õ¼ÓÃ£©
-        short n2 = 10;   //ÊıÖµÊÇ10 £¬2×Ö½Ú(Õ¼ÓÃ£©
-        int n3 = 10;     //ÊıÖµÊÇ10 £¬4×Ö½Ú(Õ¼ÓÃ£©
-        long n4 = 10;    //ÊıÖµÊÇ10 £¬8×Ö½Ú(Õ¼ÓÃ£©
+        byte n1 = 10;
+        short n2 = 10;
+        int n3 = 10;
+        long n4 = 10;
 
-        //javaÕûĞÎ³£Á¿£¨¾ßÌåÖµ£©Ä¬ÈÏÎª£ºintĞÍ¡£ÉùÃ÷longĞÍ³£Á¿£¬Ğëºó¼Ó'l' »ò 'L'
-            int n5 = 1;    // int 4×Ö½Ú
-        // int n1 = 1L   (±¨´í £» 1L ÊÇlongĞÍ 8×Ö½Ú£¬ÎŞ·¨½øint 4×Ö½Ú£©
-            long n6 = 1L;  // ÕıÈ·
+            int n5 = 1;
+        // int n1 = 1L
+            long n6 = 1L;
 
-        //Êı¾İÀàĞÍ - ¸¡µãÀàĞÍ
-        float num1 = 1.1F;   //ÕıÈ·
-        double num2 = 1.1;   //ÕıÈ·
-        double num3 = 1.1F;  //ÕıÈ·
-        /*  ¾ÙÀı£º float num1 = 1.1; £¨ÔËĞĞ´íÎó£©
-                  Ä¬ÈÏ¸¡µãÀàĞÍ double;   double 8×Ö½Ú£¬float 4×Ö½Ú£»
-                                       double×ªfloat »áËğÊ§Êı¾İ */
+        float num1 = 1.1F;
+        double num2 = 1.1;
+        double num3 = 1.1F;
 
-        //Ê®½øÖÆÊıĞÎÊ½£ºÈç 5.12    512.0f   .512(±ØĞëÓĞĞ¡Êıµã£©
-        double num5 = .125; //µÈ¼Û 0.125
+        double num5 = .125;
         System.out.println(num5);
-        //¿ÆÑ§¼ÆÊı·¨ĞÎÊ½£ºÈç 5.12e2 [ 5.12*10µÄ2´Î·½ ]    5.12E-2[ ]
-        System.out.println(5.12e2);  // 512.0
-        System.out.println(5.12E-2); //0.0512
 
-        //¾ÙÀıËµÃ÷ doubleĞÍ ±È floatĞÍ¸ü¾«È·
+        System.out.println(5.12e2);
+        System.out.println(5.12E-2);
+
         double num9 = 2.1234567851;
-        System.out.println(num9);   //2.1234567851
+        System.out.println(num9);
         float num10 = 2.1234567851F;
-        System.out.println(num10);  //2.1234567
+        System.out.println(num10);
 
-        //¸¡µãÊıÊ¹ÓÃÏİÚå  2.7 ºÍ 8.1 / 3 ±È½Ï
+
         double num11 = 2.7;
-        double num12 = 8.1 /3;   //2.7
-        System.out.println(num11);   // 2.7
-        System.out.println(num12);   // 2.6999999999999997  ½Ó½ü2.7 Ğ¡Êı£¬²»ÊÇ2.7
-        //µÃµ½Ò»¸öÖØÒªµÄÊ¹ÓÃµã£ºµ±¶ÔÔËËã½á¹ûÊÇĞ¡ÊıµÄ½øĞĞÏàµÈÅĞ¶Ï£¬ÒªĞ¡ĞÄ
-        //Ó¦µ±ÊÇÒÔÁ½¸öÊıµÄ²îÖµµÄ¾ø¶ÔÖµ£¬ÔÚÄ³¸ö¾«¶È·¶Î§ÀàÅĞ¶Ï
+        double num12 = 8.1 /3;
+        System.out.println(num11);
+        System.out.println(num12);
         if ( num11 == num12);{
-            System.out.println("ÏàµÈ");
+            System.out.println("numå€¼");
         }
-        //ÕıÈ·Ğ´·¨   ctrl+/ = ×¢ÊÍ¿ì½İ¼ü£¬ÔÙÊäÈë¼´È¡Ïû
-        if ( Math.abs(num11 - num12) < 0.000001){
-            System.out.println("²îÖµ·Ç³£Ğ¡£¬µ½ÎÒµÄ¹æ¶¨¾«¶È£¬ÈÏÎªÏàµÈ...");
-        }
-        // ¿ÉÒÔÍ¨¹ıjava api
-        System.out.println( Math.abs(num11 - num12));
-        // Ï¸½Ú£ºÈç¹ûÊÇ×ÖºÎ½â²éÑ¯µÃµÄĞ¡Êı»òÖ±½Ó¸³Öµ£¬ÊÇ¿ÉÒÔÅĞ¶ÏÏàµÈ
 
-        //×Ö·ûÀàĞÍ char
+        if ( Math.abs(num11 - num12) < 0.000001){
+            System.out.println("æœ€ç»ˆå–å€¼");
+        }
+
+        System.out.println( Math.abs(num11 - num12));
+
         char c1 = 'a';
         char c2 = '\t';
-        char c3 = 'º«';
-        char c4 = 92; // ËµÃ÷£º×Ö·ûÀàĞÍ¿ÉÒÔÖ±½Ó´æ·ÅÒ»¸öÊı×Ö
+        char c3 = 'B';
+        char c4 = 92;
         System.out.println(c1);
         System.out.println(c2);
         System.out.println(c3);
-        System.out.println(c4);  //µ±Êä³öc4£¬»áÊä³ö92±íÊ¾µÄ×Ö·û
+        System.out.println(c4);
 
-        char c5 = 'a';  //Êä³ö'a' ¶ÔÓ¦µÄÊı×Ö
+        char c5 = 'a';
         System.out.println((int)c5);
-        char c6 = 'º«';
+        char c6 = 'B';
         System.out.println((int)c6);  //38889
         char c7 = 38889;
-        System.out.println((int) c7);  //º«
-        //char ÀàĞÍÊÇ¿ÉÒÔ½øĞĞÔËËãµÄ£¬Ïàµ±ÓÚÒ»¸öÕûÊı£¬ÒòÎªËû¶¼¶ÔÓ¦ÓĞUnicodeÂë
+        System.out.println((int) c7);
+
 
         System.out.println('a' + 10);  //107
 
-        //ËæÌÃ²âÊÔ
+
         char c8 = 'b' + 1;   //98+1 ==> 99
         System.out.println((int) c8);   //99
-        System.out.println((c8));  //99 -> ¶ÔÓ¦µÄ×Ö·û ->±àÂë±íASCII£¨¹æ¶¨ºÃµÄ£©=> c
+        System.out.println((c8));  //99
 
 
 

@@ -1,6 +1,6 @@
 package com.hspedu.extend_;
 
-public class ExtendsDetail {
+public class ExtendsDetail01 {
     public static void main(String[] args) {
 //        System.out.println("===第1个对象====");
 //        Sub sub = new Sub(); //创建了子类对象 sub

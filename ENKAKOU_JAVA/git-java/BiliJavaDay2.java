@@ -1,76 +1,52 @@
 public class BiliJavaDay2 {
 	
     public static void main(String[] args){
-        //´úÂë¹æ·¶
-        int n1 = 1 + 2;  //ÕûÌåÏòÓÒÒÆ¶¯£¬Ñ¡ÖĞ£¬È»ºóÊäÈëtab
-        int n2 = 5 + 10; //ÕûÌåÏò×óÒÆ¶¯£¬Ñ¡ÖĞ£¬È»ºóÊäÈëshift+tab
-        int n3 = 1 + 3 + 34; //ÔËËã·ûºÍ = Á½±ßÏ°¹ßĞÔ¸÷¼ÓÒ»¸ö¿Õ¸ñ
-        System.out.println(n1 + n2);
-        //ĞĞ¿í²»Òª³¬¹ı80×Ö·û
-        //´ÎĞĞ·ç¸ñ£¬ĞĞÎ²·ç¸ñ
 
-        // ×÷Òµ1 ±àĞ´hello world
+        int n1 = 1 + 2;
+        int n2 = 5 + 10;
+        int n3 = 1 + 3 + 34;
+        System.out.println(n1 + n2);
+
         System.out.println("hello world");
 
-        /* ×÷Òµ2 ½«¸öÈËµÄ»ù±¾ĞÅÏ¢£¨ĞÕÃû£¬ĞÔ±ğ£¬¼®¹á£¬×¡Ö·£©
-             ´òÓ¡µ½¿ØÖÆÌ¨ÉÏÊä³ö¡£¸÷ÌõĞÅÏ¢·Ö±ğÕ¼Ò»ĞĞ  */
-        System.out.println("ĞÕÃû\tĞÔ±ğ\t¼®¹á\t×¡Ö·\n½´½´\tÅ®ĞÔ\tÎ´Öª\t¸£¸Ô");
 
-        /* ×÷Òµ3 JDK,JRE,JVMµÄ¹ØÏµ
-             ´ğ£ºJDK + JRE = java¿ª·¢¹¤¾ß   JRE + JVM = ºËĞÄÀà¿â */
+        System.out.println("ä½ å¥½\tjava\tä½ å¥½\tä¸–ç•ŒÖ·\nHSP\tæ•™è‚²");
 
-        /* ×÷Òµ4 »·¾³±äÁ¿pathÅäÖÃ¼°Æğ×÷ÓÃ
-             ´ğ£º»·¾³±äÁ¿µÄ×÷ÓÃ£¬ÎªÁËÔÚdosµÄÈÎÒâÄ¿Â¼£¬¿ÉÒÔÈ¥Ê¹ÓÃjava ºÍ javacÃüÁî¡£
-                ÏÈÅäÖÃ JAVA HOME = Ö¸Ïòjdk°²×°µÄÖ÷Ä¿Â¼¡£
-                ±à¼­path»·¾³±äÁ¿£¬Ôö¼Ó %JAVA_HOME%\bin  */
 
-        /* ×÷Òµ5 ±àĞ´JAVA²½Öè
-            1.±àĞ´javaÔ´´úÂë
-            2.java±àÒë£¬¶ÔÓ¦µÄ.class ×Ö½ÚÂëÎÄ¼ş
-            3.javaÔËĞĞ£¬±¾ÖÊÊÇ.class ¼ÓÔØµ½jvm ÔËĞĞ */
+        int a = 1;
 
-        // java±äÁ¿
-        // ±äÁ¿ Èı¸öÒªËØ £º  ÀàĞÍ + Ãû³Æ + Öµ
-        int a = 1;   // int = ÀàĞÍ ;  a = Ãû³Æ ; 1 = Öµ
-        //  b = 89; //°Ñ89Öµ¸³¸øb±äÁ¿
-        System.out.println(a); //Êä³öa ±äÁ¿µÄÖµ
+        System.out.println(a);
 
-        //ÉùÃ÷±äÁ¿
+
         //int = a;
         a = 100;
         System.out.println(a);
-        //»¹¿ÉÒÔÕâÑùÊ¹ÓÃ
+
         int b = 100;
         System.out.println(b);
 
-        //¶¨Òå±äÁ¿  ¼ÇÂ¼ÈËµÄĞÅÏ¢
+
         int age = 20;
         double score = 88.6;
-        char gender = 'ÄĞ';
+        char gender = '2';
         String name = "jack";
-        //Êä³öĞÅÏ¢
-        System.out.println("ÈËµÄĞÅÏ¢ÈçÏÂ£º");
+
+        System.out.println("ä¿¡æ¯ä¸º");
         System.out.println(name);
         System.out.println(age);
         System.out.println(score);
         System.out.println(gender);
 
+       // int a = 50;
+       // System.out.println(a);
 
-        //±äÁ¿±ØĞëÏÈÉùÃ÷£¬ºóÊ¹ÓÃ£¬¼´£ºÓĞË³Ğò
-       // int a = 50;   //int ÀàĞÍ
-       // System.out.println(a);  // Êä³öÎª 50
-        //¸ÃÇøÓòÊı¾İ/Öµ¿ÉÒÔÔÚÍ¬Ò»ÀàĞÍ·¶Î§ÄÚ²»¶Ï±ä»¯
         //  a = 88;
-        //  System.out.println(a);  // Êä³öÎª 88
+        //  System.out.println(a);
 
         //  a = "jack";
-        // StringÀàĞÍ ²»ÄÜ×ª³É intÀàĞÍ
-
-
-        //±äÁ¿ÔÚÍ¬Ò»¸ö×÷ÓÃÓòÄÚ²»ÄÜÖØÃû    ÀıÈç £º int a = 77;£¨´íÎó£©
         //   class doc{
         //    public static void main(String[] args){
-        //        int a = 666;   // ¶ÔµÄ
+        //        int a = 666;
 
 
 

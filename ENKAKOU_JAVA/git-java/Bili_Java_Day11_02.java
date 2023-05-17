@@ -2,27 +2,26 @@ import java.util.Scanner;
 
 public class Bili_Java_Day11_02 {
 	
-    // ÕâÊÇÒ»¸ömain·½·¨
+
     public static void main(String[] args){
-        // while Ñ­»·
+
         int i = 1;
         while (i <= 10){
-            System.out.println("ÄãºÃ" + i);
+            System.out.println("ï¿½ï¿½ï¿½" + i);
             i++;
         }
-        System.out.println("ÍË³öwhile£¬¼ÌÐø...");
+        System.out.println("ï¿½Ë³ï¿½whileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...");
 
-        //×÷Òµ 1 £º´òÓ¡1-100Ö®¼äËùÓÐÄÜ±»3Õû³ýµÄÊý£¨Ê¹ÓÃwhile)
-            // 1. »¯·±Îª¼ò
+
         int n1 = 1;
         while (n1 <=100){
             if(n1 % 3 == 0) {
             System.out.println("n1=" + n1);
         }
-            n1++;  //±äÁ¿×ÔÔö
+            n1++;
         }
 
-            // 2. ÏÈËÀºó»î
+
         int n2 = 1;
         int end = 100;
         int t = 3;
@@ -33,41 +32,35 @@ public class Bili_Java_Day11_02 {
             n2++;
         }
 
-        //×÷Òµ2 £º´òÓ¡40-200Ö®¼äËùÓÐµÄÅ¼Êý£¨Ê¹ÓÃwhile£©
-            // 1. »¯·±Îª¼ò
-        int  j = 40;   //±äÁ¿³õÊ¼»¯
+
+        int  j = 40;
         while (j <= 200){
             if(j % 2 == 0){
             System.out.println("j=" + j);
         }
-            j++;    //Ñ­»·±äÁ¿µü´ú
+            j++;
         }
-            // 2. ÏÈËÀºó»î
-        int  j2 = 40;   //±äÁ¿³õÊ¼»¯
+
+        int  j2 = 40;
         int end2 = 200;
         int t2 = 2;
         while (j2 <= end2){
             if(j2 % t2 == 0){
                 System.out.println("j2=" + j2);
             }
-            j2++;    //Ñ­»·±äÁ¿µü´ú
+            j2++;
         }
 
-        // do...while Ñ­»·
+
         int l1 = 1;
         do{
-            // Ñ­»·Ö´ÐÐÓï¾ä
-            System.out.println("hello");
-            // Ñ­»·±äÁ¿µü´ú
-            l1++;
-        }while (l1 <= 10);  // Ñ­»·Ìõ¼þ
-        System.out.println("ÍË³ödo whileÖ´ÐÐ");
 
-            //°¸ÀýÌâ1£ºÍ³¼Æ1-200Ö®¼äÄÜ±»5Õû³ý£¬µ«²»ÄÜ±»3Õû³ýµÄ¸öÊý
-            /* Ë¼Â··ÖÎö£¨»¯·±Îª¼ò£©£º
-               1. Ê¹ÓÃdo whileÊä³ö1-200
-               2. ¹ýÂËÄÜ±»5Õû³ý£¬µ«²»ÄÜ±»3Õû³ýµÄÊý %
-               3. Í³¼ÆÂú×ãÌõ¼þµÄ¸öÊý  int count = 0 */
+            System.out.println("hello");
+
+            l1++;
+        }while (l1 <= 10);
+        System.out.println("do whilÖ´e");
+
         int l2 = 1;
         int count5 = 0;
         do{
@@ -79,16 +72,16 @@ public class Bili_Java_Day11_02 {
         }while (l2 <= 200);
         System.out.println("count5=" + count5);
 
-            //°¸ÀýÌâ2£º
+
         Scanner myScanner2 = new Scanner(System.in);
         char answer = ' ';
         do{
-            System.out.println("À×ÎÞ½ÜÊ¹³öÀ×µ¯×Ó");
-            System.out.println("ÏôÉª£ºÀ×ÎÞ½ÜÄãµ½µ×»¹²»»¹Ç®£¿y/n");
+            System.out.println("ï¿½ï¿½ï¿½Þ½ï¿½Ê¹ï¿½ï¿½ï¿½×µï¿½ï¿½ï¿½");
+            System.out.println("ï¿½ï¿½Éªï¿½ï¿½ï¿½ï¿½ï¿½Þ½ï¿½ï¿½ãµ½ï¿½×»ï¿½ï¿½ï¿½ï¿½ï¿½Ç®ï¿½ï¿½y/n");
             answer = myScanner2.next().charAt(0);
-            System.out.println("ËûµÄ»Ø´ð" + answer);
+            System.out.println("ï¿½ï¿½ï¿½Ä»Ø´ï¿½" + answer);
         }while (answer != 'y');
-        System.out.println("À×ÎÞ½ÜÖÕÓÚ»¹Ç®ÁË");
+        System.out.println("ï¿½ï¿½ï¿½Þ½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½Ç®ï¿½ï¿½");
 
     }
 }
