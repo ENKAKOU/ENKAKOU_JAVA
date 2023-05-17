@@ -1,4 +1,5 @@
 public class BinaryTest { 
+	
 	public static void main(String[] args) {
 
 		int n1 = 0b1010;
