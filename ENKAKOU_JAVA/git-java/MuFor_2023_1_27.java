@@ -9,53 +9,39 @@ public class MuFor_2023_1_27 {
                 System.out.println("a=" + a + "g=" + g);
             }
         }
-        /* Ï°Ìâ1£ºÍ³¼Æ3¸ö°à¼¶µÄ³É¼¨Çé¿ö£¬Ã¿¸ö°àÓĞ5ÃûÍ¬Ñ§
-                 Çó¸÷¸ö°à¼¶Æ½¾ù·ÖºÍËùÓĞ°à¼¶µÄÆ½¾ù·Ö£¨Ñ§ÉúµÄ³É¼¨´Ó¼üÅÌÊäÈë£©
-                 Í³¼ÆÈı¸ö°à¼°¸ñÈËÊı£¬Ã¿¸ö°àÓĞ5ÃûÍ¬Ñ§
-            /*Ë¼Â··ÖÎö£¨»¯·±Îª¼ò£©£»
-                 1. ÏÈ¼ÆËãÒ»¸ö°à£¬5¸öÑ§ÉúµÄ³É¼¨;Ê¹ÓÃforÑ­»·;
-                    ´´½¨Scanner¶ÔÏó£¬½ÓÊÕÓÃ»§ÊäÈë;
-                    µÃµ½¸Ã°à¼¶µÄÆ½¾ù·Ö£¬ÏÈ¶¨ÒåÒ»¸ö double sum °Ñ¸Ã°à¼¶5¸öÑ§ÉúµÄ³É¼¨ÀÛ¼ÆÆğÀ´
-                 2. Í³¼Æ3¸ö°à¼¶£¨Ã¿¸ö°à5¸öÑ§Éú£©Æ½¾ù·Ö
-                 3. ËùÓĞ°à¼¶µÄÆ½¾ù·Ö
-                    ¶¨ÒåÒ»¸ö±äÁ¿ double totalScore ÀÛ¼ÆËùÓĞÑ§ÉúµÄ³É¼¨
-                    µ±¶àÖØÑ­»·½áÊøºó£¬totalScore / (3 * 5);
-                 4. Í³¼ÆÈı¸ö°à¼°¸ñÈËÊı
-                    ¶¨Òå±äÁ¿ int passNum = 0; µ±ÓĞÒ»¸öÑ§Éú³É¼¨ >= 60, passNum++
-                    Èç¹û>=60  passNum++
-                 5. ÓÅ»¯£¨Ğ§ÂÊ£¬¿É¶ÁĞÔ£¬½á¹¹£©*/
+   
 
         Scanner myScanner = new Scanner(System.in);
-        double totalScore = 0;  //ÀÛ¼ÆËùÓĞÑ§ÉúµÄ³É¼¨
-        int passNum = 0;   //ÀÛ¼Æ ¼°¸ñÈËÊı
-        for(int i = 1; i <= 3; i++){    // i ±íÊ¾°à¼¶
-            double sum = 0;     // Ò»¸ö°à¼¶µÄ×Ü·Ö
-            for(int j = 1; j <= 5; j++){    // j ±íÊ¾Ñ§Éú
-              System.out.println("ÇëÊäÈëµÚ" + i + "°àµÄµÚ" + j +"¸öÑ§ÉúµÄ³É¼¨");
+        double totalScore = 0;  //ç´¯è®¡æ‰€æœ‰å­¦ç”Ÿçš„æˆç»©
+        int passNum = 0;   //ç´¯è®¡ åŠæ ¼äººæ•°
+        for(int i = 1; i <= 3; i++){    // i è¡¨ç¤ºç­çº§
+            double sum = 0;     // ä¸€ä¸ªç­çº§çš„æ€»åˆ†
+            for(int j = 1; j <= 5; j++){    // j è¡¨ç¤ºå­¦ç”Ÿ
+              System.out.println("è¯·è¾“å…¥ç¬¬" + i + "ç­çš„ç¬¬" + j +"ä¸ªå­¦ç”Ÿçš„æˆç»©");
               double score = myScanner.nextDouble();
-                //µ±ÓĞÒ»¸öÑ§Éú³É¼¨ >= 60, passNum++
+                //å½“æœ‰ä¸€ä¸ªå­¦ç”Ÿæˆç»© >= 60, passNum++
               if(score >= 60){
                   passNum++;
             }
-            sum += score;   // ÀÛ¼Æ
-            System.out.println("³É¼¨Îª" + score);
+            sum += score;   // ç´¯è®¡
+            System.out.println("æˆç»©ä¸º" + score);
         }
-            //ÒòÎªsum ÊÇ 5¸öÑ§ÉúµÄ×Ü³É¼¨
-        System.out.println("sum=" + sum + " Æ½¾ù·Ö=" + (sum / 5));
-            //°Ñsum ÀÛ¼Æµ½ totalScore
+            //å› ä¸ºsum æ˜¯ 5ä¸ªå­¦ç”Ÿçš„æ€»æˆç»©
+        System.out.println("sum=" + sum + " å¹³å‡åˆ†=" + (sum / 5));
+            //æŠŠsum ç´¯è®¡åˆ° totalScore
             totalScore += sum;
         }
-        System.out.println("Èı¸ö°à×Ü·Ö=" + totalScore + " Æ½¾ù·Ö=" + totalScore / 15);
-        System.out.println("¼°¸ñÈËÊıÓĞ=" + passNum);
+        System.out.println("ä¸‰ä¸ªç­æ€»åˆ†=" + totalScore + " å¹³å‡åˆ†=" + totalScore / 15);
+        System.out.println("åŠæ ¼äººæ•°æœ‰=" + passNum);
 
 
-        // ´òÓ¡Ò»¸ö¾ØĞÎ
-        for(int y = 1; y <= 5; y++){   //y ±íÊ¾²ãÊı
+        // æ‰“å°ä¸€ä¸ªçŸ©å½¢
+        for(int y = 1; y <= 5; y++){   //y è¡¨ç¤ºå±‚æ•°
             System.out.println("*****");
         }
-        // ´òÓ¡°ë¸ö½ğ×ÖËş
+        // æ‰“å°åŠä¸ªé‡‘å­—å¡”
         for(int w = 1; w <= 5; w++){
-            // ¿ØÖÆ´òÓ¡Ã¿²ãµÄ * ¸ö
+            // æ§åˆ¶æ‰“å°æ¯å±‚çš„ * ä¸ª
             for( int v = 1; v <= w; v++){
                 System.out.println("*");
         }
