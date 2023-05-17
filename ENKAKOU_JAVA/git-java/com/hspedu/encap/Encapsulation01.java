@@ -3,8 +3,7 @@ package com.hspedu.encap;
 public class Encapsulation01 {
 
     public static void main(String[] args) {
-        //如果要使用快捷键alt+r, 需要先配置主类
-        //第一次，我们使用鼠标点击形式运算程序，后面就可以用
+
         Person person = new Person();
         person.setName("韩顺平");
         person.setAge(30);
@@ -12,7 +11,7 @@ public class Encapsulation01 {
         System.out.println(person.info());
         System.out.println(person.getSalary());
 
-        //如果我们自己使用构造器指定属性
+
         Person smith = new Person("smith", 80, 50000);
         System.out.println("====smith的信息======");
         System.out.println(smith.info());
@@ -20,13 +19,7 @@ public class Encapsulation01 {
 
     }
 }
-/*
-那么在java中如何实现这种类似的控制呢?
-请大家看一个小程序(com.hspedu.encap: Encapsulation01.java),
-不能随便查看人的年龄,工资等隐私，并对设置的年龄进行合理的验证。年龄合理就设置，否则给默认
-年龄, 必须在 1-120, 年龄， 工资不能直接查看 ， name的长度在 2-6字符 之间
 
- */
 class Person {
     public  String name; //名字公开
     private int age; //age 私有化
@@ -43,14 +36,12 @@ class Person {
 //        this.name = name;
 //        this.age = age;
 //        this.salary = salary;
-        //我们可以将set方法写在构造器中，这样仍然可以验证
+
         setName(name);
         setAge(age);
         setSalary(salary);
     }
 
-    //自己写setXxx 和 getXxx 太慢，我们使用快捷键
-    //然后根据要求来完善我们的代码.
     public String getName() {
         return name;
     }
@@ -69,7 +60,7 @@ class Person {
     }
 
     public void setAge(int age) {
-        //判断
+
         if(age >= 1 && age <= 120) {//如果是合理范围
             this.age = age;
         } else {

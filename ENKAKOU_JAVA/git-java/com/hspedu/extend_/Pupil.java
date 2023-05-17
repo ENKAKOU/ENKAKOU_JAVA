@@ -1,5 +1,5 @@
 package com.hspedu.extend_;
-//小学生->模拟小学生考试的情况
+
 public class Pupil {
     public String name;
     public int age;

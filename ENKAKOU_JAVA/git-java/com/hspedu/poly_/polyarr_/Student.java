@@ -15,13 +15,12 @@ public class Student extends Person {
     public void setScore(double score) {
         this.score = score;
     }
-    //重写父类say
 
     @Override
     public String say() {
         return "学生 " + super.say() + " score=" + score;
     }
-    //特有的方法
+
     public void study() {
         System.out.println("学生 " + getName() + " 正在学java...");
     }

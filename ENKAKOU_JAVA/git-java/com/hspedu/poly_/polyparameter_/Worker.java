@@ -9,7 +9,7 @@ public class Worker extends Employee {
     }
 
     @Override
-    public double getAnnual() { //因为普通员工没有其它收入，则直接调用父类方法
+    public double getAnnual() {
         return super.getAnnual();
     }
 }

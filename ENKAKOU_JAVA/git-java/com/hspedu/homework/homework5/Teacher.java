@@ -1,9 +1,9 @@
 package com.hspedu.homework.homework5;
 
-public class Teacher extends Employee{//子类
-    //特有属性
-    private int classDays; //一年上课次数
-    private double classSal; //课时费
+public class Teacher extends Employee{
+
+    private int classDays;
+    private double classSal;
 
     public Teacher(String name, double sal) {
         super(name, sal);
@@ -11,7 +11,7 @@ public class Teacher extends Employee{//子类
     //方法-重写printSal
 
     @Override
-    public void printSal() { //老师不能使用super.printSal()
+    public void printSal() {
         System.out.print("老师 ");
         System.out.println(getName() + " 年工资是: "
                 + (getSal() * getSalMonth() + classDays * classSal ));

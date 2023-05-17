@@ -1,5 +1,5 @@
 package com.hspedu.extend_;
-//大学生类-> 模拟大学生考试的简单情况
+
 public class Graduate {
     public String name;
     public int age;

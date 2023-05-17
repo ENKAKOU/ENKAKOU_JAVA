@@ -13,7 +13,7 @@ class A {//A类
     }
 }
 
-class B extends A { //B类,继承A类		//main方法中： C c =new C(); 输出么内容? 3min
+class B extends A {
     public B() {
         System.out.println("我是B类的无参构造");
     }

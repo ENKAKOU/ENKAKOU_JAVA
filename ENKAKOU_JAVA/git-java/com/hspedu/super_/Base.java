@@ -1,6 +1,6 @@
 package com.hspedu.super_;
 
-public class Base { //父类是Object
+public class Base {
 
     public int n1 = 999;
     public int age = 111;

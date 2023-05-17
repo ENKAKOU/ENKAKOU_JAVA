@@ -6,7 +6,7 @@ public class Sub extends Base {
         System.out.println("sub()....");
     }
     public void sayOk() {
-        //我们发现 父类的非private属性和方法都可以访问
+
     }
 }
 class GrandPa {

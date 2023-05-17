@@ -56,7 +56,7 @@ public class Account {
             this.pwd = "000000";
         }
     }
-    //显示账号信息
+
     public void showInfo() {
         //可以增加权限的校验
         System.out.println("账号信息 name=" + name + " 余额=" + balance + " 密码" + pwd);
