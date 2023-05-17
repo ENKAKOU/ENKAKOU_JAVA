@@ -3,15 +3,7 @@ import java.util.Scanner;
 public class HomeWork_01_02_03 {
 	
     public static void main(String[] args){
-        // ÀýÌâ1
-            /* Ä³ÈËÓÐ100£¬000Ôª£¬Ã¿¾­¹ýÒ»¸öÂ·¿Ú£¬ÐèÒª½É·Ñ£¬ÍËÔòÈçÏÂ£º
-               µ±ÏÖ½ð > 50000,Ã¿´Î½Ð5%
-               µ±ÏÖ½ð < 50000,Ã¿´Î1000
-               ¼ÆËã¸ÃÈË¿ÉÒÔ¾­¹ý¶àÉÙ´ÎÂ·¿Ú£¨while + break£© */
-        /* Ë¼Â·£º
-               1. ¶¨Òå double money ±£´æ 100£¬000
-               2. ÈýÖÖÇé¿ö£º¢Ù money > 50000;  ¢Ú money >= 1000 && money <= 50000; ¢Û money < 1000;
-               3. ±äÁ¿ count ±£´æÍ¨¹ýµÄÂ·¿Ú    */
+      
         double money = 100000;
          int count = 0;
         while (true){
@@ -24,41 +16,30 @@ public class HomeWork_01_02_03 {
             }else {
                 break;
             }
-            System.out.println(money + "¿ÉÒÔ×ß" + count + "Â·¿Ú");
+            System.out.println(money + "å¯ä»¥èµ°" + count + "è·¯å£");
         }
 
 
-        // ÀýÌâ2
-            /* ÅÐ¶ÏÒ»¸öÕûÊý£¬ÊäÈëÄÄ¸ö·¶Î§£»´óÓÚ0£¬Ð¡ÓÚ0£¬µÈÓÚ0;
-               Ë¼Â·£º
-                  1. ´´½¨Sanner¶ÔÏó£¬½ÓÊÕÓÃ»§ÊäÈëµÄÊý¾Ý
-                  2. ¶¨Òå±äÁ¿ int n £¬±£´æÕûÊý£»
-                  3. Ê¹ÓÃif ¡ª¡ª else if ¡ª¡ª else  */
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÒ»¸öÕûÊý Êý×Ö");
-        int n = myScanner.nextInt();      // ÕâÀï×Ü´í£¡£¡£¡
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•° æ•°å­—");
+        int n = myScanner.nextInt();    
         if(n > 0 ){
-            System.out.println(n + "´óÓÚ0");
+            System.out.println(n + "å¤§äºŽ0");
         } else if( n < 0){
-            System.out.println(n + "Ð¡ÓÚ0");
+            System.out.println(n + "å°äºŽ0");
         } else {
-            System.out.println(n + "µÈÓÚ0");
+            System.out.println(n + "ç­‰äºŽ0");
         }
 
 
-        // ÀýÌâ3
-            /* ÅÐ¶ÏÒ»¸öÊäÈëµÄÄê·ÝÊÇ·ñÊÇÈòÄê;
-               Ë¼Â·£º
-                  1. ´´½¨Scanner¶ÔÏó£¬½ÓÊÕÓÃ»§ÊäÈëµÄÊý¾Ý
-                  2. ¶¨Òå±äÁ¿ long year ±£´æÄê·Ý
-                  3. Äê·ÝÒªÄÜ±»4Õû³ý£¬µ«ÊÇ²»ÄÜ±»100Õû³ý¡£ÄÜ±»400 Õû³ý¡£  */
+      
         Scanner myScanner2 = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÒ»¸öÄê·Ý£¨½öÏÞ4Î»Êý×Ö£©");
+        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå¹´ä»½ï¼ˆä»…é™4ä½æ•°å­—ï¼‰");
         long year = myScanner2.nextLong();
         if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-            System.out.println(year + "ÊÇÈòÄê");
+            System.out.println(year + "æ˜¯é—°å¹´");
         } else {
-            System.out.println(year + "²»ÊÇÈòÄê");
+            System.out.println(year + "ä¸æ˜¯é—°å¹´");
         }
 
 
