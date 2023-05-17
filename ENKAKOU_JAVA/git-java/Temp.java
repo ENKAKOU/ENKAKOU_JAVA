@@ -1,4 +1,5 @@
 public class Temp { 
+	
 	public static void main(String[] args) {
 		int n1;
 		n1 = 13;
