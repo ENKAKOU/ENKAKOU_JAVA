@@ -1,26 +1,17 @@
 import java.util.Scanner;
 public class DoWhileExercise02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//Èç¹ûÀîÈı²»»¹Ç®£¬ÔòÀÏº«½«Ò»Ö±Ê¹³öÎåÁ¬±Ş£¬Ö±µ½ÀîÈıËµ»¹Ç®Îª
-		//[System.out.println("ÀÏº«ÎÊ£º»¹Ç®Âğ£¿y/n")]   do...while ..
-		//
-		//»¯·±Îª¼ò
-		//(1) ²»Í£µÄÎÊ»¹Ç®Âğ?
-		//(2) Ê¹ÓÃchar answer ½ÓÊÕ»Ø´ğ, ¶¨ÒåÒ»¸öScanner¶ÔÏó
-		//(3) ÔÚdo-while µÄwhile ÅĞ¶ÏÈç¹ûÊÇ y ¾Í²»ÔÚÑ­»·
-		//Ò»¶¨×Ô¼º¶¯ÄÔ½î..
 		Scanner myScanner  = new Scanner(System.in);
 		char answer = ' ';
 		do {
-			System.out.println("ÀÏº«Ê¹³öÎåÁ¬±Ş~");
-			System.out.println("ÀÏº«ÎÊ£º»¹Ç®Âğ£¿y/n");
+			System.out.println("è€éŸ©ä½¿å‡ºäº”è¿é­~");
+			System.out.println("è€éŸ©é—®ï¼šè¿˜é’±å—ï¼Ÿy/n");
 			answer = myScanner.next().charAt(0);
-			System.out.println("ËûµÄ»Ø´ğÊÇ" + answer);
-		}while(answer != 'y');//ÅĞ¶ÏÌõ¼şºÜ¹Ø¼ü
+			System.out.println("ä»–çš„å›ç­”æ˜¯" + answer);
+		}while(answer != 'y');
 
-		System.out.println("ÀîÈı»¹Ç®ÁË");
+		System.out.println("æä¸‰è¿˜é’±äº†");
 	}
 }
