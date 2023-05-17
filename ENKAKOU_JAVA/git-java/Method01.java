@@ -1,23 +1,14 @@
 public class Method01 {
-    //±àĞ´Ò»¸ö main ·½·¨
 	
     public static void main(String[] args) {
-    	
-    	
-    //·½·¨Ê¹ÓÃ
-    //1. ·½·¨Ğ´ºÃºó£¬Èç¹û²»È¥µ÷ÓÃ(Ê¹ÓÃ)£¬²»»áÊä³ö
-    //2. ÏÈ´´½¨¶ÔÏó ,È»ºóµ÷ÓÃ·½·¨¼´¿É
+    
         Person p1 = new Person();
-        p1.speak();   //µ÷ÓÃ·½·¨
-        p1.cal01();   //µ÷ÓÃ cal01 ·½·¨
-        p1.cal02(5);  //µ÷ÓÃ cal02 ·½·¨£¬Í¬Ê±¸ø n = 5
-        p1.cal02(10); //µ÷ÓÃ cal02 ·½·¨£¬Í¬Ê±¸ø n = 10
-        
-    //µ÷ÓÃ getSum ·½·¨£¬Í¬Ê± num1=10, num2=20
-    //°Ñ ·½·¨ getSum ·µ»ØµÄÖµ£¬¸³¸ø ±äÁ¿ returnRes
-        
+        p1.speak();   
+        p1.cal01();   
+        p1.cal02(5);  
+        p1.cal02(10); 
         int returnRes = p1.getSum(10, 20);
-        System.out.println("getSum ·½·¨·µ»ØµÄÖµ=" + returnRes);
+        System.out.println("getSum æ–¹æ³•è¿”å›çš„å€¼=" + returnRes);
     }
 }
 
@@ -28,60 +19,31 @@ class Person {
     String name;
     int age;
 
-
-    //·½·¨(³ÉÔ±·½·¨)
-    //Ìí¼Ó speak ³ÉÔ±·½·¨,Êä³ö ¡°ÎÒÊÇÒ»¸öºÃÈË¡±
-    //1. public ±íÊ¾·½·¨ÊÇ¹«¿ª
-    //2. void £º ±íÊ¾·½·¨Ã»ÓĞ·µ»ØÖµ
-    //3. speak() : speak ÊÇ·½·¨Ãû£¬ () ĞÎ²ÎÁĞ±í
-    //4. {} ·½·¨Ìå£¬¿ÉÒÔĞ´ÎÒÃÇÒªÖ´ĞĞµÄ´úÂë
-    //5. System.out.println("ÎÒÊÇÒ»¸öºÃÈË"); ±íÊ¾ÎÒÃÇµÄ·½·¨¾ÍÊÇÊä³öÒ»¾ä»°
     
     public void speak() {
-        System.out.println("ÎÒÊÇÒ»¸öºÃÈË");
+        System.out.println("æˆ‘æ˜¯ä¸€ä¸ªå¥½äºº");
     }
     
-    
-    //Ìí¼Ó cal01 ³ÉÔ±·½·¨,¿ÉÒÔ¼ÆËã´Ó 1+..+1000 µÄ½á¹û
-    
     public void cal01() {
-    	
-    //Ñ­»·Íê³É
-
         int res = 0;
         for(int i = 1; i <= 1000; i++) {
             res += i;
         }
-        System.out.println("cal01 ·½·¨ ¼ÆËã½á¹û=" + res);
+        System.out.println("cal01 æ–¹æ³• è®¡ç®—ç»“æœ=" + res);
     }
 
-    //Ìí¼Ó cal02 ³ÉÔ±·½·¨,¸Ã·½·¨¿ÉÒÔ½ÓÊÕÒ»¸öÊı n£¬¼ÆËã´Ó 1+..+n µÄ½á¹û
-    //1. (int n) ĞÎ²ÎÁĞ±í£¬ ±íÊ¾µ±Ç°ÓĞÒ»¸öĞÎ²Î n, ¿ÉÒÔ½ÓÊÕÓÃ»§ÊäÈë
-    
-    
     public void cal02(int n) {
-    //Ñ­»·Íê³É
+
         int res = 0;
         for(int i = 1; i <= n; i++) {
             res += i;
         }
-        System.out.println("cal02 ·½·¨ ¼ÆËã½á¹û=" + res);
+        System.out.println("cal02 æ–¹æ³• è®¡ç®—ç»“æœ=" + res);
     }
     
-    
-    //Ìí¼Ó getSum ³ÉÔ±·½·¨,¿ÉÒÔ¼ÆËãÁ½¸öÊıµÄºÍ
-    //1. public ±íÊ¾·½·¨ÊÇ¹«¿ªµÄ
-    //2. int :±íÊ¾·½·¨Ö´ĞĞºó£¬·µ»ØÒ»¸ö int Öµ
-    //3. getSum ·½·¨Ãû
-    //4. (int num1, int num2) ĞÎ²ÎÁĞ±í£¬2 ¸öĞÎ²Î£¬¿ÉÒÔ½ÓÊÕÓÃ»§´«ÈëµÄÁ½¸öÊı
-    //5. return res; ±íÊ¾°Ñ res µÄÖµ£¬ ·µ»Ø
     public int getSum(int num1, int num2) {
 
         int res = num1 + num2;
         return res;
-
-        
-
-
     }
 }
