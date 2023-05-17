@@ -1,21 +1,14 @@
-
-
 public class DoWhile01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-
-		//Êä³ö10¾ä ÄãºÃ,º«Ë³Æ½½ÌÓı
-		int i = 1; //Ñ­»·±äÁ¿³õÊ¼»¯
+		int i = 1; 
 		do {
-			//Ñ­»·Ö´ĞĞÓï¾ä
-			System.out.println("ÄãºÃ£¬º«Ë³Æ½½ÌÓı" + i);
-			//Ñ­»·±äÁ¿µü´ú
+			System.out.println("ä½ å¥½ï¼ŒéŸ©é¡ºå¹³æ•™è‚²" + i);
 			i++;
 
 		}while(i <= 10);
 
-		System.out.println("ÍË³ö do..while ¼ÌĞøÖ´ĞĞ.." + i);//11
+		System.out.println("é€€å‡º do..while ç»§ç»­æ‰§è¡Œ.." + i);//11
 	}
 }
