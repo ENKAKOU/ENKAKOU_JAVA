@@ -1,17 +1,11 @@
-
 import java.util.Scanner;
+
 public class SwitchExercise { 
 
-	//±àÐ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//Ê¹ÓÃ switch °ÑÐ¡Ð´ÀàÐÍµÄ 
-		//charÐÍ×ªÎª´óÐ´(¼üÅÌÊäÈë)¡£Ö»×ª»» a->A, b->B, c, d, e. 
-		//ÆäËüµÄÊä³ö "other"¡£
-		
-		//´´½¨Scanner¶ÔÏó
 		// Scanner myScanner = new Scanner(System.in);
-		// System.out.println("ÇëÊäÈëa-e");
+		// System.out.println("è¯·è¾“å…¥a-e");
 		// char c1 = myScanner.next().charAt(0);
 		// switch(c1) {
 		// 	case 'a' :
@@ -30,75 +24,53 @@ public class SwitchExercise {
 		// 		System.out.println("E");
 		// 		break;
 		// 	default :
-		// 		System.out.println("ÄãµÄÊäÈëÓÐÎó~");
+		// 		System.out.println("ä½ çš„è¾“å…¥æœ‰è¯¯~");
 
 		// }
 
-		//¶ÔÑ§Éú³É¼¨´óÓÚ60·ÖµÄ£¬Êä³ö"ºÏ¸ñ"¡£µÍÓÚ60·ÖµÄ£¬
-		//Êä³ö"²»ºÏ¸ñ"¡£(×¢£ºÊäÈëµÄ³É¼¨²»ÄÜ´óÓÚ100), ÌáÊ¾ ³É¼¨/60
-		//Ë¼Â··ÖÎö
-		//1. ÕâµÀÌâ£¬¿ÉÒÔÊ¹ÓÃ ·ÖÖ§À´Íê³É£¬ µ«ÊÇÒªÇóÊ¹ÓÃswitch
-		//2. ÕâÀïÎÒÃÇÐèÒª½øÐÐÒ»¸ö×ª»», ±à³ÌË¼Â· : 
-		//   Èç¹û³É¼¨ÔÚ [60,100] , (int)(³É¼¨/60) = 1 
-		//   Èç¹û³É¼¨ÔÚ [0,60) , (int)(³É¼¨/60) = 0 
-		
-		//´úÂëÊµÏÖ
-		
 		double score = 1.1;
 
-		//Ê¹ÓÃif-else ±£Ö¤ÊäÈëµÄ³É¼¨ÓÐÓÐÐ§µÄ 0-100
-		//¿´ÁËµ±ÀÏÊ¦µÄ·ÖÎöºÍ´úÂëÑÝÊ¾ºó£¬×Ô¼ºÒ»¶¨Òª¶ÀÁ¢Íê³É£¨²»¿´ÀÏº«´úÂë£¬Ò²ÄÜÐ´£©
 		if( score >= 0 && score <= 100) {
 			switch ((int)(score / 60)) {
 				case 0 :
-					System.out.println("²»ºÏ¸ñ");
+					System.out.println("ä¸åˆæ ¼");
 					break;
 				case 1 :
-					System.out.println("ºÏ¸ñ");
+					System.out.println("åˆæ ¼");
 					break;
 				// default :
-				// 	System.out.println("ÊäÈëÓÐÎó");
+				// 	System.out.println("è¾“å…¥æœ‰è¯¯");
 			}
 		} else {
-			System.out.println("ÊäÈëµÄ³É¼¨ÔÚ0-100");
+			System.out.println("è¾“å…¥çš„æˆç»©åœ¨0-100");
 		}
 
-		//¸ù¾ÝÓÃÓÚÖ¸¶¨ÔÂ·Ý£¬
-		//´òÓ¡¸ÃÔÂ·ÝËùÊôµÄ¼¾½Ú¡£
-		//3,4,5 ´º¼¾ 6,7,8 ÏÄ¼¾  9,10,11 Çï¼¾ 12, 1, 2 ¶¬¼¾ 
-		//[¿ÎÌÃÁ·Ï°, ÌáÊ¾ Ê¹ÓÃ´©Í¸ ] 
-		//
-		//Ë¼Â··ÖÎö
-		//1. ´´½¨Scanner¶ÔÏó£¬ ½ÓÊÕÓÃ»§ÊäÈë
-		//2. Ê¹ÓÃ int month ½ÓÊÕ
-		//3. Ê¹ÓÃswitch À´Æ¥Åä ,Ê¹ÓÃ´©Í¸À´Íê³É£¬±È½Ï¼ò½à
-		
 		Scanner myScanner = new Scanner(System.in);
-		System.out.println("ÊäÈëÔÂ·Ý");
+		System.out.println("è¾“å…¥æœˆä»½");
 		int month = myScanner.nextInt();
 		switch(month) {
 			case 3:
 			case 4:
 			case 5: 
-				System.out.println("ÕâÊÇ´º¼¾");
+				System.out.println("è¿™æ˜¯æ˜¥å­£");
 				break;
 			case 6:
 			case 7:
 			case 8: 
-				System.out.println("ÕâÊÇÏÄ¼¾");
+				System.out.println("è¿™æ˜¯å¤å­£");
 				break;
 			case 9:
 			case 10:
 			case 11: 
-				System.out.println("ÕâÊÇÇï¼¾");
+				System.out.println("è¿™æ˜¯ç§‹å­£");
 				break;
 			case 1:
 			case 2:
 			case 12: 
-				System.out.println("ÕâÊÇ¶¬¼¾");
+				System.out.println("è¿™æ˜¯å†¬å­£");
 				break;
 			default :
-				System.out.println("ÄãÊäÈëµÄÔÂ·Ý²»¶Ô(1-12)");
+				System.out.println("ä½ è¾“å…¥çš„æœˆä»½ä¸å¯¹(1-12)");
 		}
 
 
