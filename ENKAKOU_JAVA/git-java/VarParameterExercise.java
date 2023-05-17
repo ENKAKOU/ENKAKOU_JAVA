@@ -11,8 +11,6 @@ public class VarParameterExercise {
 
 class HspMethod02 {
 	
-	//1. 方法名 showScore 2. 形参(String ,double... ) 3. 返回 String
-	
 	public String showScore(String name, double... scores) {
 		
 		double totalScore = 0;
