@@ -1,28 +1,18 @@
-//ifµÄ¿ìËÙÈëÃÅ
-import java.util.Scanner;//µ¼Èë
+import java.util.Scanner;
 public class If01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//±àĞ´Ò»¸ö³ÌĞò,¿ÉÒÔÊäÈëÈËµÄÄêÁä,Èç¹û¸ÃÍ¬Ö¾µÄÄêÁä´óÓÚ18Ëê,
-		//ÔòÊä³ö "ÄãÄêÁä´óÓÚ18,Òª¶Ô×Ô¼ºµÄĞĞÎª¸ºÔğ,ËÍÈë¼àÓü"	
-		//
-		//Ë¼Â··ÖÎö
-		//1. ½ÓÊÕÊäÈëµÄÄêÁä, Ó¦¸Ã¶¨ÒåÒ»¸öScanner ¶ÔÏó
-		//2. °ÑÄêÁä±£´æµ½Ò»¸ö±äÁ¿ int age
-		//3. Ê¹ÓÃ if ÅĞ¶Ï£¬Êä³ö¶ÔÓ¦ĞÅÏ¢
 		
-		//Ó¦¸Ã¶¨ÒåÒ»¸öScanner ¶ÔÏó
 		Scanner myScanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄêÁä");
-		//°ÑÄêÁä±£´æµ½Ò»¸ö±äÁ¿ int age
+		System.out.println("è¯·è¾“å…¥å¹´é¾„");
+		
 		int age = myScanner.nextInt();
-		//Ê¹ÓÃ if ÅĞ¶Ï£¬Êä³ö¶ÔÓ¦ĞÅÏ¢
+		
 		if(age > 18) {
-			System.out.println("ÄãÄêÁä´óÓÚ18,Òª¶Ô×Ô¼ºµÄĞĞÎª¸ºÔğ,ËÍÈë¼àÓü");
+			System.out.println("ä½ å¹´é¾„å¤§äº18,è¦å¯¹è‡ªå·±çš„è¡Œä¸ºè´Ÿè´£,é€å…¥ç›‘ç‹±");
 		}
 
-		System.out.println("³ÌĞò¼ÌĞø...");
+		System.out.println("ç¨‹åºç»§ç»­...");
 
 
 	}
