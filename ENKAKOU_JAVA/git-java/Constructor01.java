@@ -4,7 +4,7 @@ public class Constructor01 {
 		
 		PersonA p1 = new PersonA("smith", 80);
 		System.out.println("p1 的信息如下");
-		System.out.println("p1 对象 name=" + p1.name);//smith);
+		System.out.println("p1 对象 name=" + p1.name);
 		System.out.println("p1 对象 age=" + p1.age);
 	}
 }
