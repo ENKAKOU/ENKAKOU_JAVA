@@ -1,6 +1,7 @@
 package com.hspedu.debug_;
 
 public class Debug01 {
+    
     public static void main(String[] args) {
 
         int sum = 0;
