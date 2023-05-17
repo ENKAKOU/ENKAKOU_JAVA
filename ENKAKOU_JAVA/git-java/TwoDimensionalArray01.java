@@ -1,24 +1,14 @@
-
 public class TwoDimensionalArray01 {
 	
     public static void main(String[] args){
 
-    /*    ÇëÓÃ¶şÎ¬Êı×éÊä³öÈçÏÂÍ¼ĞÎ
-          0 0 0 0 0 0
-          0 0 1 0 0 0
-          0 2 0 3 0 0
-          0 0 0 0 0 0     */
-
-          //Ê²Ã´ÊÇ¶şÎ¬Êı×é£º
-          //1. ´Ó¶¨ÒåĞÎÊ½ÉÏ¿´ int[][]
-          //2. ¿ÉÒÔÕâÑùÀí½â£¬Ô­À´µÄÒ»Î¬Êı×éµÄÃ¿¸öÔªËØÊÇÒ»Î¬Êı×é, ¾Í¹¹³É¶şÎ¬Êı×é
           int[][] arr = { {0, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0,2, 0, 3, 0, 0}, {0, 0, 0, 0, 0, 0} };
-          System.out.println("¶şÎ¬Êı×éµÄÔªËØ¸öÊı=" + arr.length);
-          System.out.println("µÚ3¸öÒ»Î¬Êı×éµÄµÚ 4 ¸öÖµ=" + arr[2][3]);
-          for(int i = 0; i < arr.length; i++) {       //±éÀú¶şÎ¬Êı×éµÄÃ¿¸öÔªËØ
+          System.out.println("äºŒç»´æ•°ç»„çš„å…ƒç´ ä¸ªæ•°=" + arr.length);
+          System.out.println("ç¬¬3ä¸ªä¸€ç»´æ•°ç»„çš„ç¬¬ 4 ä¸ªå€¼=" + arr[2][3]);
+          for(int i = 0; i < arr.length; i++) {       
 
             for(int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");    //Êä³öÁËÒ»Î¬Êı×é
+                System.out.print(arr[i][j] + " ");   
             }
             System.out.println();
         }
