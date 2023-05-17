@@ -1,10 +1,8 @@
-package com.hspedu.poly_.detail_;
+package com.hspedu.poly_.objectpoly_;
 
 public class Cat extends Animal {
-    public void eat(){//方法重写
-        System.out.println("猫吃鱼");
-    }
-    public void catchMouse(){//Cat特有方法
-        System.out.println("猫抓老鼠");
+
+    public void cry() {
+        System.out.println("Cat cry() 小猫喵喵叫...");
     }
 }
