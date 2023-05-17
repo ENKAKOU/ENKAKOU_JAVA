@@ -19,9 +19,6 @@ public class MethodParameter02{
 		//p.age = 10;
 		//b.test200(p);
 		
-		//如果 test200 执行的是 p = null ,下面的结果是 10
-		//如果 test200 执行的是 p = new Person();..., 下面输出的是 10 System.out.println("main 的 p.age=" + p.age);//10000
-		
 		//System.out.println("main 的 p.age=" + p.age);      //10000);
 		
 		} 
