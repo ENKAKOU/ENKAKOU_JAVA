@@ -13,4 +13,6 @@ public class HashCode_ {
 
     }
 }
-class AA {}
+class AA {
+
+}

@@ -8,27 +8,23 @@ public class EqualsExercise01 {
         System.out.println(person1.equals(person2));//假
     }
 }
-//判断两个Person对象的内容是否相等，
-//如果两个Person对象的各个属性值都一样，则返回true，反之false
-class Person{ //extends Object
+
+class Person{
     private String name;
     private int age;
     private char gender;
 
-    //重写Object 的 equals方法
     public boolean equals(Object obj) {
-        //判断如果比较的两个对象是同一个对象，则直接返回true
+
         if(this == obj) {
             return true;
         }
-        //类型判断
-        if(obj instanceof  Person) {//是Person，我们才比较
 
-            //进行 向下转型, 因为我需要得到obj的 各个属性
+        if(obj instanceof  Person) {
             Person p = (Person)obj;
             return this.name.equals(p.name) && this.age == p.age && this.gender == p.gender;
         }
-        //如果不是Person ，则直接返回false
+
         return false;
 
     }

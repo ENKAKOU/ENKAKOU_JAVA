@@ -2,7 +2,7 @@ package com.hspedu.poly_.dynamic_;
 
 public class DynamicBinding {
     public static void main(String[] args) {
-        //a 的编译类型 A, 运行类型 B
+
         A a = new B();//向上转型
         System.out.println(a.sum());//?40 -> 30
         System.out.println(a.sum1());//?30-> 20
@@ -11,7 +11,7 @@ public class DynamicBinding {
 
 class A {//父类
     public int i = 10;
-    //动态绑定机制:
+
 
     public int sum() {//父类sum()
         return getI() + 10;//20 + 10

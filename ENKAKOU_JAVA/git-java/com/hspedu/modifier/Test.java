@@ -9,5 +9,6 @@ public class Test {
     }
 }
 
-//只有 默认和public 可以修饰类
-class Tiger{ }
+class Tiger{
+
+}
