@@ -1,28 +1,21 @@
-
 public class CharDetail { 
 
-	//±àÐ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//ÔÚjavaÖÐ£¬charµÄ±¾ÖÊÊÇÒ»¸öÕûÊý£¬ÔÚÄ¬ÈÏÊä³öÊ±£¬ÊÇunicodeÂë¶ÔÓ¦µÄ×Ö·û
-		//ÒªÊä³ö¶ÔÓ¦µÄÊý×Ö£¬¿ÉÒÔ(int)×Ö·û
 		char c1 = 97;
-		System.out.println(c1); // a
+		System.out.println(c1); 
 
-		char c2 = 'a'; //Êä³ö'a' ¶ÔÓ¦µÄ Êý×Ö
+		char c2 = 'a'; 
 		System.out.println((int)c2);
-		char c3 = 'º«';
-		System.out.println((int)c3);//38889
+		char c3 = 'éŸ©';
+		System.out.println((int)c3);
 		char c4 = 38889;
-		System.out.println(c4);//º«
+		System.out.println(c4);
 
-		//charÀàÐÍÊÇ¿ÉÒÔ½øÐÐÔËËãµÄ£¬Ïàµ±ÓÚÒ»¸öÕûÊý£¬ÒòÎªËü¶¼¶ÔÓ¦ÓÐUnicodeÂë.
-		
-		System.out.println('a' + 10);//107
+		System.out.println('a' + 10);
 
-		//¿ÎÌÃÐ¡²âÊÔ
-		char c5 = 'b' + 1;//98+1==> 99
-		System.out.println((int)c5); //99
-		System.out.println(c5); //99->¶ÔÓ¦µÄ×Ö·û->±àÂë±íASCII(¹æ¶¨ºÃµÄ)=>c
+		char c5 = 'b' + 1;
+		System.out.println((int)c5); 
+		System.out.println(c5); 
 	}
 }
