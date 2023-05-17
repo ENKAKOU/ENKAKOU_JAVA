@@ -1,7 +1,5 @@
-
 public class VarScopeDetail { 
-
-
+	
 	public static void main(String[] args) {
 		PersonT p1 = new PersonT();
 
@@ -17,11 +15,11 @@ class WWT {
 
 	public void test() {
 		PersonT p1 = new PersonT();
-		System.out.println(p1.name);   //jack
+		System.out.println(p1.name);  
 	}
 
 	public void test2(PersonT p) {
-		System.out.println(p.name);   //jack
+		System.out.println(p.name);   
 	}
 }
 
