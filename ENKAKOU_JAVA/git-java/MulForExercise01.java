@@ -1,56 +1,36 @@
-
 import java.util.Scanner;
+
 public class MulForExercise01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//Í³¼Æ3¸ö°à³É¼¨Çé¿ö£¬Ã¿¸ö°àÓĞ5ÃûÍ¬Ñ§£¬
-		//Çó³ö¸÷¸ö°àµÄÆ½¾ù·ÖºÍËùÓĞ°à¼¶µÄÆ½¾ù·Ö[Ñ§ÉúµÄ³É¼¨´Ó¼üÅÌÊäÈë]¡£
-		//Í³¼ÆÈı¸ö°à¼°¸ñÈËÊı£¬Ã¿¸ö°àÓĞ5ÃûÍ¬Ñ§¡£
-		//
-		//Ë¼Â··ÖÎö:
-		//»¯·±Îª¼ò
-		//(1) ÏÈ¼ÆËãÒ»¸ö°à , 5¸öÑ§ÉúµÄ³É¼¨ºÍÆ½¾ù·Ö , Ê¹ÓÃfor
-		//1.1 ´´½¨ Scanner ¶ÔÏóÈ»ºó£¬½ÓÊÕÓÃ»§ÊäÈë
-		//1.2 µÃµ½¸Ã°à¼¶µÄÆ½¾ù·Ö , ¶¨ÒåÒ»¸ö doubel sum °Ñ¸Ã°à¼¶5¸öÑ§ÉúµÄ³É¼¨ÀÛ»ı 
-		
-		//(2) Í³¼Æ3¸ö°à(Ã¿¸ö°à5¸öÑ§Éú) Æ½¾ù·Ö
-		//(3) ËùÓĞ°à¼¶µÄÆ½¾ù·Ö
-		//3.1 ¶¨ÒåÒ»¸ö±äÁ¿£¬double totalScore ÀÛ»ıËùÓĞÑ§ÉúµÄ³É¼¨
-		//3.2 µ±¶àÖØÑ­»·½áÊøºó£¬totalScore / (3 * 5) 
-		//(4) Í³¼ÆÈı¸ö°à¼°¸ñÈËÊı
-		//4.1 ¶¨Òå±äÁ¿ int passNum = 0; µ±ÓĞÒ»¸öÑ§Éú³É¼¨>=60, passNum++
-		//4.2 Èç¹û >= 60 passNum++
-		//(5) ¿ÉÒÔÓÅ»¯[Ğ§ÂÊ£¬¿É¶ÁĞÔ, ½á¹¹]
-		
-		//´´½¨ Scanner ¶ÔÏó
-		Scanner myScanner = new Scanner(System.in);
-		double totalScore = 0; //ÀÛ»ıËùÓĞÑ§ÉúµÄ³É¼¨
-		int passNum = 0;//ÀÛ»ı ¼°¸ñÈËÊı
-		int classNum = 3; //°à¼¶¸öÊı
-		int stuNum = 5;//Ñ§Éú¸öÊı
-		for( int i = 1; i <= classNum; i++) {//i ±íÊ¾°à¼¶
 
-			double sum = 0; //Ò»¸ö°à¼¶µÄ×Ü·Ö
-			for( int j = 1; j <= stuNum; j++) {//j ±íÊ¾Ñ§Éú
-				System.out.println("ÇëÊıµÚ"+i+"¸ö°àµÄµÚ"+j+"¸öÑ§ÉúµÄ³É¼¨");
+		Scanner myScanner = new Scanner(System.in);
+		double totalScore = 0; 
+		int passNum = 0;
+		int classNum = 3; 
+		int stuNum = 5;
+		for( int i = 1; i <= classNum; i++) {
+
+			double sum = 0; 
+			for( int j = 1; j <= stuNum; j++) {
+				System.out.println("è¯·æ•°ç¬¬"+i+"ä¸ªç­çš„ç¬¬"+j+"ä¸ªå­¦ç”Ÿçš„æˆç»©");
 				double score = myScanner.nextDouble();
-				//µ±ÓĞÒ»¸öÑ§Éú³É¼¨>=60, passNum++
+
 				if(score >= 60) {
 					passNum++;
 				}
-				sum += score; //ÀÛ»ı
-				System.out.println("³É¼¨Îª" + score);
+				sum += score; //ç´¯ç§¯
+				System.out.println("æˆç»©ä¸º" + score);
 			}
-			//ÒòÎªsum ÊÇ 5¸öÑ§ÉúµÄ×Ü³É¼¨
-			System.out.println("sum=" + sum + " Æ½¾ù·Ö=" + (sum / stuNum));
-			//°Ñ sum ÀÛ»ıµ½ totalScore
+			
+			System.out.println("sum=" + sum + " å¹³å‡åˆ†=" + (sum / stuNum));
+		
 			totalScore += sum;
 
 		}
-		System.out.println("Èı¸ö°à×Ü·Ö="+ totalScore 
-			+ " Æ½¾ù·Ö=" + totalScore / (classNum*stuNum));
-		System.out.println("¼°¸ñÈËÊı=" + passNum);
+		System.out.println("ä¸‰ä¸ªç­æ€»åˆ†="+ totalScore 
+			+ " å¹³å‡åˆ†=" + totalScore / (classNum*stuNum));
+		System.out.println("åŠæ ¼äººæ•°=" + passNum);
 
 	}
 }
