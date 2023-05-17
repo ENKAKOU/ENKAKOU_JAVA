@@ -1,34 +1,30 @@
 public class MethodDetail {
+	
    public static void main(String[] args) {
 	   
    
    AA a = new AA();
    int[] res = a.getSumAndSub(1, 4);
-   System.out.println("ºÍ=" + res[0]);
-   System.out.println("²î=" + res[1]);
+   System.out.println("å’Œ=" + res[0]);
+   System.out.println("å·®=" + res[1]);
 
 
    byte b1 = 1;
    byte b2 = 2;
    a.getSumAndSub(b1, b2);
    
-   a.f3("tom", 10); //ok
-   //a.f3(100, "jack"); // Êµ¼Ê²ÎÊıºÍĞÎÊ½²ÎÊıË³Ğò²»¶Ô
-   
+   a.f3("tom", 10); 
    }
 }
 
    class AA {
    
    public void f4() {
-   //´íÎó
-   // public void f5() {
-   // }
    }
    
    public void f3(String str, int n) {
    }
-   //1. Ò»¸ö·½·¨×î¶àÓĞÒ»¸ö·µ»ØÖµ [Ë¼¿¼£¬ÈçºÎ·µ»Ø¶à¸ö½á¹û ·µ»ØÊı×é ]
+	   
      public int[] getSumAndSub(int n1, int n2) {
      int[] resArr = new int[2]; //
      resArr[0] = n1 + n2;
@@ -41,8 +37,7 @@ public class MethodDetail {
    public double f1() {
      double d1 = 1.1 * 3;
      int n = 100;
-     return n; // int ->double
-     //return d1; //ok? double -> int
+     return n; 
    }
    
  
