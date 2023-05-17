@@ -1,49 +1,35 @@
-
 public class FloatDetail { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//Java µÄ¸¡µãĞÍ³£Á¿(¾ßÌåÖµ)Ä¬ÈÏÎªdoubleĞÍ£¬ÉùÃ÷floatĞÍ³£Á¿£¬Ğëºó¼Ó¡®f¡¯»ò¡®F'
-		//float num1 = 1.1; //¶Ô²»¶Ô?´íÎó
-		float num2 = 1.1F; //¶ÔµÄ
-		double num3 = 1.1; //¶Ô
-		double num4 = 1.1f; //¶Ô
+		//float num1 = 1.1;
+		float num2 = 1.1F; 
+		double num3 = 1.1; 
+		double num4 = 1.1f; 
 
-		//Ê®½øÖÆÊıĞÎÊ½£ºÈç£º5.12       512.0f        .512   (±ØĞëÓĞĞ¡Êıµã£©
-		double num5 = .123; //µÈ¼Û 0.123
+		double num5 = .123; 
 		System.out.println(num5);
-		//¿ÆÑ§¼ÆÊı·¨ĞÎÊ½:Èç£º5.12e2 [5.12 * 10µÄ2´Î·½ ]      5.12E-2   [] 
-		System.out.println(5.12e2);//512.0
-		System.out.println(5.12E-2);//0.0512
+		System.out.println(5.12e2);
+		System.out.println(5.12E-2);
 
-
-		//Í¨³£Çé¿öÏÂ£¬Ó¦¸ÃÊ¹ÓÃdoubleĞÍ£¬ÒòÎªËü±ÈfloatĞÍ¸ü¾«È·¡£
-		//[¾ÙÀıËµÃ÷]double num9 = 2.1234567851;float num10 =  2.1234567851F;
 		double num9 =  2.1234567851;
 		float num10 =  2.1234567851F;
 		System.out.println(num9);
 		System.out.println(num10);
 
-		//¸¡µãÊıÊ¹ÓÃÏİÚå: 2.7 ºÍ 8.1 / 3  ±È½Ï
-		//¿´¿´Ò»¶Î´úÂë
 		double num11 = 2.7;
-		double num12 = 2.7;	//8.1 / 3; //2.7
-		System.out.println(num11);//2.7
-		System.out.println(num12);//½Ó½ü2.7µÄÒ»¸öĞ¡Êı£¬¶ø²»ÊÇ2.7
-		//µÃµ½Ò»¸öÖØÒªµÄÊ¹ÓÃµã: µ±ÎÒÃÇ¶ÔÔËËã½á¹ûÊÇĞ¡ÊıµÄ½øĞĞÏàµÈÅĞ¶ÏÊÇ£¬ÒªĞ¡ĞÄ
-		//Ó¦¸ÃÊÇÒÔÁ½¸öÊıµÄ²îÖµµÄ¾ø¶ÔÖµ£¬ÔÚÄ³¸ö¾«¶È·¶Î§ÀàÅĞ¶Ï
+		double num12 = 2.7;	
+		System.out.println(num11);
+		System.out.println(num12);
 		if( num11 == num12) {
-			System.out.println("num11 == num12 ÏàµÈ");
+			System.out.println("num11 == num12 ç›¸ç­‰");
 		}
-		//ÕıÈ·µÄĞ´·¨ , ctrl + / ×¢ÊÍ¿ì½İ¼ü, ÔÙ´ÎÊäÈë¾ÍÈ¡Ïû×¢ÊÍ
-		if(Math.abs(num11 - num12) < 0.000001 ) {
-			System.out.println("²îÖµ·Ç³£Ğ¡£¬µ½ÎÒµÄ¹æ¶¨¾«¶È£¬ÈÏÎªÏàµÈ...");
-		}
-		// ¿ÉÒÔÍ¨¹ıjava API  À´¿´ ÏÂÒ»¸öÊÓÆµ½éÉÜÈçºÎÊ¹ÓÃAPI
-		System.out.println(Math.abs(num11 - num12));
-		//Ï¸½Ú:Èç¹ûÊÇÖ±½Ó²éÑ¯µÃµÄµÄĞ¡Êı»òÕßÖ±½Ó¸³Öµ£¬ÊÇ¿ÉÒÔÅĞ¶ÏÏàµÈ
 		
+		if(Math.abs(num11 - num12) < 0.000001 ) {
+			System.out.println("å·®å€¼éå¸¸å°ï¼Œåˆ°æˆ‘çš„è§„å®šç²¾åº¦ï¼Œè®¤ä¸ºç›¸ç­‰...");
+		}
+		
+		System.out.println(Math.abs(num11 - num12));
 		
 
 	}
