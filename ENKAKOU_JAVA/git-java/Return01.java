@@ -1,14 +1,12 @@
-
 public class Return01 { 
 
-	//±àÐ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
 		for(int i=1;i<=5;i++){
 
 			if(i==3) {
-		        System.out.println("º«Ë³Æ½½ÌÓý "+i);
-				return; //µ±returnÓÃÔÚ·½·¨Ê±£¬±íÊ¾Ìø³ö·½·¨£¬Èç¹ûÊ¹ÓÃÔÚmain,±íÊ¾ÍË³ö³ÌÐò
+		        System.out.println("éŸ©é¡ºå¹³æ•™è‚² "+i);
+				return; 
 				
 			}
 			System.out.println("Hello World!");
