@@ -4,46 +4,34 @@ public class ArrayAdd {
 	
 	public static void main(String[] args){
 
-        /*ÒªÇó£ºÊµÏÖ¶¯Ì¬µÄ¸øÊı×éÌí¼ÓÔªËØĞ§¹û£¬ÊµÏÖ¶ÔÊı×éÀ©Èİ¡£
-          1.Ô­Ê¼Êı×éÊ¹ÓÃ¾²Ì¬·ÖÅä int[] arr = {1,2,3}
-          2.Ôö¼ÓµÄÔªËØ4£¬Ö±½Ó·ÅÔÚÊı×éµÄ×îºó arr = {1,2,3,4}
-          3.ÓÃ»§¿ÉÒÔÍ¨¹ıÈçÏÂ·½·¨À´¾ö¶¨ÊÇ·ñ¼ÌĞøÌí¼Ó£¬Ìí¼Ó³É¹¦£¬ÊÇ·ñ¼ÌĞø£¿y/n   */
 
-        /*Ë¼Â·
-          1. ¶¨Òå³õÊ¼Êı×é int[] arr = {1,2,3}        ÏÂ±ê 0-2
-          2. ¶¨ÒåÒ»¸öĞÂµÄÊı×é int[] arrNew = new int[arr.length+1];
-          3. ±éÀú arr Êı×é£¬ÒÀ´Î½« arr µÄÔªËØ¿½±´µ½ arrNew Êı×é
-          4. ½«¡®4¡¯¸³¸ø arrNew[arrNew.length - 1] = 4;°Ñ 4 ¸³¸ø arrNew ×îºóÒ»¸öÔªËØ
-          5. ÈÃ arr Ö¸Ïò arrNew ; arr = arrNew; Ô­À´ arr Êı×é¾Í±»Ïú»Ù
-          6. ´´½¨Ò»¸ö Scanner ¿ÉÒÔ½ÓÊÜÓÃ»§ÊäÈë
-          7. ÒòÎªÓÃ»§Ê²Ã´Ê±ºòÍË³ö²»È·¶¨£¬ËùÒÔÊ¹ÓÃ do-while    */
 
         Scanner myScanner = new Scanner(System.in);
-               //³õÊ¼»¯Êı×é
+               //åˆå§‹åŒ–æ•°ç»„
         int[] arr = {1,2,3};
         do {
             int[] arrNew = new int[arr.length + 1];
-            //±éÀú arr Êı×é£¬ÒÀ´Î½« arr µÄÔªËØ¿½±´µ½ arrNew Êı×é
+            //éå† arr æ•°ç»„ï¼Œä¾æ¬¡å°† arr çš„å…ƒç´ æ‹·è´åˆ° arrNew æ•°ç»„
             for(int i = 0; i < arr.length; i++) {
                 arrNew[i] = arr[i];
             }
-            System.out.println("ÇëÊäÈëÄãÒªÌí¼ÓµÄÔªËØ");
+            System.out.println("è¯·è¾“å…¥ä½ è¦æ·»åŠ çš„å…ƒç´ ");
             int addNum = myScanner.nextInt();
-               //°Ñ addNum ¸³¸ø arrNew ×îºóÒ»¸öÔªËØ
+               //æŠŠ addNum èµ‹ç»™ arrNew æœ€åä¸€ä¸ªå…ƒç´ 
             arrNew[arrNew.length - 1] = addNum;
-               //ÈÃ arr Ö¸Ïò arrNew, arr = arrNew;
+               //è®© arr æŒ‡å‘ arrNew, arr = arrNew;
 
             for(int i = 0; i < arr.length; i++) {
                 System.out.print(arr[i] + "\t");
             }
-               //ÎÊÓÃ»§ÊÇ·ñ¼ÌĞø
-            System.out.println("ÊÇ·ñ¼ÌĞøÌí¼Ó y/n");
+               //é—®ç”¨æˆ·æ˜¯å¦ç»§ç»­
+            System.out.println("æ˜¯å¦ç»§ç»­æ·»åŠ  y/n");
             char key = myScanner.next().charAt(0);
-            if( key == 'n') {         //Èç¹ûÊäÈë n ,¾Í½áÊø
+            if( key == 'n') {         //å¦‚æœè¾“å…¥ n ,å°±ç»“æŸ
                 break;
             }
         }while(true);
-        System.out.println("ÄãÍË³öÁËÌí¼Ó...");
+        System.out.println("ä½ é€€å‡ºäº†æ·»åŠ ...");
 
 
         }
