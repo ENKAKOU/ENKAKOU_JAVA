@@ -1,4 +1,5 @@
 public class ThisHomeWork01 {
+    
     public static void main(String[] args) {
         A01 a01= new A01();
         double[] arr = {1.0, 4.7, 1.8};
