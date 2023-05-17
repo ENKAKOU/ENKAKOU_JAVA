@@ -1,78 +1,59 @@
-public class BubbleSort {
-	
+public class BubbleSort {	
     public static void main(String[] args) {
-    	
-        //ÎÒÃÇ½«Îå¸öÎÞÐò£º24,69,80,57,13 Ê¹ÓÃÃ°ÅÝÅÅÐò·¨½«ÆäÅÅ³ÉÒ»¸ö´ÓÐ¡µ½´óµÄÓÐÐòÊýÁÐ¡£
-
-        //·½·¨Ò»£º»ù´¡·Ö²¼Ê½£¨·±Ëö£©
+  
         int[] arr = {24, 69, 80, 57, 13};
         int temp = 0;
-        /*   Êý×é [24,69,80,57,13]
-             µÚ 1 ÂÖÅÅÐò: Ä¿±ê°Ñ×î´óÊý·ÅÔÚ×îºó
-               µÚ 1 ´Î±È½Ï[24,69,80,57,13]
-               µÚ 2 ´Î±È½Ï[24,69,80,57,13]
-               µÚ 3 ´Î±È½Ï[24,69,57,80,13]
-               µÚ 4 ´Î±È½Ï[24,69,57,13,80]    */
-        for (int j = 0; j < 4; j++) {   //4 ´Î±È½Ï
-            //Èç¹ûÇ°ÃæµÄÊý>ºóÃæµÄÊý£¬¾Í½»»»
+        for (int j = 0; j < 4; j++) {   
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
         }
-        System.out.println("==µÚ 1 ÂÖ==");
+        System.out.println("==ç¬¬ 1 è½®==");
         for (int j = 0; j < arr.length; j++) {
             System.out.print(arr[j] + "\t");
         }
-        /*   µÚ 2 ÂÖÅÅÐò: Ä¿±ê°ÑµÚ¶þ´óÊý·ÅÔÚµ¹ÊýµÚ¶þÎ»ÖÃ
-               µÚ 1 ´Î±È½Ï[24,69,57,13,80]
-               µÚ 2 ´Î±È½Ï[24,57,69,13,80]
-               µÚ 3 ´Î±È½Ï[24,57,13,69,80]   */
-        for (int j = 0; j < 3; j++) {   //3 ´Î±È½Ï
-            //Èç¹ûÇ°ÃæµÄÊý>ºóÃæµÄÊý£¬¾Í½»»»
+      
+        for (int j = 0; j < 3; j++) {     
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
         }
-        System.out.println("\n==µÚ 2 ÂÖ==");
+        System.out.println("\n==ç¬¬ 2 è½®==");
         for (int j = 0; j < arr.length; j++) {
             System.out.print(arr[j] + "\t");
         }
 
 
-        for (int j = 0; j < 2; j++) {   //2 ´Î±È½Ï
-            //Èç¹ûÇ°ÃæµÄÊý>ºóÃæµÄÊý£¬¾Í½»»»
+        for (int j = 0; j < 2; j++) {  
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
         }
-        System.out.println("\n==µÚ 3 ÂÖ==");
+        System.out.println("\n==ç¬¬ 3 è½®==");
 
 
         for (int j = 0; j < arr.length; j++) {
             System.out.print(arr[j] + "\t");
         }
-        for (int j = 0; j < 1; j++) {   //1 ´Î±È½Ï
-            //Èç¹ûÇ°ÃæµÄÊý>ºóÃæµÄÊý£¬¾Í½»»»
+        for (int j = 0; j < 1; j++) {   
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
         }
-        System.out.println("\n==µÚ 4 ÂÖ==");
+        System.out.println("\n==ç¬¬ 4 è½®==");
         for (int j = 0; j < arr.length; j++) {
             System.out.print(arr[j] + "\t");
         }
 
         System.out.println();
-
-
 
     }
 }
