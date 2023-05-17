@@ -1,37 +1,21 @@
-
-//ÕâÊÇjavaµÄ¿ìËÙÈëÃÅ£¬ ÑİÊ¾javaµÄ¿ª·¢²½Öè
-//¶Ô´úÂëµÄÏà¹ØËµÃ÷
-//1. public class Hello ±íÊ¾HelloÊÇÒ»¸öÀà,ÊÇÒ»¸öpublic¹«ÓĞµÄÀà
-//2. Hello{ } ±íÊ¾Ò»¸öÀàµÄ¿ªÊ¼ºÍ½áÊø
-//3. public static void main(String[] args) ±íÊ¾Ò»¸öÖ÷·½·¨,¼´ÎÒÃÇ³ÌĞòµÄÈë¿Ú
-//4. main() {} ±íÊ¾·½·¨µÄ¿ªÊ¼ºÍ½áÊø
-//5. System.out.println("hello,world~"); ±íÊ¾Êä³ö"hello,world~"µ½ÆÁÄ»
-//6. ;±íÊ¾Óï¾ä½áÊø
 public class Hello {
-
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		System.out.println("º«Ë³Æ½½ÌÓı hello");
+		System.out.println("éŸ©é¡ºå¹³æ•™è‚² hello");
 	}
 
 }
 
-//Ò»¸öÔ´ÎÄ¼şÖĞ×î¶àÖ»ÄÜÓĞÒ»¸öpublicÀà¡£ÆäËüÀàµÄ¸öÊı²»ÏŞ¡£[ÑİÊ¾]
-//Dog ÊÇÒ»¸öÀà
-//±àÒëºó£¬Ã¿Ò»¸öÀà£¬¶¼¶ÔÓÚÒ»¸ö.class
 class Dog {
 	
-	//Ò»¸öÔ´ÎÄ¼şÖĞ×î¶àÖ»ÄÜÓĞÒ»¸öpublicÀà¡£ÆäËüÀàµÄ¸öÊı²»ÏŞ£¬Ò²¿ÉÒÔ½«main·½·¨Ğ´ÔÚ·ÇpublicÀàÖĞ£¬
-	//È»ºóÖ¸¶¨ÔËĞĞ·Çpublic Àà£¬ÕâÑùÈë¿Ú·½·¨¾ÍÊÇ·Çpublic µÄmain·½·¨
 	public static void main(String[] args) {
-		System.out.println("hello, Ğ¡¹·¹·~");
+		System.out.println("hello, å°ç‹—ç‹—~");
 	}
 }
 
 class Tiger {
 
 	public static void main(String[] args) {
-		System.out.println("hello, Ğ¡ÀÏ»¢~");
+		System.out.println("hello, å°è€è™~");
 	}
 
 }
