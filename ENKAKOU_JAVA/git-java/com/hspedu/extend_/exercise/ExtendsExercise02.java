@@ -1,6 +1,7 @@
 package com.hspedu.extend_.exercise;
 
 public class ExtendsExercise02 {
+    
     public static void main(String[] args) {
         C c = new C();
     }
