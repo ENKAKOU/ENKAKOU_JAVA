@@ -1,17 +1,19 @@
-package com.hspedu.poly_;
+package com.hspedu.poly_.detail_;
 
 public class Animal {
-    private String name;
-
-    public Animal(String name) {
-        this.name = name;
+    String name = "动物";
+    int age = 10;
+    public void sleep(){
+        System.out.println("睡");
+    }
+    public void run(){
+        System.out.println("跑");
+    }
+    public void eat(){
+        System.out.println("吃");
+    }
+    public void show(){
+        System.out.println("hello,你好");
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
