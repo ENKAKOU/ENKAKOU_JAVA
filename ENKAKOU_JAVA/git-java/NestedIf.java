@@ -1,40 +1,23 @@
 import java.util.Scanner;
 public class NestedIf { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		/*
-		²Î¼Ó¸èÊÖ±ÈÈü£¬Èç¹û³õÈü³É¼¨´óÓÚ8.0½øÈë¾öÈü£¬
-		·ñÔòÌáÊ¾ÌÔÌ­¡£²¢ÇÒ¸ù¾İĞÔ±ğÌáÊ¾½øÈëÄĞ×Ó×é»òÅ®×Ó×é¡£
-		¡¾¿ÉÒÔÈÃÑ§Ô±ÏÈÁ·Ï°ÏÂ¡¿, ÊäÈë³É¼¨ºÍĞÔ±ğ£¬½øĞĞÅĞ¶ÏºÍÊä³öĞÅÏ¢¡£
-		[NestedIf.java]
-
-		ÌáÊ¾: double score; char gender; 
-		½ÓÊÕ×Ö·û: char gender = scanner.next().charAt(0)
-
-		 */
-		//Ë¼Â··ÖÎö
-		//1. ´´½¨Scanner¶ÔÏó£¬½ÓÊÕÓÃ»§ÊäÈë
-		//2. ½ÓÊÕ ³É¼¨±£´æµ½ double score
-		//3. Ê¹ÓÃ if-else ÅĞ¶Ï Èç¹û³õÈü³É¼¨´óÓÚ8.0½øÈë¾öÈü£¬·ñÔòÌáÊ¾ÌÔÌ­
-		//4. Èç¹û½øÈëµ½ ¾öÈü£¬ÔÙ½ÓÊÕ char gender, Ê¹ÓÃ if-else Êä³öĞÅÏ¢
-		//´úÂëÊµÏÖ => Ë¼Â· --> java´úÂë
-		
+	
 		Scanner myScanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¸Ã¸èÊÖµÄ³É¼¨");
+		System.out.println("è¯·è¾“å…¥è¯¥æ­Œæ‰‹çš„æˆç»©");
 		double score = myScanner.nextDouble();
 		if( score > 8.0 ) {
-			System.out.println("ÇëÊäÈëĞÔ±ğ");
+			System.out.println("è¯·è¾“å…¥æ€§åˆ«");
 			char gender = myScanner.next().charAt(0); 
-			if( gender == 'ÄĞ' ) {
-				System.out.println("½øÈëÄĞ×Ó×é");
-			} else if(gender == 'Å®') {
-				System.out.println("½øÈëÅ®×Ó×é");
+			if( gender == 'ç”·' ) {
+				System.out.println("è¿›å…¥ç”·å­ç»„");
+			} else if(gender == 'å¥³') {
+				System.out.println("è¿›å…¥å¥³å­ç»„");
 			} else {
-				System.out.println("ÄãµÄĞÔ±ğÓĞÎó£¬²»ÄÜ²Î¼Ó¾öÈü~");
+				System.out.println("ä½ çš„æ€§åˆ«æœ‰è¯¯ï¼Œä¸èƒ½å‚åŠ å†³èµ›~");
 			}
 		} else {
-			System.out.println("sorry ,Äã±»ÌÔÌ­ÁË~");
+			System.out.println("sorry ,ä½ è¢«æ·˜æ±°äº†~");
 		}
 	}
 }
