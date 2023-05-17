@@ -7,8 +7,8 @@ public class VarScope {
 
 class cat {
 
-    int age = 10;  //指定的值是 10
-    double weight;   //默认值 0.0
+    int age = 10; 
+    double weight;  
     
     public void hi() {
     	int num = 1;
@@ -21,10 +21,6 @@ class cat {
     
     public void cry() {
 
-    	//1. 局部变量一般是指在成员方法中定义的变量
-    	//2. n 和 name 就是局部变量
-    	//3. n 和 name 的作用域在 cry 方法
-    	
 		int n = 10;
 		String name = "jack";
 		System.out.println("在 cry 中使用属性 age=" + age);
