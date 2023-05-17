@@ -1,4 +1,5 @@
 public class HomeWord_07_08 {
+    
     public static void main(String[] args){
     
         double sum = 0;
