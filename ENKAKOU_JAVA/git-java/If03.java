@@ -1,43 +1,25 @@
-//¿ÎÌÃÁ·Ï°
 import java.util.Scanner;
 public class If03 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		/*
-		ÊäÈë±£¹úÍ¬Ö¾µÄÖ¥ÂéĞÅÓÃ·Ö£º
-		Èç¹û£º
-		ĞÅÓÃ·ÖÎª100·ÖÊ±£¬Êä³ö ĞÅÓÃ¼«ºÃ£»
-		ĞÅÓÃ·ÖÎª(80£¬99]Ê±£¬Êä³ö ĞÅÓÃÓÅĞã£»
-		ĞÅÓÃ·ÖÎª[60,80]Ê±£¬Êä³ö ĞÅÓÃÒ»°ã£»
-		ÆäËüÇé¿ö £¬Êä³ö ĞÅÓÃ ²»¼°¸ñ 
-		Çë´Ó¼üÅÌÊäÈë±£¹úµÄÖ¥ÂéĞÅÓÃ·Ö£¬²¢¼ÓÒÔÅĞ¶Ï
-		¼Ù¶¨ĞÅÓÃ·ÖÊıÎªint
-		 */
-		
 		Scanner myScanner = new Scanner(System.in);
-		//½ÓÊÕÓÃ»§ÊäÈë
-		System.out.println("ÇëÊäÈëĞÅÓÃ·Ö(1-100):");
-		//ÇëË¼¿¼£ºÈç¹ûĞ¡»ï°éÊäÈëµÄ²»ÊÇÕûÊı£¬¶øÊÇhello..
-		//==>ÕâÀïÎÒÃÇºóÃæ¿ÉÒÔÊ¹ÓÃÒì³£´¦Àí»úÖÆ¸ã¶¨-¡·ÀÏÊ¦µãÒ»ÏÂ
+	
+		System.out.println("è¯·è¾“å…¥ä¿¡ç”¨åˆ†(1-100):");
 		int grade = myScanner.nextInt();
-
-		//ÏÈ¶ÔÊäÈëµÄĞÅÓÃ·Ö£¬½øĞĞÒ»¸ö·¶Î§µÄÓĞĞ§ÅĞ¶Ï 1-100, ·ñÔòÌáÊ¾ÊäÈë´íÎó
-
 		if(grade >=1 && grade <= 100) {
-			//ÒòÎªÓĞ4ÖÖÇé¿ö£¬ËùÒÔÊ¹ÓÃ¶à·ÖÖ§
+			
 			if(grade == 100) {
-				System.out.println("ĞÅÓÃ¼«ºÃ");
-			} else if (grade > 80 && grade <= 99) { //ĞÅÓÃ·ÖÎª(80£¬99]Ê±£¬Êä³ö ĞÅÓÃÓÅĞã£»
-				System.out.println("ĞÅÓÃÓÅĞã");
-			} else if (grade >= 60 && grade <= 80) {//ĞÅÓÃ·ÖÎª[60,80]Ê±£¬Êä³ö ĞÅÓÃÒ»°ã
-				System.out.println("ĞÅÓÃÒ»°ã");
-			} else {//ÆäËüÇé¿ö £¬Êä³ö ĞÅÓÃ ²»¼°¸ñ 
-				System.out.println("ĞÅÓÃ²»¼°¸ñ");
+				System.out.println("ä¿¡ç”¨æå¥½");
+			} else if (grade > 80 && grade <= 99) { 
+				System.out.println("ä¿¡ç”¨ä¼˜ç§€");
+			} else if (grade >= 60 && grade <= 80) {
+				System.out.println("ä¿¡ç”¨ä¸€èˆ¬");
+			} else {
+				System.out.println("ä¿¡ç”¨ä¸åŠæ ¼");
 			}
 
 		} else {
-			System.out.println("ĞÅÓÃ·ÖĞèÒªÔÚ1-100,ÇëÖØĞÂÊäÈë:)");
+			System.out.println("ä¿¡ç”¨åˆ†éœ€è¦åœ¨1-100,è¯·é‡æ–°è¾“å…¥:)");
 		}
 
 	}
