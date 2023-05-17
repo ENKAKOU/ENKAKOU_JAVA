@@ -1,6 +1,6 @@
 package com.hspedu.extend_;
 
-public class Base extends TopBase { //父类
+public class Base { //父类
     //4个属性
     public int n1 = 100;
     protected int n2 = 200;
