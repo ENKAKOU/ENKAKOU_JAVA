@@ -1,4 +1,5 @@
 public class ConstructorDetail { 
+	
 	public static void main(String[] args) {
 		Person p1 = new Person("king", 40);
 		Person p2 = new Person("tom");
