@@ -1,9 +1,8 @@
 public class MethodExercise01{
+	
 	public static void main(String[] args) {
 
     AAB a = new AAB();
-    
-    
     // boolean b = a.isOdd(1);
     /*
      if(a.isOdd(1)){  // true
