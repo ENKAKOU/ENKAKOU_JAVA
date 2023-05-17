@@ -2,8 +2,8 @@ package com.hspedu.debug_;
 
 import java.util.Arrays;
 
-
 public class Debug04 {
+    
     public static void main(String[] args) {
 
         int[] arr = {1, -1, 10, -20 , 100};
