@@ -1,53 +1,37 @@
 import java.util.Scanner;
 public class ArrayAdd02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
+	
 	public static void main(String[] args) {
-		/*
-		ÒªÇó£ºÊµÏÖ¶¯Ì¬µÄ¸øÊı×éÌí¼ÓÔªËØĞ§¹û£¬ÊµÏÖ¶ÔÊı×éÀ©Èİ¡£ArrayAdd.java
-		1.Ô­Ê¼Êı×éÊ¹ÓÃ¾²Ì¬·ÖÅä int[] arr = {1,2,3}
-		2.Ôö¼ÓµÄÔªËØ4£¬Ö±½Ó·ÅÔÚÊı×éµÄ×îºó arr = {1,2,3,4}
-		3.ÓÃ»§¿ÉÒÔÍ¨¹ıÈçÏÂ·½·¨À´¾ö¶¨ÊÇ·ñ¼ÌĞøÌí¼Ó£¬Ìí¼Ó³É¹¦£¬ÊÇ·ñ¼ÌĞø£¿y/n
-		
-		Ë¼Â··ÖÎö
-		1. ¶¨Òå³õÊ¼Êı×é int[] arr = {1,2,3}//ÏÂ±ê0-2
-		2. ¶¨ÒåÒ»¸öĞÂµÄÊı×é int[] arrNew = new int[arr.length+1];
-		3. ±éÀú arr Êı×é£¬ÒÀ´Î½«arrµÄÔªËØ¿½±´µ½ arrNewÊı×é
-		4. ½« 4 ¸³¸ø arrNew[arrNew.length - 1] = 4;°Ñ4¸³¸øarrNew×îºóÒ»¸öÔªËØ
-		5. ÈÃ arr Ö¸Ïò arrNew ;  arr = arrNew; ÄÇÃ´ Ô­À´arrÊı×é¾Í±»Ïú»Ù
-		6. ´´½¨Ò»¸ö Scanner¿ÉÒÔ½ÓÊÜÓÃ»§ÊäÈë
-		7. ÒòÎªÓÃ»§Ê²Ã´Ê±ºòÍË³ö£¬²»È·¶¨£¬ÀÏÊ¦Ê¹ÓÃ do-while + breakÀ´¿ØÖÆ
-		 */
 		
 		Scanner myScanner = new Scanner(System.in);
-		//³õÊ¼»¯Êı×é
+		
 		int[] arr = {1,2,3};
 
 		do {
 			int[] arrNew = new int[arr.length + 1];
-			//±éÀú arr Êı×é£¬ÒÀ´Î½«arrµÄÔªËØ¿½±´µ½ arrNewÊı×é
 			for(int i = 0; i < arr.length; i++) {
 				arrNew[i] = arr[i];
 			}
-			System.out.println("ÇëÊäÈëÄãÒªÌí¼ÓµÄÔªËØ");
+			System.out.println("è¯·è¾“å…¥ä½ è¦æ·»åŠ çš„å…ƒç´ ");
 			int addNum = myScanner.nextInt();
-			//°ÑaddNum¸³¸øarrNew×îºóÒ»¸öÔªËØ
+			
 			arrNew[arrNew.length - 1] = addNum;
-			//ÈÃ arr Ö¸Ïò arrNew, 
+			
 			arr = arrNew;
-			//Êä³öarr ¿´¿´Ğ§¹û
-			System.out.println("====arrÀ©ÈİºóÔªËØÇé¿ö====");
+			
+			System.out.println("====arræ‰©å®¹åå…ƒç´ æƒ…å†µ====");
 			for(int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i] + "\t");
 			}
-			//ÎÊÓÃ»§ÊÇ·ñ¼ÌĞø
-			System.out.println("ÊÇ·ñ¼ÌĞøÌí¼Ó y/n");
+			
+			System.out.println("æ˜¯å¦ç»§ç»­æ·»åŠ  y/n");
 			char key = myScanner.next().charAt(0);
-			if( key == 'n') { //Èç¹ûÊäÈën ,¾Í½áÊø
+			if( key == 'n') { 
 				break;
 			}			
 		}while(true);
 
-		System.out.println("ÄãÍË³öÁËÌí¼Ó...");
+		System.out.println("ä½ é€€å‡ºäº†æ·»åŠ ...");
 	}
 }
