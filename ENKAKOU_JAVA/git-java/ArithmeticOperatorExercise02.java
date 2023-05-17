@@ -1,38 +1,17 @@
-//¿ÎÌÃÁ·Ï°
-
 public class ArithmeticOperatorExercise02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//1.ĞèÇó:
-		//¼ÙÈç»¹ÓĞ59Ìì·Å¼Ù£¬ÎÊ£ººÏxx¸öĞÇÆÚÁãxxÌì
-		//2.Ë¼Â··ÖÎö
-		//(1) Ê¹ÓÃint ±äÁ¿ days ±£´æ ÌìÊı
-		//(2) Ò»¸öĞÇÆÚÊÇ7Ìì ĞÇÆÚÊıweeks£º days / 7 ÁãxxÌìleftDays days % 7
-		//(3) Êä³ö
-
-		//3.×ß´úÂë
 		int days = 25911;
 		int weeks = days / 7;
 		int leftDays = days % 7;
-		System.out.println(days + "Ìì ºÏ" + weeks + "ĞÇÆÚÁã" 
-			+ leftDays + "Ìì");
+		System.out.println(days + "å¤© åˆ" + weeks + "æ˜ŸæœŸé›¶" 
+			+ leftDays + "å¤©");
 
-		//1.ĞèÇó
-		//¶¨ÒåÒ»¸ö±äÁ¿±£´æ»ªÊÏÎÂ¶È£¬»ªÊÏÎÂ¶È×ª»»ÉãÊÏÎÂ¶ÈµÄ¹«Ê½Îª
-		//£º5/9*(»ªÊÏÎÂ¶È-100),ÇëÇó³ö»ªÊÏÎÂ¶È¶ÔÓ¦µÄÉãÊÏÎÂ¶È
-		//
-		//2Ë¼Â··ÖÎö
-		//(1) ÏÈ¶¨ÒåÒ»¸ödouble huaShi ±äÁ¿±£´æ »ªÊÏÎÂ¶È
-		//(2) ¸ù¾İ¸ø³öµÄ¹«Ê½£¬½øĞĞ¼ÆËã¼´¿É5/9*(»ªÊÏÎÂ¶È-100)
-		//    ¿¼ÂÇÊıÑ§¹«Ê½ºÍjavaÓïÑÔµÄÌØĞÔ
-		//(3) ½«µÃµ½µÄ½á¹û±£´æµ½double sheShi
-		//3×ß´úÂë
 		double huaShi = 1234.6;
 		double sheShi = 5.0 / 9 * (huaShi - 100);
-		System.out.println("»ªÊÏÎÂ¶È" + huaShi 
-			+ " ¶ÔÓ¦µÄÉãÊÏÎÂ¶È=" + sheShi);
+		System.out.println("åæ°æ¸©åº¦" + huaShi 
+			+ " å¯¹åº”çš„æ‘„æ°æ¸©åº¦=" + sheShi);
 
 	}
 }
