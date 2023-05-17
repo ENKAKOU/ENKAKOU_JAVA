@@ -1,12 +1,12 @@
 public class MethodExercise02_1{
 	public static void main(String[] args) {
 		
-	Person p = new Person();
+	Person009 p = new Person009();
 	p.name = "milan";
 	p.age = 100;
 	
-	MyTools tools = new MyTools();
-	Person p2 = tools.copyPerson(p);
+	MyTools003 tools = new MyTools003();
+	Person009 p2 = tools.copyPerson(p);
 	
 	// p 和 p2 是person 两个独立对象
 	System.out.println("P的属性 age=" + p.age + "名字=" + p.name);
@@ -16,19 +16,19 @@ public class MethodExercise02_1{
 	}
 }
 
-class Person{
+class Person009{
 	String name;
 	int age;
 	
 }
 
-class MyTools{
+class MyTools003{
 	
 	
-public Person copyPerson(Person p) {
+public Person009 copyPerson(Person009 p) {
 	
 	//创建一个新的对象
-	Person p2 = new Person();
+	Person009 p2 = new Person009();
 	p2.name = p.name;
 	p2.age = p.age;
 	

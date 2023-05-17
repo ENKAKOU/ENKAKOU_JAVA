@@ -2,7 +2,7 @@ public class PropertiesDetail{
 
     public static void main(String[] args){
 
-        Person p1 = new Person();
+        Person008 p1 = new Person008();
 
         System.out.println("\n ��ǰ����˵���Ϣ");
         System.out.println("age=" + p1.age + " name=" + p1.name + " sal=" +
@@ -11,7 +11,7 @@ public class PropertiesDetail{
     }
 }
 
-class Person22 {
+class Person008 {
     int age;
     String name;
     double sal;

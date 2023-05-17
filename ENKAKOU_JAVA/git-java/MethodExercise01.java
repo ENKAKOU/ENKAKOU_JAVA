@@ -1,7 +1,7 @@
 public class MethodExercise01{
 	public static void main(String[] args) {
 
-    AA a = new AA();
+    AAB a = new AAB();
     
     
     // boolean b = a.isOdd(1);
@@ -20,7 +20,7 @@ public class MethodExercise01{
 	}
 }
 
-class AA{
+class AAB{
 	//类型；boolean；名字：isOdd；形参：int num；方法体：判断；
 	
 	public boolean isOdd(int num) {

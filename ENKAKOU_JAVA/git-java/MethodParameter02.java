@@ -2,7 +2,7 @@ public class MethodParameter02{
 	
 	public static void main(String[] args) {
 		
-		B b = new B();
+		WB b = new WB();
 		int[] arr = {1, 2, 3};
 		b.test100(arr);//调用方法
 		
@@ -33,7 +33,7 @@ class person{
 }
 
 
-class B {
+class WB {
 	
 	public void test100(int[] arr) {
 		

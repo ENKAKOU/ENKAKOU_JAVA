@@ -4,14 +4,14 @@ public class MethodParameter01 {
 		int a = 10;
 		int b = 20;
 		
-		AA obj = new AA();
+		AAA obj = new AAA();
 	obj.swap(a, b);
 
 		System.out.println("\na=" + a + "b= " + b);   // a = 10   b= 20;
 	}
 }
 
-class AA {
+class AAA {
 	
 	public void swap(int a, int b) {
 		
