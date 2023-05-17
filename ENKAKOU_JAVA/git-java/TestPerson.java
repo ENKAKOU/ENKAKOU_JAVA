@@ -1,33 +1,26 @@
-
 public class TestPerson { 
-
-	//±àĞ´Ò»¸ömain·½·¨
+	
 	public static void main(String[] args) {
 
 		Person p1 = new Person("mary", 20);
 		Person p2 = new Person("mary", 20);
 
-		System.out.println("p1ºÍp2±È½ÏµÄ½á¹û=" + p1.compareTo(p2));
+		System.out.println("p1å’Œp2æ¯”è¾ƒçš„ç»“æœ=" + p1.compareTo(p2));
 	}
 }
 
-/*
-¶¨ÒåPersonÀà£¬ÀïÃæÓĞname¡¢ageÊôĞÔ£¬²¢Ìá¹©compareTo±È½Ï·½·¨£¬
-ÓÃÓÚÅĞ¶ÏÊÇ·ñºÍÁíÒ»¸öÈËÏàµÈ£¬Ìá¹©²âÊÔÀàTestPersonÓÃÓÚ²âÊÔ, 
-Ãû×ÖºÍÄêÁäÍêÈ«Ò»Ñù£¬¾Í·µ»Øtrue, ·ñÔò·µ»Øfalse
-
- */
 class Person {
 	String name;
 	int age;
-	//¹¹ÔìÆ÷
+	
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
-	//compareTo±È½Ï·½·¨
+	
+	//compareToæ¯”è¾ƒæ–¹æ³•
 	public boolean compareTo(Person p) {
-		//Ãû×ÖºÍÄêÁäÍêÈ«Ò»Ñù
+		
 		// if(this.name.equals(p.name) && this.age == p.age) {
 		// 	return true;
 		// } else {
