@@ -2,44 +2,29 @@ import java.util.Scanner;
 
 public class SeqSearch {
 	
-	
     public static void main(String[] args){
-        /*   ÓĞÒ»¸öÊıÁĞ£º°×Ã¼Ó¥Íõ¡¢½ğÃ«Ê¨Íõ¡¢×ÏÉÀÁúÍõ¡¢ÇàÒíòğÍõ²ÂÊıÓÎÏ·£º
-             ´Ó¼üÅÌÖĞÈÎÒâÊäÈëÒ»¸öÃû³Æ£¬ÅĞ¶ÏÊıÁĞÖĞÊÇ·ñ°üº¬´ËÃû³Æ¡¾Ë³Ğò²éÕÒ¡¿
-             ÒªÇó: Èç¹ûÕÒµ½ÁË£¬¾ÍÌáÊ¾ÕÒµ½£¬²¢¸ø³öÏÂ±êÖµ
-        Ë¼Â·:
-             1. ¶¨ÒåÒ»¸ö×Ö·û´®Êı×é
-             2. ´´½¨Scanner¶ÔÏó£¬½ÓÊÕÓÃ»§ÊäÈë, ±éÀúÊı×é£¬ÖğÒ»±È½Ï£¬Èç¹ûÓĞ£¬ÔòÌáÊ¾ĞÅÏ¢£¬²¢ÍË³ö   */
-
-             //¶¨ÒåÒ»¸ö×Ö·û´®Êı×é
-        String[] names = {"°×Ã¼Ó¥Íõ", "½ğÃ«Ê¨Íõ", "×ÏÉÀÁúÍõ", "ÇàÒíòğÍõ"};
+     
+        String[] names = {"ç™½çœ‰é¹°ç‹", "é‡‘æ¯›ç‹®ç‹", "ç´«è¡«é¾™ç‹", "é’ç¿¼è ç‹"};
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("ÇëÊäÈëÃû×Ö");
+        System.out.println("è¯·è¾“å…¥åå­—");
         String findName = myScanner.next();
 
-             //±éÀúÊı×é£¬ÖğÒ»±È½Ï£¬Èç¹ûÓĞ£¬ÔòÌáÊ¾ĞÅÏ¢£¬²¢ÍË³ö
         int index = -1;
         for(int i = 0; i < names.length; i++) {
-             //±È½Ï ×Ö·û´®±È½Ï equals, Èç¹ûÒªÕÒµ½Ãû×Ö¾ÍÊÇµ±Ç°ÔªËØ
+          
             if(findName.equals(names[i])) {
-                System.out.println("¹§Ï²ÄãÕÒµ½ " + findName);
-                System.out.println("ÏÂ±êÎª= " + i);
-             //°Ñ i ±£´æµ½ index
+                System.out.println("æ­å–œä½ æ‰¾åˆ° " + findName);
+                System.out.println("ä¸‹æ ‡ä¸º= " + i);
+             //æŠŠ i ä¿å­˜åˆ° index
                 index = i;
-                break;//ÍË³ö
+                break;
             }
         }
-        if(index == -1) { //Ã»ÓĞÕÒµ½
-            System.out.println("sorry ,Ã»ÓĞÕÒµ½ " + findName);
+        if(index == -1) { 
+            System.out.println("sorry ,æ²¡æœ‰æ‰¾åˆ° " + findName);
         }
 
-
-        /*  Çë¶ÔÒ»¸öÓĞĞòÊı×é½øĞĞ¶ş·Ö²éÕÒ {1,8, 10, 89, 1000, 1234} £¬ÊäÈëÒ»¸öÊı¿´¿´¸ÃÊı×éÊÇ·ñ´æÔÚ´ËÊı£¬
-            ²¢ÇÒÇó³öÏÂ±ê£¬Èç¹ûÃ»ÓĞ¾ÍÌáÊ¾"Ã»ÓĞÕâ¸öÊı"¡£
-
-            Ë¼Â·£º
-                1. Ê×ÏÈÈ·¶¨¸ÃÊı×éµÄÖĞ¼äµÄÏÂ±êmid = (left + right) / 2£»*/
 
     }
 }
