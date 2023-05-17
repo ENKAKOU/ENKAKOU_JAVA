@@ -1,19 +1,15 @@
-/**
- * ÑİÊ¾ËãÊõÔËËã·ûµÄÊ¹ÓÃ 
- */
 public class ArithmeticOperator { 
 
-	//±àĞ´Ò»¸ömain·½·¨
+	
 	public static void main(String[] args) {
-		// /Ê¹ÓÃ
-		System.out.println(10 / 4); //´ÓÊıÑ§À´¿´ÊÇ2.5, javaÖĞ 2
-		System.out.println(10.0 / 4); //javaÊÇ2.5
-		// ×¢ÊÍ¿ì½İ¼ü ctrl + /, ÔÙ´ÎÊäÈë ctrl + / È¡Ïû×¢ÊÍ
-		double d = 10 / 4;//javaÖĞ10 / 4 = 2, 2=>2.0 
-		System.out.println(d);// ÊÇ2.0
+	
+		System.out.println(10 / 4); //ä»æ•°å­¦æ¥çœ‹æ˜¯2.5, javaä¸­ 2
+		System.out.println(10.0 / 4); //javaæ˜¯2.5
+		
+		double d = 10 / 4;//javaä¸­10 / 4 = 2, 2=>2.0 
+		System.out.println(d);// æ˜¯2.0
 
-		// % È¡Ä£ ,È¡Óà
-		// ÔÚ % µÄ±¾ÖÊ ¿´Ò»¸ö¹«Ê½!!!! a % b = a - a / b * b
+		
 		// -10 % 3 => -10 - (-10) / 3 * 3 = -10 + 9 = -1
 		// 10 % -3 = 10 - 10 / (-3) * (-3) = 10 - 9 = 1
 		// -10 % -3 =  (-10) - (-10) / (-3) * (-3) = -10 + 9 = -1
@@ -23,21 +19,21 @@ public class ArithmeticOperator {
 		System.out.println(10 % -3); //1
 		System.out.println(-10 % -3);//-1
 
-		//++µÄÊ¹ÓÃ
+		//++çš„ä½¿ç”¨
 		//
 		int i = 10;
-		i++;//×ÔÔö µÈ¼ÛÓÚ i = i + 1; => i = 11
-		++i;//×ÔÔö µÈ¼ÛÓÚ i = i + 1; => i = 12
+		i++;//è‡ªå¢ ç­‰ä»·äº i = i + 1; => i = 11
+		++i;//è‡ªå¢ ç­‰ä»·äº i = i + 1; => i = 12
 		System.out.println("i=" + i);//12
 
 		/*
-		×÷Îª±í´ïÊ½Ê¹ÓÃ
-        Ç°++£º++iÏÈ×ÔÔöºó¸³Öµ
-        ºó++£ºi++ÏÈ¸³Öµºó×ÔÔö
+		ä½œä¸ºè¡¨è¾¾å¼ä½¿ç”¨
+        å‰++ï¼š++iå…ˆè‡ªå¢åèµ‹å€¼
+        å++ï¼ši++å…ˆèµ‹å€¼åè‡ªå¢
 		 */
 		int j = 8;
-		//int k = ++j; //µÈ¼Û j=j+1;k=j; 
-		int k = j++; // µÈ¼Û k =j;j=j+1;
+		//int k = ++j; //ç­‰ä»· j=j+1;k=j; 
+		int k = j++; // ç­‰ä»· k =j;j=j+1;
 		System.out.println("k=" + k + "j=" + j);//8 9
 	}
 }
