@@ -1,7 +1,7 @@
 package com.hspedu.debug_;
 
-
 public class DebugExercise {
+    
     public static void main(String[] args) {
 
         Person jack = new Person("jack", 20);
