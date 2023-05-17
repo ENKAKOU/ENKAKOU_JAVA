@@ -1,27 +1,19 @@
-import java.util.Scanner;//±íÊ¾°Ñjava.utilÏÂµÄScannerÀàµ¼Èë 
+import java.util.Scanner;
 public class Input { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//ÑİÊ¾½ÓÊÜÓÃ»§µÄÊäÈë
-		//²½Öè
-		//ScannerÀà ±íÊ¾ ¼òµ¥ÎÄ±¾É¨ÃèÆ÷£¬ÔÚjava.util °ü
-		//1. ÒıÈë/µ¼Èë ScannerÀàËùÔÚµÄ°ü
-		//2. ´´½¨ Scanner ¶ÔÏó , new ´´½¨Ò»¸ö¶ÔÏó,Ìå»á
-		//   myScanner ¾ÍÊÇ ScannerÀàµÄ¶ÔÏó
+		
 		Scanner myScanner = new Scanner(System.in);
-		//3. ½ÓÊÕÓÃ»§ÊäÈëÁË£¬ Ê¹ÓÃ Ïà¹ØµÄ·½·¨
-		System.out.println("ÇëÊäÈëÃû×Ö");
 
-		//µ±³ÌĞòÖ´ĞĞµ½ next ·½·¨Ê±£¬»áµÈ´ıÓÃ»§ÊäÈë~~~
-		String name = myScanner.next(); //½ÓÊÕÓÃ»§ÊäÈë×Ö·û´®
-		System.out.println("ÇëÊäÈëÄêÁä");
-		int age = myScanner.nextInt(); //½ÓÊÕÓÃ»§ÊäÈëint
-		System.out.println("ÇëÊäÈëĞ½Ë®");
-		double sal = myScanner.nextDouble(); //½ÓÊÕÓÃ»§ÊäÈëdouble
-		System.out.println("ÈËµÄĞÅÏ¢ÈçÏÂ:");
-		System.out.println("Ãû×Ö=" + name 
-			+ " ÄêÁä=" + age + " Ğ½Ë®=" + sal);
+		System.out.println("è¯·è¾“å…¥åå­—");
+		String name = myScanner.next(); 
+		System.out.println("è¯·è¾“å…¥å¹´é¾„");
+		int age = myScanner.nextInt(); 
+		System.out.println("è¯·è¾“å…¥è–ªæ°´");
+		double sal = myScanner.nextDouble(); 
+		System.out.println("äººçš„ä¿¡æ¯å¦‚ä¸‹:");
+		System.out.println("åå­—=" + name 
+			+ " å¹´é¾„=" + age + " è–ªæ°´=" + sal);
 
 	}
 }
