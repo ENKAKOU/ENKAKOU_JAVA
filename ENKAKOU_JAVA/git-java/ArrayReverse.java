@@ -1,52 +1,31 @@
 public class ArrayReverse {
     public static void main(String[] args){
-
-        //°ÑÊı×éµÄÔªËØÄÚÈİ·´×ª¡£
+  
         //arr {11,22,33,44,55,66} {66, 55,44,33,22,11
-
-        /* ·½·¨Ò»
-        ¶¨ÒåÊı×é
-        1. °Ñ arr[0] ºÍ arr[5] ½øĞĞ½»»» {66,22,33,44,55,11}
-        2. °Ñ arr[1] ºÍ arr[4] ½øĞĞ½»»» {66,55,33,44,22,11}
-        3. °Ñ arr[2] ºÍ arr[3] ½øĞĞ½»»» {66,55,44,33,22,11}
-        4. Ò»¹²Òª½»»» 3 ´Î = arr.length / 2
-        5. Ã¿´Î½»»»Ê±£¬¶ÔÓ¦µÄÏÂ±ê ÊÇ arr[i] ºÍ arr[arr.length - 1 -i  */
 
         int[] arr = {11, 22, 33, 44, 55, 66};
         int temp = 0;
-        int len = arr.length;               //¼ÆËãÊı×éµÄ³¤¶È
+        int len = arr.length;              
         for( int i = 0; i < len / 2; i++) {
-            temp = arr[len - 1 - i];//±£´æ
+            temp = arr[len - 1 - i];//ä¿å­˜
             arr[len - 1 - i] = arr[i];
             arr[i] = temp;
         }
-        System.out.println("===·­×ªºóÊı×é===");
+        System.out.println("===ç¿»è½¬åæ•°ç»„===");
 
         for(int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + "\t");//66,55,44,33,22,11
+            System.out.print(arr[i] + "\t");
         }
 
         System.out.println();
 
-
-        /* ·½·¨¶ş
-        ¶¨ÒåÊı×é £¨Ê¹ÓÃÄæĞò¸³Öµ·½Ê½£©
-        1. ÏÈ´´½¨Ò»¸öĞÂµÄÊı×é arr2 ,´óĞ¡ arr.length
-        2. ÄæĞò±éÀú arr ,½« Ã¿¸öÔªËØ¿½±´µ½ arr2 µÄÔªËØÖĞ(Ë³Ğò¿½±´)
-        3. ½¨ÒéÔö¼ÓÒ»¸öÑ­»·±äÁ¿ j -> 0 -> 5
-        4. µ± for Ñ­»·½áÊø£¬arr2 ¾ÍÊÇÒ»¸öÄæĞòµÄÊı×é {66, 55, 44,33, 22, 11}
-        5. ÈÃ arr Ö¸Ïò arr2 Êı¾İ¿Õ¼ä, ´ËÊ± arr Ô­À´µÄÊı¾İ¿Õ¼ä¾ÍÃ»ÓĞ±äÁ¿ÒıÓÃ   */
-
         int[] arr2= {11, 22, 33, 44, 55, 66};
         int[] arr3 = new int[arr.length];
-         //ÄæĞò±éÀú arr
+
         for(int i = arr2.length - 1, j = 0; i >= 0; i--, j++) {
             arr3[j] = arr2[i];
         }
-        // »á±»µ±×öÀ¬»ø£¬Ïú»Ù
         arr2 = arr3;
-
-        //Êä³ö arr2
         for(int i = 0; i < arr2.length; i++) {
             System.out.print(arr2[i] + "\t");
         }
