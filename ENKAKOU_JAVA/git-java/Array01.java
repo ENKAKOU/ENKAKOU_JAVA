@@ -1,21 +1,7 @@
-
-//Êı×éµÄÒı³ö
-//
 public class Array01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		/*
-		ËüÃÇµÄÌåÖØ·Ö±ğÊÇ3kg,5kg,1kg,3.4kg,2kg,50kg ¡£
-		ÇëÎÊÕâÁùÖ»¼¦µÄ×ÜÌåÖØÊÇ¶àÉÙ?Æ½¾ùÌåÖØÊÇ¶àÉÙ?
-
-		Ë¼Â··ÖÎö
-		1. ¶¨ÒåÁù¸ö±äÁ¿ double , ÇóºÍ µÃµ½×ÜÌåÖØ
-		2. Æ½¾ùÌåÖØ = ×ÜÌåÖØ / 6
-		3. ·ÖÎö´«Í³ÊµÏÖµÄ·½Ê½ÎÊÌâ. 6->600->566
-		4. Òı³öĞÂµÄ¼¼Êõ -> Ê¹ÓÃÊı×éÀ´½â¾ö.
-		 */
-		
+	
 		// double hen1 = 3;
 		// double hen2 = 5;
 		// double hen3 = 1;
@@ -26,37 +12,21 @@ public class Array01 {
 		// double totalWeight = hen1 + hen2 + hen3 + hen4 + hen5 + hen6;
 		
 		// double avgWeight = totalWeight / 6;
-		// System.out.println("×ÜÌåÖØ=" + totalWeight 
-		// 	+ "Æ½¾ùÌåÖØ=" + avgWeight);
-
-		//±ÈÈç£¬ÎÒÃÇ¿ÉÒÔÓÃÊı×éÀ´½â¾öÉÏÒ»¸öÎÊÌâ => ÌåÑé
-		//
-		//¶¨ÒåÒ»¸öÊı×é
-		//ÀÏº«½â¶Á
-		//1. double[] ±íÊ¾ ÊÇdoubleÀàĞÍµÄÊı×é£¬ Êı×éÃû hens
-		//2. {3, 5, 1, 3.4, 2, 50} ±íÊ¾Êı×éµÄÖµ/ÔªËØ,ÒÀ´Î±íÊ¾Êı×éµÄ
-		//   µÚ¼¸¸öÔªËØ
-		//   
+		// System.out.println("æ€»ä½“é‡=" + totalWeight 
+		// 	+ "å¹³å‡ä½“é‡=" + avgWeight);
 		double[] hens = {3, 5, 1, 3.4, 2, 50, 7.8, 88.8,1.1,5.6,100};
 
-		//±éÀúÊı×éµÃµ½Êı×éµÄËùÓĞÔªËØµÄºÍ£¬ Ê¹ÓÃfor
-		//ÀÏº«½â¶Á
-		//1. ÎÒÃÇ¿ÉÒÔÍ¨¹ı hens[ÏÂ±ê] À´·ÃÎÊÊı×éµÄÔªËØ
-		//   ÏÂ±êÊÇ´Ó 0 ¿ªÊ¼±àºÅµÄ±ÈÈçµÚÒ»¸öÔªËØ¾ÍÊÇ hens[0]
-		//   µÚ2¸öÔªËØ¾ÍÊÇ hens[1]  , ÒÀ´ÎÀàÍÆ 
-		//2. Í¨¹ıfor¾Í¿ÉÒÔÑ­»·µÄ·ÃÎÊ Êı×éµÄÔªËØ/Öµ
-		//3. Ê¹ÓÃÒ»¸ö±äÁ¿ totalWeight ½«¸÷¸öÔªËØÀÛ»ı
-		System.out.println("===Ê¹ÓÃÊı×é½â¾ö===");
-		//ÀÏÊ¦ÌáÊ¾£º ¿ÉÒÔÍ¨¹ı Êı×éÃû.length µÃµ½Êı×éµÄ´óĞ¡/³¤¶È
-		//System.out.println("Êı×éµÄ³¤¶È=" + hens.length);
+		System.out.println("===ä½¿ç”¨æ•°ç»„è§£å†³===");
+	
+		//System.out.println("æ•°ç»„çš„é•¿åº¦=" + hens.length);
 		double totalWeight = 0;
 		for( int i = 0; i < hens.length; i++) {
-			//System.out.println("µÚ" + (i+1) + "¸öÔªËØµÄÖµ=" + hens[i]);
+			//System.out.println("ç¬¬" + (i+1) + "ä¸ªå…ƒç´ çš„å€¼=" + hens[i]);
 			totalWeight += hens[i];
 		}
 
-		System.out.println("×ÜÌåÖØ=" + totalWeight 
-		 	+ "Æ½¾ùÌåÖØ=" + (totalWeight / hens.length) );
+		System.out.println("æ€»ä½“é‡=" + totalWeight 
+		 	+ "å¹³å‡ä½“é‡=" + (totalWeight / hens.length) );
 
 
 		
