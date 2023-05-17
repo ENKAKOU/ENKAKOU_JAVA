@@ -1,15 +1,12 @@
-
 public class Var02 { 
-
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//¼ÇÂ¼ÈËµÄĞÅÏ¢
+		
 		int age = 30;
 		double score = 88.9;
-		char gender = 'ÄĞ';
+		char gender = 'ç”·';
 		String name = "king";
-		//Êä³öĞÅÏ¢, ¿ì½İ¼ü
-		System.out.println("ÈËµÄĞÅÏ¢ÈçÏÂ:");
+	
+		System.out.println("äººçš„ä¿¡æ¯å¦‚ä¸‹:");
 		System.out.println(name);
 		System.out.println(age);
 		System.out.println(score);
