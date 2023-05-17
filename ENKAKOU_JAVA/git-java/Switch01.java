@@ -1,41 +1,29 @@
-
 import java.util.Scanner;
+
 public class Switch01 { 
-
-	//±àĞ´Ò»¸ömain·½·¨
+	
 	public static void main(String[] args) {
-		/*
-		°¸Àı£ºSwitch01.java
-		Çë±àĞ´Ò»¸ö³ÌĞò£¬¸Ã³ÌĞò¿ÉÒÔ½ÓÊÕÒ»¸ö×Ö·û£¬±ÈÈç:a,b,c,d,e,f,g  
-		a±íÊ¾ĞÇÆÚÒ»£¬b±íÊ¾ĞÇÆÚ¶ş ¡­  
-		¸ù¾İÓÃ»§µÄÊäÈëÏÔÊ¾ÏàÓ¦µÄĞÅÏ¢.ÒªÇóÊ¹ÓÃ switch Óï¾äÍê³É
-
-		Ë¼Â··ÖÎö
-		1. ½ÓÊÕÒ»¸ö×Ö·û , ´´½¨Scanner¶ÔÏó
-		2. Ê¹ÓÃswitch À´Íê³ÉÆ¥Åä,²¢Êä³ö¶ÔÓ¦ĞÅÏ¢
-		´úÂë
-
-		 */
+		
 		Scanner myScanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û(a-g)");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦(a-g)");
 		char c1 = myScanner.next().charAt(0);//
-		//ÔÚjavaÖĞ£¬Ö»ÒªÊÇÓĞÖµ·µ»Ø£¬¾ÍÊÇÒ»¸ö±í´ïÊ½
+		
 		switch(c1) {
 			case 'a' : 
-				System.out.println("½ñÌìĞÇÆÚÒ»,ºï×Ó´©ĞÂÒÂ");
+				System.out.println("ä»Šå¤©æ˜ŸæœŸä¸€,çŒ´å­ç©¿æ–°è¡£");
 				break;
 			case 'b' : 
-				System.out.println("½ñÌìĞÇÆÚ¶ş,ºï×Óµ±Ğ¡¶ş");
+				System.out.println("ä»Šå¤©æ˜ŸæœŸäºŒ,çŒ´å­å½“å°äºŒ");
 				break;
 			case 'c' : 
-				System.out.println("½ñÌìĞÇÆÚÈı,ºï×ÓÅÀÑ©É½..");
+				System.out.println("ä»Šå¤©æ˜ŸæœŸä¸‰,çŒ´å­çˆ¬é›ªå±±..");
 				break;
 			//.....
 			default:
-				System.out.println("ÄãÊäÈëµÄ×Ö·û²»ÕıÈ·£¬Ã»ÓĞÆ¥ÅäµÄ");
+				System.out.println("ä½ è¾“å…¥çš„å­—ç¬¦ä¸æ­£ç¡®ï¼Œæ²¡æœ‰åŒ¹é…çš„");
 
 		}
 
-		System.out.println("ÍË³öÁËswitch ,¼ÌĞøÖ´ĞĞ³ÌĞò");
+		System.out.println("é€€å‡ºäº†switch ,ç»§ç»­æ‰§è¡Œç¨‹åº");
 	}
 }
