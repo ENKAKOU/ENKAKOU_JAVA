@@ -2,7 +2,6 @@ package com.hspedu.extend_;
 
 import java.util.Arrays;
 
-
 public class Sub extends Base { //子类
 
     public Sub(String name, int age) {
