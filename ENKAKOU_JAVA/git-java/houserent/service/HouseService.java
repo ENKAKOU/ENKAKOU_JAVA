@@ -2,12 +2,6 @@ package houserent.service;
 
 import com.hspedu.houserent.domain.House;
 
-/**
- * HouseService.java<=>类 [业务层]
- * 1. 响应HouseView的调用
- * 2. 完成对房屋信息的各种操作(增删改查c[create]r[read]u[update]d[delete])
- */
-
 public class HouseService {
     private House[] houses;
     private int houseNums = 1;
