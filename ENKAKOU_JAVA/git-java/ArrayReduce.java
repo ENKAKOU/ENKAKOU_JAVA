@@ -1,11 +1,8 @@
 import java.util.Scanner;
-
 public class ArrayReduce{
 	
     public static void main(String[] args){
-        //ÓĞÒ»¸öÊı×é {1£¬ 2£¬ 3£¬ 4£¬ 5}£¬ ¿ÉÒÔ½«¸ÃÊı×é½øĞĞËõ¼õ£¬ÌáÊ¾ÓÃ»§ÊÇ·ñ¼ÌĞøËõ¼õ£¬Ã¿´ÎËõ¼õ×îºóÄÇ¸öÔªËØ¡£
-        //µ±Ö»Ê£ÏÂ×îºóÒ»¸öÔªËØ£¬ÌáÊ¾£¬²»ÄÜÔÙËõ¼õ¡£
-
+  
         Scanner input = new Scanner(System.in);
         int[] arr = {1,2,3,4,5};
         boolean reduce = false;
@@ -14,27 +11,27 @@ public class ArrayReduce{
             for(int i = 0;i < arr.length - 1;i++){
                 arrNew[i] = arr[i];
             }
-            System.out.println("Ëõ¼õÍê³É£¬±¾´ÎËõ¼õÔªËØÎª" + arr[arr.length-1]);
+            System.out.println("ç¼©å‡å®Œæˆï¼Œæœ¬æ¬¡ç¼©å‡å…ƒç´ ä¸º" + arr[arr.length-1]);
             arr = arrNew;
-            System.out.print("arrÊı×é Ëõ¼õºóµÄÖµ£º");
+            System.out.print("arræ•°ç»„ ç¼©å‡åçš„å€¼ï¼š");
             for(int i = 0;i < arr.length;i++){
                 System.out.print(arr[i] + "  ");
             }
             if(arr.length == 1){
-                System.out.println("\n arrÊı×éÏÖÔÚÖ»Ê£ÏÂ×îºóÒ»¸öÔªËØ£¬²»ÄÜÔÙËõ¼õÀ²£¡");
+                System.out.println("\n arræ•°ç»„ç°åœ¨åªå‰©ä¸‹æœ€åä¸€ä¸ªå…ƒç´ ï¼Œä¸èƒ½å†ç¼©å‡å•¦ï¼");
                 break;
             }
-            System.out.print("\n ÊÇ·ñ¼ÌĞøËõ¼õ(Y/N):");
+            System.out.print("\n æ˜¯å¦ç»§ç»­ç¼©å‡(Y/N):");
             while(true){
                 char kay = input.next().charAt(0);
                 if(kay == 'n' || kay == 'N'){
-                    System.out.println("ºÃµÄ");
+                    System.out.println("å¥½çš„");
                     break;
                 }else if(kay == 'y' || kay == 'Y'){
                     reduce = true;
                     break;
                 }else{
-                    System.out.print("ÊäÈëÓĞÎó,ÇëÖØĞÂÊäÈë(Y/N)£¡");
+                    System.out.print("è¾“å…¥æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥(Y/N)ï¼");
                 }
             }
         }while(reduce);
