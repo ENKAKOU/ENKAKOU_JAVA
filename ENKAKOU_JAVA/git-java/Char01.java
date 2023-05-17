@@ -1,22 +1,14 @@
-
-//ÑİÊ¾charµÄ»ù±¾Ê¹ÓÃ
-
 public class Char01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 		char c1 = 'a';
 		char c2 = '\t';
-		char c3 = 'º«';
-		char c4 = 97; //ËµÃ÷: ×Ö·ûÀàĞÍ¿ÉÒÔÖ±½Ó´æ·ÅÒ»¸öÊı×Ö
-		//ĞŞ¸Ä¿ì½İ¼ü 
-		//É¾³ıµ±Ç°ĞĞµÄ¿ì½İ¼üÊ¹ÓÃ ctrl+shif+k => ctrl+ k
+		char c3 = 'éŸ©';
+		char c4 = 97; 
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);
-		System.out.println(c4);//µ±Êä³öc4Ê±ºò£¬»áÊä³ö97±íÊ¾µÄ×Ö·û => ±àÂëµÄ¸ÅÄî
-		
-
+		System.out.println(c4);
 		
 
 	}
