@@ -1,13 +1,12 @@
 public class Boolean01 { 
-	//±àĞ´Ò»¸ömain·½·¨
+
 	public static void main(String[] args) {
-		//ÑİÊ¾ÅĞ¶Ï³É¼¨ÊÇ·ñÍ¨¹ıµÄ°¸Àı
-		//¶¨ÒåÒ»¸ö²¼¶û±äÁ¿
+		
 		boolean isPass = true;//
 		if(isPass == true) {
-			System.out.println("¿¼ÊÔÍ¨¹ı£¬¹§Ï²");
+			System.out.println("è€ƒè¯•é€šè¿‡ï¼Œæ­å–œ");
 		} else {
-			System.out.println("¿¼ÊÔÃ»ÓĞÍ¨¹ı£¬ÏÂ´ÎÅ¬Á¦");
+			System.out.println("è€ƒè¯•æ²¡æœ‰é€šè¿‡ï¼Œä¸‹æ¬¡åŠªåŠ›");
 		}
 	}
 }
