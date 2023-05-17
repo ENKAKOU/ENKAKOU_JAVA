@@ -1,4 +1,3 @@
-
 public class MiGong { 
 
 	public static void main(String[] args) {
