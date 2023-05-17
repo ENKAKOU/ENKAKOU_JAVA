@@ -1,27 +1,17 @@
-
 public class ArrayReverse02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//¶¨ÒåÊı×é
 		int[] arr = {11, 22, 33, 44, 55, 66};
-		//Ê¹ÓÃÄæĞò¸³Öµ·½Ê½ 
-		//ÀÏº«Ë¼Â·
-		//1. ÏÈ´´½¨Ò»¸öĞÂµÄÊı×é arr2 ,´óĞ¡ arr.length
-		//2. ÄæĞò±éÀú arr ,½« Ã¿¸öÔªËØ¿½±´µ½ arr2µÄÔªËØÖĞ(Ë³Ğò¿½±´)
-		//3. ½¨ÒéÔö¼ÓÒ»¸öÑ­»·±äÁ¿ j -> 0 -> 5
 		int[] arr2 = new int[arr.length];
-		//ÄæĞò±éÀú arr
+		
 		for(int i = arr.length - 1, j = 0; i >= 0; i--, j++) {
 			arr2[j] = arr[i];
 		}
-		//4. µ±forÑ­»·½áÊø£¬arr2¾ÍÊÇÒ»¸öÄæĞòµÄÊı×é {66, 55, 44,33, 22, 11} 
-		//5. ÈÃ arr Ö¸Ïò arr2Êı¾İ¿Õ¼ä, ´ËÊ± arrÔ­À´µÄÊı¾İ¿Õ¼ä¾ÍÃ»ÓĞ±äÁ¿ÒıÓÃ
-		//   »á±»µ±×öÀ¬»ø£¬Ïú»Ù
+		
 		arr = arr2;
-		System.out.println("====arrµÄÔªËØÇé¿ö=====");
-		//6. Êä³ö arr ¿´¿´
+		System.out.println("====arrçš„å…ƒç´ æƒ…å†µ=====");
+		
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + "\t");
 		}
