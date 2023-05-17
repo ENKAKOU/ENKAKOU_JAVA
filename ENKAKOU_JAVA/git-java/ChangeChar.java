@@ -1,25 +1,14 @@
-//ÑİÊ¾×ªÒå×Ö·ûµÄÊ¹ÓÃ
 public class ChangeChar {
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		
-		//\t  £ºÒ»¸öÖÆ±íÎ»£¬ÊµÏÖ¶ÔÆëµÄ¹¦ÄÜ
-		System.out.println("±±¾©\tÌì½ò\tÉÏº£");
-		// \n  £º»»ĞĞ·û
+	
+		System.out.println("åŒ—äº¬\tå¤©æ´¥\tä¸Šæµ·");
+	
 		System.out.println("jack\nsmith\nmary");
-		// \\  £ºÒ»¸ö\  \\
 		System.out.println("C:\\Windows\\System32\\cmd.exe");
-		// \"  :Ò»¸ö"
-		System.out.println("ÀÏº«Ëµ:\"ÒªºÃºÃÑ§Ï°java,ÓĞÇ°Í¾\"");
-		// \'  £ºÒ»¸ö'
-		System.out.println("ÀÏº«Ëµ:\'ÒªºÃºÃÑ§Ï°java,ÓĞÇ°Í¾\'");
-		
-		// \r  :Ò»¸ö»Ø³µ  System.out.println("º«Ë³Æ½½ÌÓı\r±±¾©");
-		// ½â¶Á
-		// 1. Êä³ö  º«Ë³Æ½½ÌÓı
-		// 2. \r±íÊ¾»Ø³µ 
-		System.out.println("º«Ë³Æ½½ÌÓı\r±±¾©"); // ±±¾©Æ½½ÌÓı
+		System.out.println("è€éŸ©è¯´:\"è¦å¥½å¥½å­¦ä¹ java,æœ‰å‰é€”\"");
+		System.out.println("è€éŸ©è¯´:\'è¦å¥½å¥½å­¦ä¹ java,æœ‰å‰é€”\'");
+		System.out.println("éŸ©é¡ºå¹³æ•™è‚²\råŒ—äº¬"); 
 	}
 
 }
