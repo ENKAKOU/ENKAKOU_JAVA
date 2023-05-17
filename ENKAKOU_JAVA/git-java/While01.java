@@ -1,18 +1,12 @@
-//whileÑ­»·µÄ°¸Àı
-//
 public class While01 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//Êä³ö10¾ä ÄãºÃ,º«Ë³Æ½½ÌÓı
-		
-		int i = 1; //Ñ­»·±äÁ¿³õÊ¼»¯
-		while( i <= 10 ) {//Ñ­»·Ìõ¼ş
-			System.out.println("ÄãºÃ£¬º«Ë³Æ½½ÌÓı" + i);//Ö´ĞĞÓï¾ä
-			i++;//Ñ­»·±äÁ¿µü´ú
-		}
+		int i = 1; 
+		while( i <= 10 ) {
+			System.out.println("ä½ å¥½ï¼ŒéŸ©é¡ºå¹³æ•™è‚²" + i);
+			i++;
 
-		System.out.println("ÍË³öwhile £¬¼ÌĞø.." + i); // 11
+		System.out.println("é€€å‡ºwhile ï¼Œç»§ç»­.." + i);
 	}
 }
