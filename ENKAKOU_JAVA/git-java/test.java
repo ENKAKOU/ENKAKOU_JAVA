@@ -1,23 +1,24 @@
 public class test {
+    
     public static void main(String[] args) {
         char grade = 'B';
 
         switch(grade)
         {
             case 'A' :
-                System.out.println("ÓÅĞã");
+                System.out.println("ä¼˜ç§€");
                 break;
             case 'B' :
             case 'C' :
-                System.out.println("Á¼ºÃ");
+                System.out.println("è‰¯å¥½");
                 break;
             case 'D':
-                System.out.println("¼°¸ñ");
+                System.out.println("åŠæ ¼");
                 break;
             default:
-                System.out.println("Î´Öª³É¼¨");
+                System.out.println("æœªçŸ¥æˆç»©");
         }
-        System.out.println("µÈ¼¶ÊÇ" + grade);
+        System.out.println("ç­‰çº§æ˜¯" + grade);
        
         
         int a = 10;
