@@ -15,7 +15,7 @@ class A{
 		System.out.println("print()方法被调用 n=" + n);
 	}
 	
-	public void sayOk() {  //sayok调用 print（直接调用即可）
+	public void sayOk() {
 		print(10);
 		System.out.println("继续执行sayOk（）");
 		
