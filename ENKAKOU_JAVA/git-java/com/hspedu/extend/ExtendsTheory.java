@@ -3,10 +3,10 @@ package com.hspedu.extend;
 public class ExtendsTheory {
     public static void main(String[] args) {
         Son son = new Son();
-        System.out.println(son.name);//返回就是大头儿子
-//      System.out.println(son.age);//返回的就是 39
-//      System.out.println(son.getAge());//返回的就是 39
-        System.out.println(son.hobby);//返回的就是旅游
+        System.out.println(son.name);
+//      System.out.println(son.age);
+//      System.out.println(son.getAge());
+        System.out.println(son.hobby);
     }
 }
 
