@@ -1,21 +1,17 @@
-
 public class MethodExercise02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 		
 		Person p = new Person();
 		p.name = "milan";
 		p.age = 100;
-		//´´½¨tools
+		
 		MyTools tools = new MyTools();
 		Person p2 = tools.copyPerson(p);
-
-		//µ½´Ë p ºÍ p2ÊÇPerson¶ÔÏó£¬µ«ÊÇÊÇÁ½¸ö¶ÀÁ¢µÄ¶ÔÏó£¬ÊôĞÔÏàÍ¬
-		System.out.println("pµÄÊôĞÔ age=" + p.age  + " Ãû×Ö=" + p.name);
-		System.out.println("p2µÄÊôĞÔ age=" + p2.age  + " Ãû×Ö=" + p2.name);
-		//ÕâÀïÀÏÊ¦ÌáÊ¾£º ¿ÉÒÔÍ¬ ¶ÔÏó±È½Ï¿´¿´ÊÇ·ñÎªÍ¬Ò»¸ö¶ÔÏó
-		System.out.println(p == p2);//false
+		
+		System.out.println("pçš„å±æ€§ age=" + p.age  + " åå­—=" + p.name);
+		System.out.println("p2çš„å±æ€§ age=" + p2.age  + " åå­—=" + p2.name);
+		System.out.println(p == p2);
 		
 
 	}
@@ -27,20 +23,12 @@ class Person {
 }
 
 class MyTools {
-	//±àĞ´Ò»¸ö·½·¨copyPerson£¬¿ÉÒÔ¸´ÖÆÒ»¸öPerson¶ÔÏó£¬·µ»Ø¸´ÖÆµÄ¶ÔÏó¡£¿ËÂ¡¶ÔÏó£¬ 
-	//×¢ÒâÒªÇóµÃµ½ĞÂ¶ÔÏóºÍÔ­À´µÄ¶ÔÏóÊÇÁ½¸ö¶ÀÁ¢µÄ¶ÔÏó£¬Ö»ÊÇËûÃÇµÄÊôĞÔÏàÍ¬
-	//
-	//±àĞ´·½·¨µÄË¼Â·
-	//1. ·½·¨µÄ·µ»ØÀàĞÍ Person
-	//2. ·½·¨µÄÃû×Ö copyPerson
-	//3. ·½·¨µÄĞÎ²Î (Person p)
-	//4. ·½·¨Ìå, ´´½¨Ò»¸öĞÂ¶ÔÏó£¬²¢¸´ÖÆÊôĞÔ£¬·µ»Ø¼´¿É
-	
+
 	public Person copyPerson(Person p) {
-		//´´½¨Ò»¸öĞÂµÄ¶ÔÏó
+		
 		Person p2 = new Person();
-		p2.name = p.name; //°ÑÔ­À´¶ÔÏóµÄÃû×Ö¸³¸øp2.name
-		p2.age = p.age; //°ÑÔ­À´¶ÔÏóµÄÄêÁä¸³¸øp2.age
+		p2.name = p.name; 
+		p2.age = p.age; 
 		return p2;
 	}
 }
