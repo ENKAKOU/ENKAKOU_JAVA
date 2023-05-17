@@ -1,27 +1,19 @@
-
 public class BreakExercise { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
-		//1-100ÒÔÄÚµÄÊıÇóºÍ£¬Çó³ö µ±ºÍ µÚÒ»´Î´óÓÚ20µÄµ±Ç°Êı ¡¾for + break¡¿
+		
+		int sum = 0; 
 
-		//Ë¼Â··ÖÎö
-		//1. Ñ­»· 1-100, ÇóºÍ sum  
-		//2. µ± sum > 20 Ê±£¬¼ÇÂ¼ÏÂµ±Ç°Êı£¬È»ºóbreak
-		//3. ÔÚforÑ­»·Íâ²¿£¬¶¨Òå±äÁ¿ n , °Ñµ±Ç°i ¸³¸ø n
-		int sum = 0; //ÀÛ»ıºÍ
-
-		//×¢Òâi µÄ×÷ÓÃ·¶Î§ÔÚ for{}
 		int n = 0;
 		for(int i = 1; i <= 100; i++) {
-			sum += i;//ÀÛ»ı
+			sum += i;
 			if(sum > 20) {
-				System.out.println("ºÍ>20Ê±ºò µ±Ç°Êıi=" + i);
+				System.out.println("å’Œ>20æ—¶å€™ å½“å‰æ•°i=" + i);
 				n = i;
 				break;
 			} 
 		}
 
-		System.out.println("µ±Ç°Êı=" + n);
+		System.out.println("å½“å‰æ•°=" + n);
 	}
 }
