@@ -1,4 +1,5 @@
 public class MethodExercise02_1{
+	
 	public static void main(String[] args) {
 		
 	Person009 p = new Person009();
