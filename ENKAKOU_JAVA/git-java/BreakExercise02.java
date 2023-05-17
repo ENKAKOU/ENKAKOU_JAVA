@@ -1,39 +1,25 @@
 import java.util.Scanner;
 public class BreakExercise02 { 
 
-	//±àĞ´Ò»¸ömain·½·¨
 	public static void main(String[] args) {
 
-		//ÊµÏÖµÇÂ¼ÑéÖ¤£¬ÓĞ3´Î»ú»á£¬Èç¹ûÓÃ»§ÃûÎª"¶¡Õæ" ,ÃÜÂë"666"ÌáÊ¾µÇÂ¼³É¹¦£¬
-		//·ñÔòÌáÊ¾»¹ÓĞ¼¸´Î»ú»á£¬ÇëÊ¹ÓÃfor+breakÍê³É
-		//
-		// Ë¼Â··ÖÎö
-		// 1. ´´½¨Scanner¶ÔÏó½ÓÊÕÓÃ»§ÊäÈë  
-		// 2. ¶¨Òå String name ; String passwd; ±£´æÓÃ»§ÃûºÍÃÜÂë
-		// 3. ×î¶àÑ­»·3´Î[µÇÂ¼3´Î]£¬Èç¹û Âú×ãÌõ¼ş¾ÍÌáÇ°ÍË³ö
-		// 4. ¶¨ÒåÒ»°ã±äÁ¿ int chance ¼ÇÂ¼»¹ÓĞ¼¸´ÎµÇÂ¼»ú»á
-		// 
-		// ´úÂëÊµÏÖ
-		
 		Scanner myScanner  = new Scanner(System.in);
 		String name = "";
 		String passwd = "";
-		int chance = 3; //µÇÂ¼Ò»´Î £¬¾Í¼õÉÙÒ»´Î
-		for( int i = 1; i <= 3; i++) {//3´ÎµÇÂ¼»ú»á
-			System.out.println("ÇëÊäÈëÃû×Ö");
+		int chance = 3; 
+		for( int i = 1; i <= 3; i++) {
+			System.out.println("è¯·è¾“å…¥åå­—");
 			name = myScanner.next();
-			System.out.println("ÇëÊäÈëÃÜÂë");
+			System.out.println("è¯·è¾“å…¥å¯†ç ");
 			passwd = myScanner.next();
-			//±È½ÏÊäÈëµÄÃû×ÖºÍÃÜÂëÊÇ·ñÕıÈ·
-			//²¹³äËµÃ÷×Ö·û´® µÄÄÚÈİ ±È½Ï Ê¹ÓÃµÄ ·½·¨ equals
-			if("¶¡Õæ".equals(name) && "666".equals(passwd)) {
-				System.out.println("¹§Ï²Äã£¬µÇÂ¼³É¹¦~");
+			
+			if("ä¸çœŸ".equals(name) && "666".equals(passwd)) {
+				System.out.println("æ­å–œä½ ï¼Œç™»å½•æˆåŠŸ~");
 				break;
 			}
 
-			//µÇÂ¼µÄ»ú»á¾Í¼õÉÙÒ»´Î
 			chance--;
-			System.out.println("Äã»¹ÓĞ" + chance + "´ÎµÇÂ¼»ú»á");
+			System.out.println("ä½ è¿˜æœ‰" + chance + "æ¬¡ç™»å½•æœºä¼š");
 
 		}
 
