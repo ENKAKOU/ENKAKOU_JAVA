@@ -1,6 +1,6 @@
 package com.hspedu.homework.homework5;
 
-public class Scientist extends Employee{ //子类
+public class Scientist extends Employee{
     private double bonus;
     public Scientist(String name, double sal) {
         super(name, sal);

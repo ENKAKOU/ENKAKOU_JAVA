@@ -1,6 +1,6 @@
 package com.hspedu.homework;
 
-public class BankAccount {//父类
+public class BankAccount {
     private double balance ;//余额
     public BankAccount(double initialBalance) {
         this.balance = initialBalance;

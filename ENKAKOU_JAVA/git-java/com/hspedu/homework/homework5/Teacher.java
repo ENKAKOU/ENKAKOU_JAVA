@@ -8,7 +8,6 @@ public class Teacher extends Employee{
     public Teacher(String name, double sal) {
         super(name, sal);
     }
-    //方法-重写printSal
 
     @Override
     public void printSal() {
