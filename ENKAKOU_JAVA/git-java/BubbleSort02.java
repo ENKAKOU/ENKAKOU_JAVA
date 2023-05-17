@@ -1,20 +1,18 @@
 public class BubbleSort02 {
 	
     public static void main(String[] args){
-        //ÎÒÃÇ½«Îå¸öÎŞĞò£º24,69,80,57,13 Ê¹ÓÃÃ°ÅİÅÅĞò·¨½«ÆäÅÅ³ÉÒ»¸ö´ÓĞ¡µ½´óµÄÓĞĞòÊıÁĞ
-
-          //·½·¨¶ş£º»¯·±Îª¼ò£¨ÏÈËÀºó»î£©
+       
         int [] arr = {24, 69, 80, 57, 13};
         int temp = 0;
-        for( int i = 0; i < arr.length - 1; i++) {              //Íâ²ãÑ­»·ÊÇ 4 ´Î
-            for( int j = 0; j < arr.length - 1 - i; j++) {     //4 ´Î±È½Ï-3 ´Î-2
+        for( int i = 0; i < arr.length - 1; i++) {            
+            for( int j = 0; j < arr.length - 1 - i; j++) { 
             if(arr[j] > arr[j + 1]){
                     temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
             }
         }
-            System.out.println("\n == µÚ" + (i + 1) + "ÂÖ ==");
+            System.out.println("\n == ç¬¬" + (i + 1) + "è½® ==");
             for(int j = 0; j < arr.length; j++) {
                     System.out.print(arr[j] + "\t");
                 }
