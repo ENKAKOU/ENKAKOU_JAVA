@@ -1,4 +1,4 @@
-package QQ.QQclient.view;
+package QQClient.QQclient.view;
 
 import com.hspedu.qqclient.service.FileClientService;
 import com.hspedu.qqclient.service.MessageClientService;
