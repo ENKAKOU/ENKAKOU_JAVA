@@ -1,4 +1,4 @@
-package QQcommon;
+package QQ.QQcommon;
 
 public class MessageType {
 

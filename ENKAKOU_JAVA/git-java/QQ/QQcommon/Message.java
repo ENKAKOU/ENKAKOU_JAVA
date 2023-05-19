@@ -1,6 +1,4 @@
-package QQcommon;
-
-import java.io.StringReader;
+package QQ.QQcommon;
 
 public class Message {
 
