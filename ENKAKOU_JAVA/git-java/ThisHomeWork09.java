@@ -2,7 +2,7 @@ public class ThisHomeWork09{
 	
 	public static void main(String[] args){
 		Circle2 c = new Circle2();
-		PassObject po = new PassObject();
+		PassObject01 po = new PassObject01();
 		po.printAreas(c, 5);
 		
 	}
@@ -24,7 +24,7 @@ class Circle2{
 		this.radius = radius;
 	}
 }
-class PassObject {
+class PassObject01 {
 	public void printAreas(Circle2 c, int times) {
 		System.out.println("radius\tarea");
 		for(int i = 1; i <= times; i++) {

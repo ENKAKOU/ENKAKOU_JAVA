@@ -2,24 +2,24 @@ public class TestPerson {
 	
 	public static void main(String[] args) {
 
-		Person p1 = new Person("mary", 20);
-		Person p2 = new Person("mary", 20);
+		Person003 p11 = new Person003("mary", 20);
+		Person003 p22 = new Person003("mary", 20);
 
-		System.out.println("p1和p2比较的结果=" + p1.compareTo(p2));
+		System.out.println("p11和p22比较的结果=" + p11.compareTo(p22));
 	}
 }
 
-class Person {
+class Person003 {
 	String name;
 	int age;
 	
-	public Person(String name, int age) {
+	public Person003(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
 	
 	//compareTo比较方法
-	public boolean compareTo(Person p) {
+	public boolean compareTo(Person003 p) {
 		
 		// if(this.name.equals(p.name) && this.age == p.age) {
 		// 	return true;

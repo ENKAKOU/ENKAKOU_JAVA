@@ -2,19 +2,19 @@ public class Homework13 {
 	
 	public static void main(String[] args) {
 
-		Circle c = new Circle();
+		Circle02 c2 = new Circle02();
 		PassObject po = new PassObject();
-		po.printAreas(c, 5);
+		po.printAreas(c2, 5);
 	}
 }
 
 
-class Circle {
+class Circle02 {
 	double radius;
-	public Circle() {
+	public Circle02() {
 
 	}
-	public Circle(double radius) {
+	public Circle02(double radius) {
 		this.radius = radius;
 	}
 	public double findArea() {
@@ -26,11 +26,11 @@ class Circle {
 	}
 }
 class PassObject {
-	public void printAreas(Circle c, int times) {
+	public void printAreas(Circle02 c2, int times) {
 		System.out.println("radius\tarea");
 		for(int i = 1; i <= times; i++) {
-			c.setRadius(i) ;
-			System.out.println((double)i + "\t" + c.findArea());
+			c2.setRadius(i) ;
+			System.out.println((double)i + "\t" + c2.findArea());
 		}
 	}
 }

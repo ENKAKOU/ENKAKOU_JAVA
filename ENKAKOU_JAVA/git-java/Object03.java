@@ -2,17 +2,17 @@ public class Object03 {
 
 	public static void main(String[] args) {
 
-		Person p1=new Person();
+		Person005 p1=new Person005();
 		p1.age=10;
 		p1.name="小明";
-		Person p2=p1; 
+		Person005 p2=p1;
 		System.out.println(p2.age); // 10
 		
 	
 	}
 }
 
-class Person {
+class Person005 {
 	String name;
 	int age; 
 }

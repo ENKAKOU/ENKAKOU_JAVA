@@ -2,31 +2,31 @@ public class MethodExercise02 {
 
 	public static void main(String[] args) {
 		
-		Person p = new Person();
-		p.name = "milan";
-		p.age = 100;
+		Person006 p2 = new Person006();
+		p2.name = "milan";
+		p2.age = 100;
 		
-		MyTools tools = new MyTools();
-		Person p2 = tools.copyPerson(p);
+		MyTools006 tools = new MyTools006();
+		Person006 p4 = tools.copyPerson(p2);
 		
-		System.out.println("p的属性 age=" + p.age  + " 名字=" + p.name);
-		System.out.println("p2的属性 age=" + p2.age  + " 名字=" + p2.name);
-		System.out.println(p == p2);
+		System.out.println("p的属性 age=" + p4.age  + " 名字=" + p2.name);
+		System.out.println("p2的属性 age=" + p4.age  + " 名字=" + p4.name);
+		System.out.println(p2 == p4);
 		
 
 	}
 }
 
-class Person {
+class Person006 {
 	String name;
 	int age;
 }
 
-class MyTools {
+class MyTools006 {
 
-	public Person copyPerson(Person p) {
+	public Person006 copyPerson(Person006 p) {
 		
-		Person p2 = new Person();
+		Person006 p2 = new Person006();
 		p2.name = p.name; 
 		p2.age = p.age; 
 		return p2;

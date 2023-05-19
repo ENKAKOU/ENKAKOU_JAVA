@@ -1,31 +1,31 @@
 public class ConstructorDetail { 
 	
 	public static void main(String[] args) {
-		Person p1 = new Person("king", 40);
-		Person p2 = new Person("tom");
+		Person02 p1 = new Person02("king", 40);
+		Person02 p2 = new Person02("tom");
 
-		Dog dog1 = new Dog();
-
-	}
-}
-class Dog {
-	public Dog(String dName) {
-	}
-	Dog() {
+		Dog02 dog1 = new Dog02();
 
 	}
 }
+class Dog02 {
+	public Dog02(String dName) {
+	}
+	Dog02() {
 
-class Person {
+	}
+}
+
+class Person02 {
 	String name;
 	int age;
 
-	public Person(String pName, int pAge) {
+	public Person02(String pName, int pAge) {
 		name = pName;
 		age = pAge;
 	}
 
-	public Person(String pName) {
+	public Person02(String pName) {
 		name = pName;
 	}
 }
