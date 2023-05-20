@@ -1,7 +1,11 @@
-package QQClient.qqclient.service;
+package com.hspedu.qqclient.service;
+
+import com.hspedu.qqcommon.Message;
+import com.hspedu.qqcommon.MessageType;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.util.Date;
 
 public class MessageClientService {
     public void sendMessageToAll(String content, String senderId) {

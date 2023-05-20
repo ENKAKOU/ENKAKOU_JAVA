@@ -1,8 +1,11 @@
-package QQClient.qqclient.service;
+package com.hspedu.qqclient.service;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import com.hspedu.qqcommon.Message;
+import com.hspedu.qqcommon.MessageType;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.Socket;
 

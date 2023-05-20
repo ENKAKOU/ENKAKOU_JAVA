@@ -1,4 +1,4 @@
-package QQClient.qqclient.service;
+package com.hspedu.qqclient.service;
 
 import java.io.FileInputStream;
 import java.io.IOException;
