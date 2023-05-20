@@ -8,11 +8,11 @@ import com.hspedu.qqclient.utils.Utility;
 
 public class QQView {
 
-    private boolean loop = true;       //控制是否显示菜单
-    private String key = "";           // 接收用户的键盘输入
-    private UserClientService userClientService = new UserClientService();            //对象是用于登录服务/注册用户
-    private MessageClientService messageClientService = new MessageClientService();   //对象用户私聊/群聊.
-    private FileClientService fileClientService = new FileClientService();            //该对象用户传输文件
+    private boolean loop = true;
+    private String key = "";
+    private UserClientService userClientService = new UserClientService();
+    private MessageClientService messageClientService = new MessageClientService();
+    private FileClientService fileClientService = new FileClientService();
 
 
     public static void main(String[] args) {
