@@ -5,9 +5,8 @@ import com.hspedu.abstract_.AA;
 public class InnerClassExercise01 {
 
     public static void main(String[] args) {
-
         f1(new IL() {
-            @Override
+            
             public void show() {
                 System.out.println("这是一副名画~~...");
             }
