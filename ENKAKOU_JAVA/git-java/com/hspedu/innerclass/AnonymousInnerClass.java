@@ -13,15 +13,6 @@ class Outer04 {
 
     public void method() {
 
-        /*
-            class Outer04$1 implements IA {
-                @Override
-                public void cry() {
-                    System.out.println("老虎叫唤...");
-                }
-            }
-         */
-
         IA tiger = new IA() {
             @Override
             public void cry() {
@@ -36,31 +27,22 @@ class Outer04 {
 //        IA tiger = new Tiger();
 //        tiger.cry();
 
-        /*
-            class Outer04$2 extends Father{
-                @Override
-                public void test() {
-                    System.out.println("匿名内部类重写了test方法");
-                }
-            }
-         */
-
         Father father = new Father("jack"){
 
-            @Override
             public void test() {
                 System.out.println("匿名内部类重写了test方法");
             }
         };
+        
         System.out.println("father对象的运行类型=" + father.getClass());
         father.test();
-
+       
         Animal animal = new Animal(){
-            @Override
             void eat() {
                 System.out.println("小狗吃骨头...");
             }
         };
+        
         animal.eat();
     }
 }
@@ -71,14 +53,12 @@ interface IA {
 
 //class Tiger implements IA {
 
-//    @Override
 //    public void cry() {
 //        System.out.println("老虎叫唤...");
 //    }
 //}
 
 //class Dog implements  IA{
-//    @Override
 //    public void cry() {
 //        System.out.println("小狗汪汪...");
 //    }
