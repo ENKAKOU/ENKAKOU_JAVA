@@ -1,10 +1,9 @@
-package QQClient.QQclient.view;
+package com.hspedu.qqclient.view;
 
 import com.hspedu.qqclient.service.FileClientService;
 import com.hspedu.qqclient.service.MessageClientService;
 import com.hspedu.qqclient.service.UserClientService;
 import com.hspedu.qqclient.utils.Utility;
-
 
 public class QQView {
 
@@ -13,8 +12,6 @@ public class QQView {
     private UserClientService userClientService = new UserClientService();
     private MessageClientService messageClientService = new MessageClientService();
     private FileClientService fileClientService = new FileClientService();
-
-
     public static void main(String[] args) {
         new QQView().mainMenu();
         System.out.println("客户端退出系统.....");
@@ -40,7 +37,6 @@ public class QQView {
                     if (userClientService.checkUser(userId, pwd)) {
                         System.out.println("===========欢迎 (用户 " + userId + " 登录成功) ===========");
 
-                        //进入到二级菜单
                         while (loop) {
                             System.out.println("\n=========网络通信系统二级菜单(用户 " + userId + " )=======");
                             System.out.println("\t\t 1 显示在线用户列表");
@@ -50,9 +46,9 @@ public class QQView {
                             System.out.println("\t\t 9 退出系统");
                             System.out.print("请输入你的选择: ");
                             key = Utility.readString(1);
+
                             switch (key) {
                                 case "1":
-
                                     userClientService.onlineFriendList();
                                     break;
 
@@ -67,7 +63,6 @@ public class QQView {
                                     String getterId = Utility.readString(50);
                                     System.out.print("请输入想说的话: ");
                                     String content = Utility.readString(100);
-
                                     messageClientService.sendMessageToOne(content, userId, getterId);
                                     break;
 
@@ -82,7 +77,6 @@ public class QQView {
                                     break;
 
                                 case "9":
-
                                     userClientService.logout();
                                     loop = false;
                                     break;
@@ -94,9 +88,9 @@ public class QQView {
                     }
                     break;
 
-                case "9":
-                    loop = false;
-                    break;
+                      case "9":
+                          loop = false;
+                          break;
             }
 
         }

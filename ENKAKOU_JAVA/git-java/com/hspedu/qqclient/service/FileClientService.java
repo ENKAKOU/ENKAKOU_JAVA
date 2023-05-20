@@ -1,13 +1,13 @@
 package com.hspedu.qqclient.service;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import com.hspedu.qqcommon.Message;
+import com.hspedu.qqcommon.MessageType;
+
+import java.io.*;
 
 public class FileClientService {
-    public void sendFileToOne(String src, String dest, String senderId, String getterId) {
 
-        //读取src文件  -->  message
+    public void sendFileToOne(String src, String dest, String senderId, String getterId) {
         Message message = new Message();
         message.setMesType(MessageType.MESSAGE_FILE_MES);
         message.setSender(senderId);
@@ -25,6 +25,7 @@ public class FileClientService {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            //close
             if(fileInputStream != null) {
                 try {
                     fileInputStream.close();

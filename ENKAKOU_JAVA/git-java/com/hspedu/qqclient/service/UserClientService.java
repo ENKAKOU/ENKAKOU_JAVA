@@ -11,8 +11,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class UserClientService {
-
-    private QQ.QQcommon.User u = new QQ.QQcommon.User();
+    private User u = new User();
     private Socket socket;
 
     public boolean checkUser(String userId, String pwd) {
@@ -32,9 +31,7 @@ public class UserClientService {
 
                 ClientConnectServerThread clientConnectServerThread =
                         new ClientConnectServerThread(socket);
-                //客户端的线程
                 clientConnectServerThread.start();
-                //客户端的扩展，将线程放入集合管理
                 ManageClientConnectServerThread.addClientConnectServerThread(userId, clientConnectServerThread);
                 b = true;
 
@@ -51,19 +48,16 @@ public class UserClientService {
     }
 
     public void onlineFriendList() {
-
         Message message = new Message();
         message.setMesType(MessageType.MESSAGE_GET_ONLINE_FRIEND);
         message.setSender(u.getUserId());
 
         try {
-
             ClientConnectServerThread clientConnectServerThread =
                     ManageClientConnectServerThread.getClientConnectServerThread(u.getUserId());
-
             Socket socket = clientConnectServerThread.getSocket();
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-            oos.writeObject(message); //发送Message对象，向服务端要求在线用户列表
+            oos.writeObject(message);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -74,14 +68,15 @@ public class UserClientService {
         Message message = new Message();
         message.setMesType(MessageType.MESSAGE_CLIENT_EXIT);
         message.setSender(u.getUserId());
-        //发送message
+
         try {
             //ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
             ObjectOutputStream oos =
                     new ObjectOutputStream(ManageClientConnectServerThread.getClientConnectServerThread(u.getUserId()).getSocket().getOutputStream());
             oos.writeObject(message);
             System.out.println(u.getUserId() + " 退出系统 ");
-            System.exit(0);    //END
+            System.exit(0);
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -8,8 +8,8 @@ import java.io.ObjectOutputStream;
 import java.util.Date;
 
 public class MessageClientService {
+
     public void sendMessageToAll(String content, String senderId) {
-        //构建message
         Message message = new Message();
         message.setMesType(MessageType.MESSAGE_TO_ALL_MES);
         message.setSender(senderId);
@@ -26,11 +26,6 @@ public class MessageClientService {
         }
     }
 
-    /**
-     * @param content  内容
-     * @param senderId 发送用户id
-     * @param getterId 接收用户id
-     */
     public void sendMessageToOne(String content, String senderId, String getterId) {
         //构建message
         Message message = new Message();
@@ -38,8 +33,9 @@ public class MessageClientService {
         message.setSender(senderId);
         message.setGetter(getterId);
         message.setContent(content);
-        message.setSendTime(new Date().toString());    //发送时间设置到message对象
+        message.setSendTime(new Date().toString());
         System.out.println(senderId + " 对 " + getterId + " 说 " + content);
+        //发送给服务端
 
         try {
             ObjectOutputStream oos =
@@ -51,5 +47,3 @@ public class MessageClientService {
 
     }
 }
-
-
