@@ -1,19 +1,19 @@
-package QQ.QQcommon;
+package com.hspedu.qqcommon;
 
-public class Message {
+import java.io.Serializable;
 
+public class Message implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String sender;    //发送者
-    private String getter;    //接收者
-    private String content;   //消息内容
-    private String sendTime;  //发送时间
-    private String mesType;   //消息类型
+    private String sender;  //发送者
+    private String getter;  //接收者
+    private String content; //消息内容
+    private String sendTime;//发送时间
+    private String mesType; //消息类型
 
-    //进行扩展 和文件相关的成员
     private byte[] fileBytes;
     private int fileLen = 0;
-    private String dest;     //将文件传输到哪里
-    private String src;      //源文件路径
+    private String dest;
+    private String src;
 
     public byte[] getFileBytes() {
         return fileBytes;
@@ -41,6 +41,10 @@ public class Message {
 
     public String getSrc() {
         return src;
+    }
+
+    public void setSrc(String src) {
+        this.src = src;
     }
 
     public String getMesType() {
@@ -82,5 +86,4 @@ public class Message {
     public void setSendTime(String sendTime) {
         this.sendTime = sendTime;
     }
-
 }
