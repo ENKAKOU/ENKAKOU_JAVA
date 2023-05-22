@@ -1,18 +1,16 @@
 package com.hspedu.try_;
 
-import com.hspedu.homework.Person009;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 public class TryCatchDetail02 {
 
     public static void main(String[] args) {
+
         try {
-            Person010 person = new Person010();
-            //person009 = null;
-            System.out.println(person010.getName());//NullPointerException
+            Person person = new Person();
+            //person = null;
+            System.out.println(person.getName());
             int n1 = 10;
             int n2 = 0;
-            int res = n1 / n2;//ArithmeticException
+            int res = n1 / n2;
         } catch (NullPointerException e) {
             System.out.println("空指针异常=" + e.getMessage());
         } catch (ArithmeticException e) {
@@ -26,11 +24,10 @@ public class TryCatchDetail02 {
     }
 }
 
-class Person010 {
+class Person {
     private String name = "jack";
 
     public String getName() {
         return name;
     }
 }
-
