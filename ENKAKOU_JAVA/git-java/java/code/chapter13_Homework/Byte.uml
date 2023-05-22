@@ -4,8 +4,8 @@
   <OriginalElement>java.lang.Byte</OriginalElement>
   <nodes>
     <node x="542.0" y="280.0">java.lang.Float</node>
-    <node x="248.0" y="280.0">java.lang.Double</node>
     <node x="817.0" y="364.0">java.lang.Long</node>
+    <node x="248.0" y="280.0">java.lang.Double</node>
     <node x="0.0" y="364.0">java.lang.Short</node>
     <node x="655.25" y="0.0">java.lang.Object</node>
     <node x="873.0833333333334" y="110.0">java.lang.Comparable</node>
@@ -22,25 +22,25 @@
       <point x="529.75" y="220.0" />
       <point x="-95.0" y="37.5" />
     </edge>
+    <edge source="java.lang.Float" target="java.lang.Number">
+      <point x="-63.75" y="-205.5" />
+      <point x="-19.0" y="37.5" />
+    </edge>
     <edge source="java.lang.Number" target="java.lang.Object">
       <point x="57.0" y="-37.5" />
       <point x="681.75" y="70.0" />
       <point x="726.75" y="70.0" />
       <point x="0.0" y="22.5" />
     </edge>
-    <edge source="java.lang.Float" target="java.lang.Number">
-      <point x="-63.75" y="-205.5" />
-      <point x="-19.0" y="37.5" />
+    <edge source="java.lang.Long" target="java.lang.Comparable">
+      <point x="57.0" y="-121.5" />
+      <point x="16.41666666666663" y="22.5" />
     </edge>
     <edge source="java.lang.Long" target="java.lang.Number">
       <point x="-57.0" y="-121.5" />
       <point x="874.0" y="230.0" />
       <point x="643.75" y="230.0" />
       <point x="19.0" y="37.5" />
-    </edge>
-    <edge source="java.lang.Long" target="java.lang.Comparable">
-      <point x="57.0" y="-121.5" />
-      <point x="16.41666666666663" y="22.5" />
     </edge>
     <edge source="java.lang.Short" target="java.lang.Comparable">
       <point x="57.0" y="-121.5" />
@@ -54,11 +54,11 @@
       <point x="567.75" y="230.0" />
       <point x="-57.0" y="37.5" />
     </edge>
-    <edge source="java.lang.Double" target="java.lang.Comparable">
-      <point x="68.5" y="-205.5" />
-      <point x="453.5" y="250.0" />
-      <point x="922.3333333333334" y="250.0" />
-      <point x="-49.25" y="22.5" />
+    <edge source="java.lang.Number" target="java.io.Serializable">
+      <point x="-57.0" y="-37.5" />
+      <point x="567.75" y="70.0" />
+      <point x="522.75" y="70.0" />
+      <point x="0.0" y="22.5" />
     </edge>
     <edge source="java.lang.Float" target="java.lang.Comparable">
       <point x="63.75" y="-205.5" />
@@ -66,11 +66,11 @@
       <point x="955.1666666666667" y="260.0" />
       <point x="-16.41666666666663" y="22.5" />
     </edge>
-    <edge source="java.lang.Number" target="java.io.Serializable">
-      <point x="-57.0" y="-37.5" />
-      <point x="567.75" y="70.0" />
-      <point x="522.75" y="70.0" />
-      <point x="0.0" y="22.5" />
+    <edge source="java.lang.Double" target="java.lang.Comparable">
+      <point x="68.5" y="-205.5" />
+      <point x="453.5" y="250.0" />
+      <point x="922.3333333333334" y="250.0" />
+      <point x="-49.25" y="22.5" />
     </edge>
     <edge source="java.lang.Byte" target="java.lang.Comparable">
       <point x="57.0" y="-121.5" />
@@ -97,7 +97,7 @@
       <point x="49.25" y="22.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.5119549929676512" x="770.5" y="345.5" />
+  <settings layout="Hierarchic Group" zoom="0.42231075697211157" x="743.0" y="305.5" />
   <SelectedNodes>
     <node>java.lang.Integer</node>
   </SelectedNodes>
