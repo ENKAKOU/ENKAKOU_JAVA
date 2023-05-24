@@ -2,7 +2,7 @@ package houserent.service;
 
 import com.hspedu.houserent.domain.House;
 
-public class HouseService {
+public class   HouseService {
     private House[] houses;
     private int houseNums = 1;
     private int idCounter = 1;
