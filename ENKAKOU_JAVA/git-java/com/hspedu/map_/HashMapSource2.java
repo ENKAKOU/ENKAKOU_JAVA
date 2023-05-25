@@ -17,4 +17,19 @@ public class HashMapSource2 {
 
 class A {
     private int num;
+
+    public A(int num) {
+        this.num = num;
+    }
+
+//    public int hashCode() {
+//        return 100;
+//    }
+
+    public String toString() {
+        return "\nA{" +
+                "num=" + num +
+                '}';
+
+    }
 }
