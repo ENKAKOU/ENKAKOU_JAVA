@@ -34,11 +34,13 @@ public class ThrowsDetail {
     }
 }
 
+
 class Father {
     public void method() throws RuntimeException {
 
     }
 }
+
 
 class Son extends Father {
     public void method() throws  ArithmeticException {
