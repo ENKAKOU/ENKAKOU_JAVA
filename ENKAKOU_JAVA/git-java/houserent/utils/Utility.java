@@ -19,27 +19,15 @@ public class Utility {
         return c;
     }
 
-    /**
-     * @return 一个字符
-     */
     public static char readChar() {
         String str = readKeyBoard(1, false);
         return str.charAt(0);
     }
 
-    /**
-     * @param defaultValue 指定的默认值
-     * @return 默认值或输入的字符
-     */
-
     public static char readChar(char defaultValue) {
         String str = readKeyBoard(1, true);
         return (str.length() == 0) ? defaultValue : str.charAt(0);
     }
-
-    /**
-     * @return 整数
-     */
 
     public static int readInt() {
         int n;
@@ -54,10 +42,6 @@ public class Utility {
         }
         return  n;
     }
-    /**
-     * @param defaultValue 指定的默认值
-     * @return 整数或默认值
-     */
 
     public static int readInt(int defaultValue) {
         int n;
@@ -77,28 +61,15 @@ public class Utility {
         return n;
     }
 
-    /**
-     * @param limit 限制的长度
-     * @return 指定长度的字符串
-     */
     public static String readString(int limit) {
         return readKeyBoard(limit, false);
     }
-
-    /**
-     * @param limit 限制的长度
-     * @param defaultValue 指定的默认值
-     * @return 指定长度的字符串
-     */
 
     public static String readString(int limit, String defaultValue) {
         String str = readKeyBoard(limit, true);
         return str.equals("")? defaultValue : str;
     }
-    /**
-     * 将小的功能，封装到一个方法中.
-     * @return Y或N
-     */
+
     public static char readConfirmSelection() {
         System.out.println("请输入你的选择(Y/N): 请小心选择");
         char c;
@@ -119,10 +90,8 @@ public class Utility {
 
         String line = "";
         //scanner.hasNextLine()  // 判断有没有下一行
-
         while (scanner.hasNextLine()) {
             line = scanner.nextLine();
-
             //line.length=0
             if (line.length() == 0) {
                 if (blankReturn) return line;
