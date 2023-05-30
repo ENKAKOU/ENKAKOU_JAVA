@@ -13,6 +13,7 @@ public class CodeBlock01 {
     }
 }
 
+
 class Movie {
     private String name;
     private double price;
