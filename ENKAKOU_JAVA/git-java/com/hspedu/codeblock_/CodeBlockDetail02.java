@@ -7,6 +7,7 @@ public class CodeBlockDetail02 {
     }
 }
 
+
 class A {
     {
         System.out.println("A 普通代码块01");
