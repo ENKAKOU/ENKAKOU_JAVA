@@ -7,6 +7,7 @@ public class CodeBlockDetail04 {
     }
 }
 
+
 class A02 { //父类
     private static int n1 = getVal01();
 
@@ -35,6 +36,7 @@ class A02 { //父类
     }
 }
 
+
 class C02 {
     private int n1 = 100;
     private static int n2 = 200;
@@ -57,6 +59,7 @@ class C02 {
         m2();
     }
 }
+
 
 class B02 extends A02 {
 
@@ -84,4 +87,5 @@ class B02 extends A02 {
     public B02() {
         System.out.println("B02的构造器");
     }
+    
 }
