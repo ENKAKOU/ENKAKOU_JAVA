@@ -15,6 +15,7 @@ public class CodeBlockDetail01 {
     }
 }
 
+
 class DD {
     public static int n1 = 8888;
     static {
@@ -26,11 +27,13 @@ class DD {
     }
 }
 
+
 class Animal {
     static {
         System.out.println("Animal 的静态代码 1被执行...");
     }
 }
+
 
 class Cat extends Animal {
     public static int n1 = 999;
@@ -39,11 +42,13 @@ class Cat extends Animal {
     }
 }
 
+
 class BB {
     static {
         System.out.println("BB 的静态代码1被执行...");
     }
 }
+
 
 class AA extends BB {
     static {
