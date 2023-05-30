@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class CollectionIterator {
-    @SuppressWarnings({"all"})
+    
     public static void main(String[] args) {
         Collection col = new ArrayList();
 
@@ -27,6 +27,7 @@ public class CollectionIterator {
         }
     }
 
+    
     static class Book {
         private String name;
         private String author;
@@ -62,7 +63,6 @@ public class CollectionIterator {
             this.price = price;
         }
 
-        @Override
         public String toString() {
             return "Book{" +
                     "name='" + name + '\'' +
