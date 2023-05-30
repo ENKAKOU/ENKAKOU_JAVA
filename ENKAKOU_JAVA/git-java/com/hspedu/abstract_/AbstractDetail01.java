@@ -7,6 +7,7 @@ public class AbstractDetail01 {
     }
 }
 
+
 abstract class A {
     public void h1() {
         System.out.println("hi");
