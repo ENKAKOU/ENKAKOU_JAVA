@@ -7,6 +7,7 @@ public class CodeBlockDetail03 {
     }
 }
 
+
 class AAA {
     {
         System.out.println("AAA的普通代码块");
@@ -16,6 +17,7 @@ class AAA {
         System.out.println("AAA() 构造器调用...");
     }
 }
+
 
 class BBB extends AAA {
     {
