@@ -8,5 +8,6 @@ public class Debug02 {
             System.out.println(arr[i]);
         }
         System.out.println("退出for");
+        
     }
 }
