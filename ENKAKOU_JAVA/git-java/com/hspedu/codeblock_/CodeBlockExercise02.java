@@ -3,6 +3,7 @@ package com.hspedu.codeblock_;
 public class CodeBlockExercise02 {
 }
 
+
 class Sample {
     Sample(String s) {
         System.out.println(s);
@@ -12,6 +13,7 @@ class Sample {
         System.out.println("Sample默认构造函数被调用");
     }
 }
+
 
 class Test {
     Sample sam1 = new Sample("sam1 成员初始化");
