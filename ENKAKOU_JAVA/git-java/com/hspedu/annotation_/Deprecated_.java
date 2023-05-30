@@ -9,6 +9,7 @@ public class Deprecated_ {
     }
 }
 
+
 class A {
     public int n1 = 10;
 
