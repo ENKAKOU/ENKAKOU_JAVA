@@ -28,7 +28,6 @@ public class Collections_ {
 
 //        sort(List.Comparator)
         Collections.sort(list, new Comparator() {
-            @Override
             public int compare(Object o1, Object o2) {
                 return ((String) o2).length() - ((String) o1).length();
             }
@@ -45,7 +44,6 @@ public class Collections_ {
 
 //        Object max(Collection，Comparator)
         Object maxObject = Collections.max(list, new Comparator() {
-            @Override
             public int compare(Object o1, Object o2) {
                 return ((String)o1).length() - ((String)o2).length();
             }
