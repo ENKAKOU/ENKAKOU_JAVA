@@ -9,5 +9,6 @@ abstract public class Template {
         job();
         long end = System.currentTimeMillis();
         System.out.println("任务执行时间" + (end - start));
+        
     }
 }
