@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class CollectionFor {
-    @SuppressWarnings({"all"})
+
     public static void main(String[] args) {
         Collection col = new ArrayList();
 
@@ -52,7 +52,6 @@ public class CollectionFor {
             this.price = price;
         }
 
-        @Override
         public String toString() {
             return "Book{" +
                     "name='" + name + '\'' +
