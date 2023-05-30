@@ -16,9 +16,9 @@ public class Encapsulation01 {
         System.out.println("====smith的信息======");
         System.out.println(smith.info());
 
-
     }
 }
+
 
 class Person {
     public  String name; //名字公开
@@ -81,4 +81,5 @@ class Person {
     public String info() {
         return "信息为 name=" + name  + " age=" + age + " 薪水=" + salary;
     }
+    
 }
