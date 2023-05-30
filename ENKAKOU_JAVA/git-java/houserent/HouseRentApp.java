@@ -14,5 +14,6 @@ public class HouseRentApp {
 
         new HouseView().mainMenu();
         System.out.println("===你推出房屋出租系统===");
+        
     }
 }
