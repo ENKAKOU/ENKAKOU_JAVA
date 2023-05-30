@@ -42,6 +42,7 @@ class BB implements IUsb<Integer, Float> {
     }
 }
 
+
 class CC implements IUsb {
 
     public Object get(Object o) {
@@ -68,5 +69,3 @@ interface IUsb<U, R> {
 
     }
 }
-
-
