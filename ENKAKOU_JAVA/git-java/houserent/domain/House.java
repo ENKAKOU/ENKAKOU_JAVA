@@ -58,7 +58,6 @@ public class House {
 
     private String state;
 
-    @Override
     public String toString() {
         return id +
                 "\t" + name +
@@ -66,6 +65,6 @@ public class House {
                 "\t" + address +
                 "\t" + rent +
                 "\t" + state;
+        
     }
-
 }
