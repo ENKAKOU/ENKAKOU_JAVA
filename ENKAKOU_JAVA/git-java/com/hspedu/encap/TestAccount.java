@@ -10,5 +10,6 @@ public class TestAccount {
         account.setPwd("123456");
 
         account.showInfo();
+        
     }
 }
