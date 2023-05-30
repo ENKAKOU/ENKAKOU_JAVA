@@ -8,7 +8,6 @@ public class Sub extends Base { //子类
         //super();
         //super("hsp");
         super("king", 20);
-
         System.out.println("子类Sub(String name, int age)构造器被调用....");
 
     }
@@ -18,6 +17,7 @@ public class Sub extends Base { //子类
         super("smith", 10);
         System.out.println("子类Sub()构造器被调用....");
     }
+
     public Sub(String name) {
         super("tom", 30);
         //do nothing...
@@ -25,7 +25,6 @@ public class Sub extends Base { //子类
     }
 
     public void sayOk() {
-
         System.out.println(n1 + " " + n2 + " " + n3);
         test100();
         test200();
@@ -33,6 +32,6 @@ public class Sub extends Base { //子类
 
         System.out.println("n4=" + getN4());
         callTest400();//
-    }
 
+    }
 }
