@@ -22,6 +22,7 @@ public class   HouseService {
         }
         return null;
     }
+    
     public boolean del(int deliId) {
         int index = -1;
         for(int i = 0; i < houseNums; i++) {
