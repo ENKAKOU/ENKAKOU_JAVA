@@ -8,17 +8,18 @@ public class AnonymousInnerClass {
     }
 }
 
+
 class Outer04 {
     private int n1 = 10;
 
     public void method() {
 
         IA tiger = new IA() {
-            @Override
             public void cry() {
                 System.out.println("老虎叫唤...");
             }
         };
+
         System.out.println("tiger的运行类型=" + tiger.getClass());
         tiger.cry();
         tiger.cry();
@@ -63,6 +64,7 @@ interface IA {
 //        System.out.println("小狗汪汪...");
 //    }
 //}
+
 
 class Father {
     public Father(String name) {

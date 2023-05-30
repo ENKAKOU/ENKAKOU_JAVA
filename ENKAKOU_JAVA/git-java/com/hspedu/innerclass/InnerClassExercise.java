@@ -7,6 +7,7 @@ public class InnerClassExercise {
     }
 }
 
+
 class Test {
 
     public Test() {
@@ -15,6 +16,7 @@ class Test {
         Inner s2 = new Inner();
         System.out.println(s2.a);
     }
+
 
 class Inner {
         public int a = 5;

@@ -10,6 +10,7 @@ public class AnonymousInnerClassDetail {
     }
 }
 
+
 class Outer05 {
     private int n1 = 99;
     public void f1() {
@@ -39,6 +40,7 @@ class Outer05 {
 
     }
 }
+
 
 class Person {
     public void hi() {

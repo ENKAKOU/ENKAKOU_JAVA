@@ -21,9 +21,11 @@ public class InnerClassExercise01 {
     }
 }
 
+
 interface IL {
     void show();
 }
+
 
 class Picture implements IL {
 

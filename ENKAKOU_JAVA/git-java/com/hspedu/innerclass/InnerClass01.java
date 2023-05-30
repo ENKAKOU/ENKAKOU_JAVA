@@ -20,7 +20,9 @@ class Outer {
     {
         System.out.println("代码块...");
     }
-    class Inner {
+
+
+class Inner {
 
     }
 }
