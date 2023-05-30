@@ -11,5 +11,6 @@ public interface AInterface {
 
     public static void cry() {
         System.out.println("cry ....");
+
     }
 }

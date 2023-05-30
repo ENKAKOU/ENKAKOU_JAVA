@@ -1,6 +1,7 @@
 package com.hspedu.interface_;
 
 public class Interface03 {
+
     public static void main(String[] args) {
 
         MysqlDB mysqlDB = new MysqlDB();

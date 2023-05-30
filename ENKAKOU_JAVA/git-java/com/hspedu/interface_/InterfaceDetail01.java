@@ -11,6 +11,8 @@ interface IA {
     void say();
     void hi();
 }
+
+
 class Cat implements IA{
 
     public void say() {
