@@ -13,9 +13,11 @@ abstract class A {
     }
 }
 
+
 abstract class B {
     public abstract void h1();
 }
+
 
 class C {
     // public abstract int n1 = 1;
