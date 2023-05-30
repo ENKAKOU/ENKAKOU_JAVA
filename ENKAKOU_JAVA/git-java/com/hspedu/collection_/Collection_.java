@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Collection_ {
-    @SuppressWarnings({"all"})
+
     public static void main(String[] args) {
 
     ArrayList arrayList = new ArrayList();
