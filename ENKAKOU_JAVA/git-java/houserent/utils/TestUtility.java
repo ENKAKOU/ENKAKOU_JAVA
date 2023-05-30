@@ -3,6 +3,7 @@ package houserent.utils;
 import com.hspedu.houserent.utils.Utility;
 
 public class TestUtility {
+    
     public static void main(String[] args) {
         System.out.println("请输入字符串");
         String s2 = Utility.readString(10, "hspedu");
@@ -11,6 +12,7 @@ public class TestUtility {
         A.cry();
     }
 }
+
 
 class A {
     public void hi(){
