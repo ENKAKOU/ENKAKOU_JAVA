@@ -8,14 +8,18 @@ public class Final01 {
     }
 }
 
+
 final class A { }
 
 //class B extends A {}
+
 
 class C {
 
     public final void hi() {}
 }
+
+
 class D extends C {
 
 //    public void hi() {
@@ -23,9 +27,11 @@ class D extends C {
 //    }
 }
 
+
 class E {
     public final double TAX_RATE = 0.08;
 }
+
 
 class F {
     public void cry() {
