@@ -26,9 +26,7 @@ class Apple<T, R, M> {
     }
 }
 
+
 class Dog {
 
 }
-
-
-
