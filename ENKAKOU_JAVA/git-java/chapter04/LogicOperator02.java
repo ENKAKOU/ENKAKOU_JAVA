@@ -1,4 +1,4 @@
-package java.code.chapter04;
+package chapter04;
 
 public class LogicOperator02 {
 
