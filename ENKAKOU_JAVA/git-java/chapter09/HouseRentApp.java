@@ -1,4 +1,4 @@
-package chapter09.houserent.domain;
+package chapter09;
 
 import chapter08.houserent.view.HouseView;
 

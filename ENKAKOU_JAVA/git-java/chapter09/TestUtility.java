@@ -1,4 +1,4 @@
-package chapter09.houserent.domain;
+package chapter09;
 
 public class TestUtility {
     
