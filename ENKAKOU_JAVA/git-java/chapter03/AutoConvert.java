@@ -1,4 +1,4 @@
-package java.code.chapter03;
+package chapter03;
 
 public class AutoConvert {
 	
