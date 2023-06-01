@@ -1,4 +1,4 @@
-package com.hspedu.map_;
+package chapter14.map_;
 
 import java.util.Collection;
 import java.util.HashMap;

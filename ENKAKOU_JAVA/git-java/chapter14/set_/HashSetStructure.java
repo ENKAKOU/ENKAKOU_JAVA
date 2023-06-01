@@ -1,4 +1,4 @@
-package com.hspedu.set_;
+package chapter14.set_;
 
 public class HashSetStructure {
 
