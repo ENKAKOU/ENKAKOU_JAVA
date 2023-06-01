@@ -7,9 +7,8 @@ public class FileInformation {
     public static void main(String[] args) {
 
     }
-    
+
     public void info() {
-        //先创建文件对象
         File file = new File("e:\\news1.txt");
 
         //调用相应的方法，得到对应信息
