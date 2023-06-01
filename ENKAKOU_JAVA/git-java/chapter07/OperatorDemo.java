@@ -1,4 +1,4 @@
-package java.code.chapter07;//import javax.xml.ws.soap.MTOM;
+package chapter07;//import javax.xml.ws.soap.MTOM;
 
 public class OperatorDemo {
 

@@ -1,4 +1,4 @@
-package java.code.chapter07;
+package chapter07;
 
 public class VarParameterExercise {
 	
