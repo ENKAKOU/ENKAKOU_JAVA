@@ -1,4 +1,4 @@
-package com.hspedu.syn;
+package chapter17.syn;
 
 public class SellTicket {
 

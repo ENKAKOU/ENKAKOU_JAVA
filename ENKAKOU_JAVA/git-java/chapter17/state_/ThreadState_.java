@@ -1,4 +1,4 @@
-package com.hspedu.state_;
+package chapter17.state_;
 
 public class ThreadState_ {
 

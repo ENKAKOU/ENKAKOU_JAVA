@@ -1,4 +1,4 @@
-package com.hspedu.threaduse;
+package chapter17.threaduse;
 
 public class Thread03 {
 
