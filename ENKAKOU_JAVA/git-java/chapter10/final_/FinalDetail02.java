@@ -1,4 +1,4 @@
-package com.hspedu.final_;
+package chapter10.final_;
 
 public class FinalDetail02 {
 

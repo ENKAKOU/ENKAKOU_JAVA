@@ -1,17 +1,18 @@
 package chapter09.houserent.utils;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class Utility {
 
     private static Scanner scanner = new Scanner(System.in);
 
-	public static char readMenuSelection() {
+    public static char readMenuSelection() {
         char c;
         for (; ; ) {
-            String str = readKeyBoard(1, false);//包含一个字符的字符串
+            String str = readKeyBoard(1, false);
             c = str.charAt(0);
-            if (c != '1' && c != '2' && 
-                c != '3' && c != '4' && c != '5') {
+            if (c != '1' && c != '2' &&
+                    c != '3' && c != '4' && c != '5') {
                 System.out.print("选择错误，请重新输入：");
             } else break;
         }
@@ -30,42 +31,40 @@ public class Utility {
 
     public static int readInt() {
         int n;
-        for (; ; ) {
+        for(; ;){
             String str = readKeyBoard(10, false);
-            try {
+            try{
                 n = Integer.parseInt(str);
                 break;
             } catch (NumberFormatException e) {
-                System.out.print("数字输入错误，请重新输入：");
+                System.out.println("数学输入错误，请重新输入：");
             }
         }
-        return n;
+        return  n;
     }
 
     public static int readInt(int defaultValue) {
         int n;
-        for (; ; ) {
+        for(; ; ) {
             String str = readKeyBoard(10, true);
             if (str.equals("")) {
                 return defaultValue;
             }
-			
-			//异常处理...
-            try {
+
+            try{
                 n = Integer.parseInt(str);
                 break;
             } catch (NumberFormatException e) {
-                System.out.print("数字输入错误，请重新输入：");
+                System.out.println("数学输入错误，请重新输入：");
             }
         }
         return n;
     }
 
-
     public static String readString(int limit) {
         return readKeyBoard(limit, false);
     }
-	
+
     public static String readString(int limit, String defaultValue) {
         String str = readKeyBoard(limit, true);
         return str.equals("")? defaultValue : str;
@@ -75,7 +74,7 @@ public class Utility {
         System.out.println("请输入你的选择(Y/N): 请小心选择");
         char c;
         for (; ; ) {
-        	//y => Y n=>N
+            //y => Y n=>N
             String str = readKeyBoard(1, false).toUpperCase();
             c = str.charAt(0);
             if (c == 'Y' || c == 'N') {
@@ -88,15 +87,13 @@ public class Utility {
     }
 
     private static String readKeyBoard(int limit, boolean blankReturn) {
-        
 
-		String line = "";
-
-		//scanner.hasNextLine()
+        String line = "";
+        //scanner.hasNextLine()  // 判断有没有下一行
         while (scanner.hasNextLine()) {
             line = scanner.nextLine();
-
-			if (line.length() == 0) {
+            //line.length=0
+            if (line.length() == 0) {
                 if (blankReturn) return line;
                 else continue;
             }

@@ -1,4 +1,4 @@
-package com.hspedu.abstract_;
+package chapter10.abstract_;
 
 public class AbstractDetail02 {
 

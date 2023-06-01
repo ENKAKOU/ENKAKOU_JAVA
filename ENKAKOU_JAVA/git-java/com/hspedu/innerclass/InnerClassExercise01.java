@@ -1,7 +1,5 @@
 package com.hspedu.innerclass;
 
-import com.hspedu.abstract_.AA;
-
 public class InnerClassExercise01 {
 
     public static void main(String[] args) {

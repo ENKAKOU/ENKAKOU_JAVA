@@ -1,23 +1,12 @@
 package chapter09.houserent.domain;
 
 public class House {
-
+    // 编号，房主，电话，地址，月租，状态（未出租/已出租）
     private int id;
     private String name;
     private String phone;
     private String address;
     private int rent;
-    private String state;
-
-
-    public House(int id, String name, String phone, String address, int rent, String state) {
-        this.id = id;
-        this.name = name;
-        this.phone = phone;
-        this.address = address;
-        this.rent = rent;
-        this.state = state;
-    }
 
     public int getId() {
         return id;
@@ -67,13 +56,15 @@ public class House {
         this.state = state;
     }
 
+    private String state;
+
     public String toString() {
-        return  id +
-                "\t\t" + name +
+        return id +
+                "\t" + name +
                 "\t" + phone +
-                "\t\t" + address +
+                "\t" + address +
                 "\t" + rent +
-                "\t" + state ;
+                "\t" + state;
         
     }
 }

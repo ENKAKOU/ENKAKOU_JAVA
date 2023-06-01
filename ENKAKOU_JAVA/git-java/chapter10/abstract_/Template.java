@@ -1,4 +1,4 @@
-package com.hspedu.abstract_;
+package chapter10.abstract_;
 
 abstract public class Template {
 
