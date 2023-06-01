@@ -1,6 +1,6 @@
 package java.chapter09.houserent;
 
-import com.hspedu.houserent.view.HouseView;
+import chapter08.houserent.view.HouseView;
 
 public class HouseRentApp {
     public static void main(String[] args) {

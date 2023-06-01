@@ -1,6 +1,6 @@
 package java.chapter09.houserent.utils;
 
-import com.hspedu.houserent.utils.Utility;
+import chapter08.houserent.utils.Utility;
 
 public class TestUtility {
     

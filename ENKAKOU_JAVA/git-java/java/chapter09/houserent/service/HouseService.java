@@ -1,6 +1,6 @@
 package java.chapter09.houserent.service;
 
-import com.hspedu.houserent.domain.House;
+import chapter08.houserent.domain.House;
 
 public class   HouseService {
     private House[] houses;

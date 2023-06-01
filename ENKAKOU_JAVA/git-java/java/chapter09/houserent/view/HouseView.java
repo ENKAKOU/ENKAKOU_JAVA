@@ -1,8 +1,8 @@
 package java.chapter09.houserent.view;
 
-import com.hspedu.houserent.domain.House;
-import com.hspedu.houserent.service.HouseService;
-import com.hspedu.houserent.utils.Utility;
+import chapter08.houserent.domain.House;
+import chapter08.houserent.service.HouseService;
+import chapter08.houserent.utils.Utility;
 
 public class HouseView {
     private boolean loop = true;
