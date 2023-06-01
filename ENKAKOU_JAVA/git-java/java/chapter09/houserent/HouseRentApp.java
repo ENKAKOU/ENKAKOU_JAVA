@@ -1,4 +1,4 @@
-package houserent;
+package java.chapter09.houserent;
 
 import com.hspedu.houserent.view.HouseView;
 

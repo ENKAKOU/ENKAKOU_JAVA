@@ -1,4 +1,4 @@
-package houserent.service;
+package java.chapter09.houserent.service;
 
 import com.hspedu.houserent.domain.House;
 
