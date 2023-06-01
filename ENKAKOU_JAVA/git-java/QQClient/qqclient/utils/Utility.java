@@ -1,4 +1,4 @@
-package com.hspedu.qqclient.utils;
+package QQClient.qqclient.utils;
 
 import java.util.Scanner;
 

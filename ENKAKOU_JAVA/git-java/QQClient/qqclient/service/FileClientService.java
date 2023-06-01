@@ -1,7 +1,7 @@
-package com.hspedu.qqclient.service;
+package QQClient.qqclient.service;
 
-import com.hspedu.qqcommon.Message;
-import com.hspedu.qqcommon.MessageType;
+import QQClient.qqcommon.Message;
+import QQClient.qqcommon.MessageType;
 
 import java.io.*;
 

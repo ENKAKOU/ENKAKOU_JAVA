@@ -1,4 +1,4 @@
-package com.hspedu.qqclient.service;
+package QQClient.qqclient.service;
 
 import java.util.HashMap;
 

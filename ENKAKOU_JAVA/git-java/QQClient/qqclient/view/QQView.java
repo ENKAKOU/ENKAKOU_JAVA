@@ -1,9 +1,9 @@
-package com.hspedu.qqclient.view;
+package QQClient.qqclient.view;
 
-import com.hspedu.qqclient.service.FileClientService;
-import com.hspedu.qqclient.service.MessageClientService;
-import com.hspedu.qqclient.service.UserClientService;
-import com.hspedu.qqclient.utils.Utility;
+import QQClient.qqclient.service.FileClientService;
+import QQClient.qqclient.service.MessageClientService;
+import QQClient.qqclient.service.UserClientService;
+import QQClient.qqclient.utils.Utility;
 
 public class QQView {
 

@@ -1,4 +1,4 @@
-package com.hspedu.qqcommon;
+package QQClient.qqcommon;
 
 public interface MessageType {
 

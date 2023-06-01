@@ -1,8 +1,8 @@
-package com.hspedu.qqclient.service;
+package QQClient.qqclient.service;
 
-import com.hspedu.qqcommon.Message;
-import com.hspedu.qqcommon.MessageType;
-import com.hspedu.qqcommon.User;
+import QQClient.qqcommon.Message;
+import QQClient.qqcommon.MessageType;
+import QQClient.qqcommon.User;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
