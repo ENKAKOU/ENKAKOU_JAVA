@@ -1,4 +1,4 @@
-package java.code.chapter08;
+package java;
 
 public class TestIfElse {
 	

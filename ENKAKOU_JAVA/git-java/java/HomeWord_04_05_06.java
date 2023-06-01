@@ -1,4 +1,4 @@
-package java.code.chapter08;
+package java;
 
 import javax.swing.text.Style;
 
