@@ -1,4 +1,4 @@
-package com.hspedu.junit_;
+package chapter15.junit_;
 
 public class JUnit_ {
 

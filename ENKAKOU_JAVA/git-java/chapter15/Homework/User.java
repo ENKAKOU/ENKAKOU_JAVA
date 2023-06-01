@@ -1,4 +1,4 @@
-package java.code.chapter15_Homework;
+package chapter15.Homework;
 
 public class User {
     private int id;
