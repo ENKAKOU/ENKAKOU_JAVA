@@ -1,4 +1,4 @@
-package com.hspedu.collection_;
+package chapter14.collection_;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,9 +8,9 @@ public class CollectionFor {
     public static void main(String[] args) {
         Collection col = new ArrayList();
 
-        col.add(new CollectionIterator.Book("少年歌行", "李宏毅", 10.1));
-        col.add(new CollectionIterator.Book("沉香如屑", "成毅", 5.1));
-        col.add(new CollectionIterator.Book("苍兰决", "张凌赫", 34.6));
+        col.add(new chapter14.collection_.CollectionIterator.Book("少年歌行", "李宏毅", 10.1));
+        col.add(new chapter14.collection_.CollectionIterator.Book("沉香如屑", "成毅", 5.1));
+        col.add(new chapter14.collection_.CollectionIterator.Book("苍兰决", "张凌赫", 34.6));
 
         for (Object book : col) {
             System.out.println("book=" + book);

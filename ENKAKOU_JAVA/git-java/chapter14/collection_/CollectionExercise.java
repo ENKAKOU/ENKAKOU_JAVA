@@ -1,11 +1,11 @@
-package com.hspedu.collection_;
+package chapter14.collection_;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class CollectionExercise {
-    @SuppressWarnings({"all"})
+
     public static void main(String[] args) {
         List list = new ArrayList();
         list.add(new Dog("小黑", 3));

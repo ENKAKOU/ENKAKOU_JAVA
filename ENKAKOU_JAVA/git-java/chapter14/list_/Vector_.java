@@ -1,8 +1,7 @@
-package com.hspedu.list_;
+package chapter14.list_;
 
 import java.util.Arrays;
 import java.util.Vector;
-@SuppressWarnings({"all"})
 
 public class Vector_ {
 

@@ -1,4 +1,4 @@
-package com.hspedu.collections_;
+package chapter14.collections_;
 
 import java.lang.reflect.Array;
 import java.util.*;

@@ -1,7 +1,6 @@
-package com.hspedu.collection_;
+package chapter14.collection_;
 
 import java.util.ArrayList;
-@SuppressWarnings({"all"})
 
 public class ArrayListDetail {
 

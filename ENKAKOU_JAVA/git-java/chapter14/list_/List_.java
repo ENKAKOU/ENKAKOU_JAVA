@@ -1,8 +1,7 @@
-package com.hspedu.list_;
+package chapter14.list_;
 
 import java.util.ArrayList;
 import java.util.List;
-@SuppressWarnings({"all"})
 
 public class List_ {
 

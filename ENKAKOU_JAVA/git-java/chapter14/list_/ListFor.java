@@ -1,7 +1,6 @@
-package com.hspedu.list_;
+package chapter14.list_;
 
 import java.util.*;
-@SuppressWarnings({"all"})
 
 public class ListFor {
 
