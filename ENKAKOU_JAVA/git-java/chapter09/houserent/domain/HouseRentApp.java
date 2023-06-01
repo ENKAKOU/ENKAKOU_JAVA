@@ -1,8 +1,9 @@
-package chapter09.houserent;
+package chapter09.houserent.domain;
 
-import chapter09.houserent.view.HouseView;
+import chapter08.houserent.view.HouseView;
 
 public class HouseRentApp {
+
     public static void main(String[] args) {
         byte b1 = 123;
         b1 += 100000;
