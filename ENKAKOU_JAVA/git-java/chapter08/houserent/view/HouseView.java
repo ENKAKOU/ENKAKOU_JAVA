@@ -2,15 +2,13 @@ package chapter08.houserent.view;
 
 import chapter08.houserent.domain.House;
 import chapter08.houserent.service.HouseService;
-import chapter08.houserent.utils.Utility;
-
+import com.hspedu.houserent.utils.Utility;
 
 public class HouseView {
 
     private boolean loop = true;
     private char key = ' ';
     private HouseService houseService = new HouseService(2);
-
 
     public void update() {
         System.out.println("=============修改房屋信息============");
@@ -29,7 +27,7 @@ public class HouseView {
 
         System.out.print("姓名(" + house.getName() + "): ");
         String name = Utility.readString(8, "");
-        if (!"".equals(name)) {
+        if (!"".equals(name)) {//修改
             house.setName(name);
         }
 
@@ -62,7 +60,7 @@ public class HouseView {
         System.out.println("=============查找房屋信息============");
         System.out.print("请输入要查找的id: ");
         int findId = Utility.readInt();
-
+        //调用方法
         House house = houseService.findById(findId);
         if (house != null) {
             System.out.println(house);
@@ -71,9 +69,9 @@ public class HouseView {
         }
     }
 
-
+    //完成退出确认
     public void exit() {
-
+        //这里我们使用Utility提供方法，完成确认
         char c = Utility.readConfirmSelection();
         if (c == 'Y') {
             loop = false;
@@ -88,7 +86,7 @@ public class HouseView {
             System.out.println("=============放弃删除房屋信息============");
             return;
         }
-
+        //注意该方法本身就有循环判断的逻辑,必须输出Y/N
         char choice = Utility.readConfirmSelection();
         if (choice == 'Y') {//真的删除
             if (houseService.del(delId)) {
@@ -102,7 +100,6 @@ public class HouseView {
 
     }
 
-
     public void addHouse() {
         System.out.println("=============添加房屋============");
         System.out.print("姓名: ");
@@ -115,7 +112,7 @@ public class HouseView {
         int rent = Utility.readInt();
         System.out.print("状态: ");
         String state = Utility.readString(3);
-        //创建一个新的House对象
+        //创建一个新的House对象, 注意id 是系统分配的，
         House newHouse = new House(0, name, phone, address, rent, state);
         if (houseService.add(newHouse)) {
             System.out.println("=============添加房屋成功============");
@@ -125,13 +122,13 @@ public class HouseView {
 
     }
 
-
+    //编写listHouses()显示房屋列表
     public void listHouses() {
         System.out.println("=============房屋列表============");
         System.out.println("编号\t\t房主\t\t电话\t\t地址\t\t月租\t\t状态(未出租/已出租)");
-        House[] houses = houseService.list();
-        for (int i = 0; i < houses.length; i++) {
-            if (houses[i] == null) {
+        House[] houses = houseService.list();//得到所有房屋信息
+        for (int i = 0; i < houses.length; i++) {//大家想想，这里老韩有什么？雷,坑
+            if (houses[i] == null) {//如果为null,就不用再显示了
                 break;
             }
             System.out.println(houses[i]);
@@ -140,9 +137,8 @@ public class HouseView {
 
     }
 
-
+    //显示主菜单
     public void mainMenu() {
-
         do {
             System.out.println("\n=============房屋出租系统菜单============");
             System.out.println("\t\t\t1 新 增 房 源");
@@ -174,5 +170,6 @@ public class HouseView {
                     break;
             }
         } while (loop);
+
     }
 }

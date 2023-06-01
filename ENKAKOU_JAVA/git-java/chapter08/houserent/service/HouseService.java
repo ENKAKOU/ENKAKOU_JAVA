@@ -7,17 +7,12 @@ public class HouseService {
     private House[] houses;
     private int houseNums = 1;
     private int idCounter = 1;
-
-    //构造器
     public HouseService(int size) {
-        //new houses
         houses = new House[size];
-
         houses[0] = new House(1,"jack","112", "海淀区", 2000, "未出租");
     }
 
     public House findById(int findId) {
-
         for(int i = 0; i < houseNums; i++) {
             if(findId == houses[i].getId()) {
                 return houses[i];
@@ -49,21 +44,18 @@ public class HouseService {
 
     }
 
-
     public boolean add(House newHouse) {
-
-        if(houseNums == houses.length) {
+        if(houseNums == houses.length) {//不能再添加
             System.out.println("数组已满，不能再添加了...");
             return false;
         }
-
         houses[houseNums++] = newHouse;
-
         newHouse.setId(++idCounter);
         return true;
     }
 
     public House[] list() {
         return houses;
+
     }
 }

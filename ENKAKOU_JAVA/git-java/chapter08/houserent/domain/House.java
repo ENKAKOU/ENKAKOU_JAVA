@@ -1,14 +1,14 @@
 package chapter08.houserent.domain;
 
 public class House {
-
+    //编号  房主  电话  地址  月租  状态(未出租/已出租)
     private int id;
     private String name;
     private String phone;
     private String address;
     private int rent;
     private String state;
-
+    //构造器和setter,getter
 
     public House(int id, String name, String phone, String address, int rent, String state) {
         this.id = id;
@@ -74,6 +74,5 @@ public class House {
                 "\t\t" + address +
                 "\t" + rent +
                 "\t" + state ;
-        
     }
 }
