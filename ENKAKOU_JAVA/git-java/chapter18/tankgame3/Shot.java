@@ -1,4 +1,4 @@
-package com.hspedu.tankgame3;
+package chapter18.tankgame3;
 
 public class Shot implements Runnable {
     int x;    //x坐标

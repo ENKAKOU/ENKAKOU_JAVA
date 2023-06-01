@@ -1,4 +1,4 @@
-package com.hspedu.tankgame3;
+package chapter18.tankgame3;
 
 public class Tank {
     private int x;   //横坐标
