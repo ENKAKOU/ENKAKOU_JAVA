@@ -1,4 +1,4 @@
-package chapter13.chapter13_Homework.string_;
+package chapter13.string_;
 
 public class StringExercise08 {
 

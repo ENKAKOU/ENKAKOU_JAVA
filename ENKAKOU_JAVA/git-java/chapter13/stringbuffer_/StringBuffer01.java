@@ -1,4 +1,4 @@
-package chapter13.chapter13_Homework.stringbuffer_;
+package chapter13.stringbuffer_;
 
 public class StringBuffer01 {
 
