@@ -1,4 +1,4 @@
-package chapter13.chapter13_Homework.arrays_;
+package chapter13.arrays_;
 
 import java.util.Arrays;
 import java.util.List;

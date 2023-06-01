@@ -1,4 +1,4 @@
-package java.code.chapter13_Homework;
+package chapter13.Homework;
 
 public class Homework02 {
 
