@@ -1,4 +1,4 @@
-package com.hspedu.method;
+package chapter17.method;
 
 public class ThreadMethod01 {
 
