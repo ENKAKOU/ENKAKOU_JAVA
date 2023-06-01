@@ -5,10 +5,10 @@
   <nodes>
     <node x="735.0" y="371.0">java.io.BufferedWriter</node>
     <node x="562.75" y="95.0">java.lang.Appendable</node>
-    <node x="983.75" y="95.0">java.io.Closeable</node>
     <node x="489.99999999999994" y="371.0">java.io.StringWriter</node>
-    <node x="101.0" y="552.0">java.io.FileWriter</node>
+    <node x="983.75" y="95.0">java.io.Closeable</node>
     <node x="781.0" y="190.0">java.io.Writer</node>
+    <node x="101.0" y="552.0">java.io.FileWriter</node>
     <node x="0.0" y="343.0">java.io.OutputStreamWriter</node>
     <node x="1308.0" y="371.0">java.io.CharArrayWriter</node>
     <node x="956.75" y="0.0">java.lang.AutoCloseable</node>
@@ -29,13 +29,13 @@
       <point x="833.5" y="323.0" />
       <point x="-35.0" y="51.5" />
     </edge>
-    <edge source="java.io.BufferedWriter" target="java.io.Writer">
-      <point x="0.0" y="-51.5" />
-      <point x="0.0" y="51.5" />
-    </edge>
     <edge source="java.io.FileWriter" target="java.io.OutputStreamWriter">
       <point x="0.0" y="-93.5" />
       <point x="0.0" y="79.5" />
+    </edge>
+    <edge source="java.io.BufferedWriter" target="java.io.Writer">
+      <point x="0.0" y="-51.5" />
+      <point x="0.0" y="51.5" />
     </edge>
     <edge source="java.io.Writer" target="java.io.Flushable">
       <point x="0.0" y="-51.5" />
@@ -72,7 +72,7 @@
       <point x="70.0" y="51.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8323529411764706" x="702.0" y="212.5" />
+  <settings layout="Hierarchic Group" zoom="0.7740641711229946" x="738.0" y="349.5" />
   <SelectedNodes>
     <node>java.io.BufferedWriter</node>
   </SelectedNodes>
