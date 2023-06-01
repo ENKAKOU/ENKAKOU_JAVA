@@ -1,4 +1,4 @@
-package java.code.chapter06;
+package chapter06;
 
 public class BubbleSort {
     
