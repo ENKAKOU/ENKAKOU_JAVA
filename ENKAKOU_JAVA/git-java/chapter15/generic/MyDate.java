@@ -1,4 +1,4 @@
-package com.hspedu.generic;
+package chapter15.generic;
 
 public class MyDate implements Comparable<MyDate>{
     private int year;

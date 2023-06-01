@@ -1,4 +1,4 @@
-package com.hspedu.generic;
+package chapter15.generic;
 
 import java.util.List;
 

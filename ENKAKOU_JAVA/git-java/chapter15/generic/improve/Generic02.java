@@ -1,4 +1,4 @@
-package com.hspedu.generic.improve;
+package chapter15.improve;
 
 import java.util.ArrayList;
 

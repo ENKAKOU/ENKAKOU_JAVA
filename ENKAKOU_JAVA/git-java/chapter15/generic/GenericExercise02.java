@@ -1,4 +1,4 @@
-package com.hspedu.generic;
+package chapter15.generic;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -8,9 +8,9 @@ public class GenericExercise02 {
     public static void main(String[] args) {
 
         ArrayList<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("tom", 20000, new MyDate(1980,12,11)));
-        employees.add(new Employee("jack", 12000, new MyDate(2001,12,12)));
-        employees.add(new Employee("tom", 50000, new MyDate(1980,12,10)));
+        employees.add(new Employee("tom", 20000, new com.hspedu.generic.MyDate(1980,12,11)));
+        employees.add(new Employee("jack", 12000, new com.hspedu.generic.MyDate(2001,12,12)));
+        employees.add(new Employee("tom", 50000, new com.hspedu.generic.MyDate(1980,12,10)));
 
         System.out.println("employees=" + employees);
 

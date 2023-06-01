@@ -1,11 +1,11 @@
-package com.hspedu.generic;
+package chapter15.generic;
 
 public class Employee {
     private String name;
     private double sal;
-    private MyDate birthday;
+    private chapter15.generic.MyDate birthday;
 
-    public Employee(String name, double sal, MyDate birthday) {
+    public Employee(String name, double sal, chapter15.generic.MyDate birthday) {
         this.name = name;
         this.sal = sal;
         this.birthday = birthday;
@@ -27,14 +27,13 @@ public class Employee {
         this.sal = sal;
     }
 
-    public MyDate getBirthday() {
+    public chapter15.generic.MyDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(MyDate birthday) {
+    public void setBirthday(chapter15.generic.MyDate birthday) {
         this.birthday = birthday;
     }
-
 
     public String toString() {
         return "\nEmployee{" +

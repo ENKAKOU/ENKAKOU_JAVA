@@ -1,4 +1,4 @@
-package com.hspedu.customgeneric;
+package chapter15.customgeneric;
 
 import java.util.ArrayList;
 
