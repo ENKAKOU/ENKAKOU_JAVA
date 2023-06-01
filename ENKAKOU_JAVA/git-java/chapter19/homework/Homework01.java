@@ -1,4 +1,4 @@
-package java.chapter19_homework;
+package chapter19.homework;
 
 import java.io.BufferedWriter;
 import java.io.File;
