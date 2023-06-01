@@ -1,4 +1,4 @@
-package java.code.chapter01;
+package chapter01;
 
 public class HelloWorld {
 
