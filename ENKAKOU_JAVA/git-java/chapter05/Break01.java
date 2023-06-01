@@ -1,4 +1,4 @@
-package java.code.chapter05;
+package chapter05;
 
 public class Break01 {
 	
