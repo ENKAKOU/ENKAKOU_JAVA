@@ -1,4 +1,4 @@
-package com.hspedu.ticket;
+package chapter17.ticket;
 
 public class SellTicket {
 
