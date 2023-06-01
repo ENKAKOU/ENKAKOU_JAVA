@@ -14,7 +14,6 @@ public class ClientConnectServerThread extends Thread {
         this.socket = socket;
     }
 
-    @Override
     public void run() {
         while (true) {
 
