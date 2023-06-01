@@ -1,4 +1,4 @@
-package com.hspedu.event_;
+package chapter16.event_;
 
 import javax.swing.*;
 import java.awt.*;

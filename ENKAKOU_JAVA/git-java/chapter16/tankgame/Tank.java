@@ -1,4 +1,4 @@
-package com.hspedu.tankgame;
+package chapter16.tankgame;
 
 public class Tank {
     private int x;

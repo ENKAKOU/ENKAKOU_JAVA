@@ -1,4 +1,4 @@
-package com.hspedu.tankgame2;
+package chapter16.tankgame2;
 
 public class Tank {
     private int x;//坦克的横坐标

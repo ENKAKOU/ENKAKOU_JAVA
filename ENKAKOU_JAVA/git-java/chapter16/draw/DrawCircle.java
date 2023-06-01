@@ -1,4 +1,4 @@
-package com.hspedu.draw;
+package chapter16.draw;
 
 import javax.swing.*;
 import java.awt.*;

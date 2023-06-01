@@ -1,4 +1,4 @@
-package com.hspedu.tankgame;
+package chapter16.tankgame;
 
 import javax.swing.*;
 
