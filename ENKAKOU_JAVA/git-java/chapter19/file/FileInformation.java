@@ -1,6 +1,5 @@
 package chapter19.file;
 
-import org.junit.jupiter.api.Test;
 import java.io.File;
 
 public class FileInformation {
@@ -8,8 +7,7 @@ public class FileInformation {
     public static void main(String[] args) {
 
     }
-
-    @Test
+    
     public void info() {
         //先创建文件对象
         File file = new File("e:\\news1.txt");

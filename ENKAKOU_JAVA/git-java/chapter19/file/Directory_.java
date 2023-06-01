@@ -1,7 +1,5 @@
 package chapter19.file;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,7 +10,6 @@ public class Directory_ {
 
     }
 
-    @Test
     public void m1() {
 
         String filePath = "e:\\news1.txt";
@@ -29,7 +26,6 @@ public class Directory_ {
 
     }
 
-    @Test
     public void m2() {
 
         String filePath = "D:\\demo02";
@@ -46,7 +42,6 @@ public class Directory_ {
 
     }
 
-    @Test
     public void m3() {
 
         String directoryPath = "D:\\demo\\a\\b\\c";
