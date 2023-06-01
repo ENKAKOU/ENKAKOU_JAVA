@@ -1,4 +1,4 @@
-package com.hspedu.tankgame4;
+package chapter18.tankgame4;
 
 public class Bomb {
     int x, y;     //坐标
