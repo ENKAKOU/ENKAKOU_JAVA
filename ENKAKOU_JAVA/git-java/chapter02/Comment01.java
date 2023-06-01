@@ -1,4 +1,4 @@
-package java.code.chapter02;
+package chapter02;
 
 public class Comment01 {
 
