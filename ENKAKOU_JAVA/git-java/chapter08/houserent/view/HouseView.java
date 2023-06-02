@@ -2,7 +2,7 @@ package chapter08.houserent.view;
 
 import chapter08.houserent.domain.House;
 import chapter08.houserent.service.HouseService;
-import com.hspedu.houserent.utils.Utility;
+import chapter08.houserent.utils.Utility;
 
 public class HouseView {
 
