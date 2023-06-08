@@ -1,13 +1,17 @@
 package chapter23.reflection;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class ReflecAccessMethod {
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException,
-            IllegalAccessException, InstantiationException, InvocationTargetException {
-
-        Class<?> bossCls = Class.forName("reflection.Boss");
+    public static void main(String[] args) throws ClassNotFoundException,
+            NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
+        //得到Boss类对应的Class对象
+        Class<?> bossCls = Class.forName("com.hspedu.reflection.Boss");
         Object o = bossCls.newInstance();
-        Method hi = bossCls.getDeclaredMethod("hi", String.class);//OK
+//        Method hi = bossCls.getMethod("hi", String.class);
+        Method hi = bossCls.getDeclaredMethod("hi", String.class);
         hi.invoke(o, "韩顺平教育~");
 
         Method say = bossCls.getDeclaredMethod("say", int.class, String.class, char.class);
@@ -22,28 +26,35 @@ public class ReflecAccessMethod {
         Object reVal2 = m1.invoke(o);
         System.out.println("reVal2的运行类型=" + reVal2.getClass());//Monster
 
+
     }
 }
 
 
-class Monster{
+class Monster {
 
 }
 
 
-class Boss{
+class Boss {
+
     public int age;
     private static String name;
 
     public Boss() {
+    }
+
+    public Monster m1() {
         return new Monster();
     }
 
-    private static String say(int n, String s, char c) {
+    private static String say(int n, String s, char c) {//静态方法
         return n + " " + s + " " + c;
     }
 
     public void hi(String s) {
-        System.out.println("hi" + s);
+        System.out.println("hi " + s);
+
     }
 }
+
