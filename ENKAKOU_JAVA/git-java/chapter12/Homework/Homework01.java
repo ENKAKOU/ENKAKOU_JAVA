@@ -1,4 +1,4 @@
-package java.code.chapter12_Homework;
+package chapter12.Homework;
 
 public class Homework01 {
     public static void main(String[] args) {
