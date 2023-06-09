@@ -1,4 +1,4 @@
-package java_english.object_oriednted_java;
+package java_english.object_java;
 
 public class Car {
 
