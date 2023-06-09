@@ -1,16 +1,14 @@
 package java_english.conditionals;
 
-public class Reservation {
+public class Reservation3 {
 
     int guestCount;
     int restaurantCapacity;
     boolean isRestaurantOpen;
     boolean isConfirmed;
 
-    public Reservation(int count, int capacity, boolean open) {
-        if (count < 1 || count > 8) {
-            System.out.println("Invalid reservation!");
-        }
+    public Reservation3(int count, int capacity, boolean open) {
+
         guestCount = count;
         restaurantCapacity = capacity;
         isRestaurantOpen = open;
@@ -27,11 +25,7 @@ public class Reservation {
     }
 
     public void informUser() {
-        if (!isConfirmed) {
-            System.out.println("Unable to confirm reservation, please contact restaurant.");
-        } else {
-            System.out.println("Please enjoy your meal!");
-        }
+        System.out.println("Please enjoy your meal!");
     }
 
     public static void main(String[] args) {
@@ -41,7 +35,5 @@ public class Reservation {
         partyOfThree.informUser();
         partyOfFour.confirmReservation();
         partyOfFour.informUser();
-
     }
 }
-
