@@ -1,5 +1,10 @@
 package chapter25.jdbc.datasource;
 
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

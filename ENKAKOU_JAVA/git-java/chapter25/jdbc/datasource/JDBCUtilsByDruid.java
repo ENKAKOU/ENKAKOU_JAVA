@@ -1,5 +1,7 @@
 package chapter25.jdbc.datasource;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
 import javax.sql.DataSource;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,12 +26,14 @@ public class JDBCUtilsByDruid {
             e.printStackTrace();
         }
 
+    }
+
         //getConnection方法
         public static Connection getConnection () throws SQLException {
             return ds.getConnection();
         }
 
-        public static void close (ResultSet resultSet, Statement statement, Connection connection){
+        public static void close(ResultSet resultSet, Statement statement, Connection connection) {
 
             try {
                 if (resultSet != null) {
@@ -46,4 +50,3 @@ public class JDBCUtilsByDruid {
             }
         }
     }
-}
