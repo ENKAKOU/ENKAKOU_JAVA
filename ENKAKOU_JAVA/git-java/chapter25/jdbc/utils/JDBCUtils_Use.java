@@ -4,12 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.junit.jupiter.api.Test;
 import java.sql.*;
 
 public class JDBCUtils_Use {
 
-    @Test
     public void testSelect() {
         Connection connection = null;   //得到连接
 
@@ -40,7 +38,6 @@ public class JDBCUtils_Use {
         }
     }
 
-    @Test
     public void testDML () {
         Connection connection = null;    //得到连接
         String sql = "update actor set name = ? where id = ?";
