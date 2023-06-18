@@ -1,17 +1,14 @@
 package chapter25.jdbc.datasource;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import org.junit.jupiter.api.Test;
 import java.io.FileInputStream;
 import java.sql.SQLException;
 import java.util.Properties;
 
 public class C3P0_ {
 
-    @Test
     public void testC3P0_01() throws Exception {
 
-        ComboPooledDataSource combopooledDataSource = new ComboPooledDataSource();   //创建一个数据源对象
+        ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
 
         Properties properties = new Properties();
         properties.load(new FileInputStream("src\\mysql.properties"));  //配置文件mysql.properties 获取相关连接的信息
@@ -30,9 +27,9 @@ public class C3P0_ {
         comboPooledDataSource.setMaxPoolSize(50);   //最大连接数
 
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 5000; i++) {       //测试连接池的效率, 测试对mysql 5000次操作
-            Connection connection = comboPooledDataSource.getConnection(); //这个方法就是从 DataSource 接口实现的
-            //System.out.println("连接OK");
+        for (int i = 0; i < 5000; i++) {
+            Connection connection = comboPooledDataSource.getConnection();   //这个方法就是从 DataSource 接口实现的
+//            System.out.println("连接OK");
             connection.close();
         }
 
@@ -41,12 +38,11 @@ public class C3P0_ {
 
     }
 
-    @Test
     public void testC3P0_02() throws Exception {
 
         ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
 
-        long start = System.currentTimeMillis();           //测试5000次连接mysql
+        long start = System.currentTimeMillis();   //测试5000次连接mysql
         System.out.println("开始执行....");
         for (int i = 0; i < 500000; i++) {
             Connection connection = comboPooledDataSource.getConnection();
@@ -55,7 +51,7 @@ public class C3P0_ {
         }
 
         long end = System.currentTimeMillis();
-        System.out.println("c3p0的第二种方式(500000) 耗时=" + (end - start));//1917
+        System.out.println("c3p0的第二种方式(500000) 耗时=" + (end - start));
 
     }
 }
