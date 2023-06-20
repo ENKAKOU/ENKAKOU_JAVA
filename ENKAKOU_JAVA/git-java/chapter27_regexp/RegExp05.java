@@ -36,6 +36,6 @@ public class RegExp05 {
         while (matcher.find()) {
             System.out.println("找到 " + matcher.group(0));
         }
-        
+
     }
 }
