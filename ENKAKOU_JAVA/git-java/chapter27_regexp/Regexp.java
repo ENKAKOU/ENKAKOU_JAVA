@@ -399,14 +399,13 @@ public class Regexp {
         //2. 创建一个匹配器对象
         //matcher 匹配器按照 pattern(模式/样式), 到 content 文本中去匹配
         //找到就返回true, 否则就返回false
+        int no = 0;
         Matcher matcher = pattern.matcher(content);
         //3.开始循环匹配
         while (matcher.find()) {
             //匹配内容，文本，放到 m.group(0)
             System.out.println("找到: " + (++no) + " " +matcher.group(0));
         }
-
-
 
     }
 }
