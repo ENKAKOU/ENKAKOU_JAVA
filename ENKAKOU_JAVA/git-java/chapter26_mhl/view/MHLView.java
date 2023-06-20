@@ -1,6 +1,5 @@
 package chapter26_mhl.view;
 
-
 import chapter26_mhl.domain.*;
 import chapter26_mhl.service.BillService;
 import chapter26_mhl.service.DiningTableService;
