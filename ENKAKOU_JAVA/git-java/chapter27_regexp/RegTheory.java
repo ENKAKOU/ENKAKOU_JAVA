@@ -24,6 +24,19 @@ public class RegTheory {
         Matcher matcher = pattern.matcher(content);
 
         //4.开始匹配
+//         matcher.group(0) 分析
+
+//         源码:
+//         public String group(int group) {
+//                 if (first < 0)
+//                     throw new IllegalStateException("No match found");
+//                 if (group < 0 || group > groupCount())
+//                     throw new IndexOutOfBoundsException("No group " + group);
+//                 if ((groups[group*2] == -1) || (groups[group*2+1] == -1))
+//                     return null;
+//                 return getSubSequence(groups[group * 2], groups[group * 2 + 1]).toString();
+//             }
+
         while (matcher.find()) {
             //1. 如果正则表达式有() 即分组, 取出匹配的字符串规则
             //2. group(0) 表示匹配到的子字符串
